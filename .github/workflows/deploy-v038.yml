@@ -1,0 +1,45 @@
+name: Deploy ARVEN v0.3.8 mobile test
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/deploy-v038.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download verified Godot Web build
+        run: |
+          mkdir -p site
+          curl -L --fail --retry 3 -o web.zip 'https://sdmntpritalynorth.oaiusercontent.com/files/00000000-4fd4-8246-b4bc-7dbfdb71862a/raw?se=2026-09-27T19%3A34%3A28Z&sp=r&sv=2026-02-06&sr=b&scid=3fe08e6a-5532-500a-9104-f87dcc05b6b2&skoid=82a3371f-2f6c-4f81-8a78-2701b362559b&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-09-27T05%3A17%3A30Z&ske=2026-09-28T05%3A17%3A30Z&sks=b&skv=2026-02-06&sig=8bgKOqPX6mD2WINhLjVmD0VSbdHHcwkfiF2OvTW7La8%3D'
+          unzip -q web.zip -d site
+          test -f site/index.html
+          test -f site/index.wasm
+          test -f site/index.pck
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
