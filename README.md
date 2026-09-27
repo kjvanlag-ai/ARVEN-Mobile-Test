@@ -1,11 +1,14 @@
-# ARVEN Mobile Test
+# ARVEN Mobile Test — v0.3.5
 
-Public browser-test channel for ARVEN.
+Player-facing working title: **RELIVOR**.
 
-- This repository contains test/deployment output only.
-- The authoritative Godot source project remains private in `kjvanlag-ai/ARVEN`.
-- Current preview: v0.3.3.
-- Player-facing game text is English.
-- Browser saves are local to the device/browser and are test data only.
+This public repository contains browser/mobile test output only. The authoritative Godot source stays private.
 
-The public test repository is not the source-of-truth for game design or permanent economy/security logic.
+## v0.3.5
+- Per-food timers that freeze when that food is unavailable.
+- Wild Blueberries: 2.5 s cooldown, +1 Vitality.
+- Chanterelle Stew: 8.0 s cooldown, +4 Vitality.
+- Active-run health decay rises over time.
+- Run repeats; Queue performs one completion.
+- Run / Queue / Auto / Priority stay visible on each action row.
+- Auto priority is 0–10, with the highest eligible priority selected first.
