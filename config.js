@@ -1,6 +1,7 @@
 'use strict';
-const VERSION='0.3.6';
-const SAVE_KEY='arven_mobile_036';
+const VERSION='0.3.7';
+const SAVE_KEY='arven_mobile_037';
+const PREVIOUS_SAVE_KEY='arven_mobile_036';
 const LOOP_XP_RATIO=.01;
 const AUTOMATION_UNLOCK=100;
 const DECAY_BASE=.24;
@@ -33,10 +34,28 @@ refasten:{name:'Refasten the Wall Boards',desc:'Costs 2 Reusable Nails.',base:8,
 seal_gaps:{name:'Seal the Wall Gaps',desc:'Costs 2 Packing Moss.',base:9,strain:.75,skill:'Crafting',repeatable:false}
 };
 const RESOURCE_NAMES={berries:'🫐 Wild Blueberries',mushrooms:'🍄 Chanterelle Mushrooms',wood:'🪵 Young Birch Poles',boards:'🪚 Salvaged Boards',nails:'🔩 Reusable Nails',moss:'🌿 Packing Moss'};
+const JOURNEY=[
+{flag:'',title:'Awoke in the Cold Clearing',info:'You woke alone on wet pine needles with no memory of your name, your route or how you reached the forest.'},
+{flag:'checked_self',title:'Checked Yourself',info:'No serious wound, no useful belongings and nothing in your pockets explains who you are.'},
+{flag:'listened',title:'Listened to the Forest',info:'No road, voices or machinery answered you—only wind, birds and deep forest.'},
+{flag:'searched_clearing',title:'Searched the Clearing',info:'The ground showed disturbed soil, broken twigs and signs that something had moved through recently.'},
+{flag:'tracks',title:'Found Faint Tracks',info:'One scrape looked almost like a dragged boot heel before the trail vanished beneath brambles.'},
+{flag:'berry_patch',title:'Found Wild Blueberries',info:'The berries became your first safe food and the first thing your instincts recognized with confidence.'},
+{flag:'stabilized',title:'Stabilized with Berries',info:'After eating enough berries, the shaking eased and you felt steady enough to leave the clearing.'},
+{flag:'beyond_clearing',title:'Searched Beyond the Clearing',info:'Old cuts, shifted stones and scarred bark suggested that people had once used this part of the forest.'},
+{flag:'mushroom_patch',title:'Found the Mushroom Patch',info:'Chanterelles offered better food, but similar toxic mushrooms made identification dangerous and trained Mycology.'},
+{flag:'fence_followed',title:'Followed the Rotten Fence',info:'Moss-covered posts formed an old line downhill—too regular to be natural.'},
+{flag:'house_seen',title:'Found the Ruined House',info:'A small timber house stood half-collapsed among the trees, abandoned for years but still useful enough to investigate.'},
+{flag:'house_inside',title:'Entered the Ruined House',info:'Inside you found a surviving hearth, old repair work, reusable boards and iron nails beneath the debris.'},
+{flag:'debris_cleared',title:'Began Restoring the Shelter',info:'Clearing the debris revealed how the old walls were built and opened the first real repair jobs.'},
+{flag:'frame_braced',title:'Braced the Broken Wall',info:'Fresh birch poles and salvaged boards pulled the weakest wall back toward square.'},
+{flag:'boards_refastened',title:'Refastened the Wall Boards',info:'Recovered nails secured the repaired boards and made the wall hold together again.'},
+{flag:'gaps_sealed',title:'Sealed the Wall Gaps',info:'Packed moss blocked the worst drafts. The ruin finally began to feel like somewhere you could survive a night.'}
+];
 function zeroMap(keys,value=0){const o={};for(const k of keys)o[k]=value;return o}
 function foodTimerDefaults(){const o={};for(const [id,f] of Object.entries(FOODS))o[id]=f.cooldown;return o}
 function fresh(){return{version:VERSION,hp:90,maxHp:100,generation:1,runSeconds:0,perm:0,res:{berries:0,mushrooms:0,wood:0,boards:0,nails:0,moss:0},cap:2,prog:{checked_self:false,listened:false,searched_clearing:false,tracks:false,berry_patch:false,stabilized:false,beyond_clearing:false,mushroom_patch:false,fence_followed:false,house_seen:false,door_checked:false,house_inside:false,debris_cleared:false,frame_braced:false,boards_refastened:false,gaps_sealed:false},runXp:zeroMap(SKILLS),loopXp:zeroMap(SKILLS),lifetime:zeroMap(ACTION_ORDER),autoActions:zeroMap(ACTION_ORDER,false),priorities:zeroMap(ACTION_ORDER,5),active:'',nextAction:'',progress:0,autoEat:true,foodTimers:foodTimerDefaults(),foodsEaten:{berries:0},storySeen:{},latestStory:'Cold needles press through your clothes. Your mouth is dry, your head aches, and the trees around you are unfamiliar. You remember no name, no road, and no reason to be here.',events:[{t:0,text:'You wake on wet pine needles with no memory of how you got here.'}]}}
-let s;try{s=JSON.parse(localStorage.getItem(SAVE_KEY)||'null')||fresh();if(s.version!==VERSION)s=fresh()}catch{s=fresh()}
+let s,migrated=false;try{const current=localStorage.getItem(SAVE_KEY),previous=localStorage.getItem(PREVIOUS_SAVE_KEY);s=JSON.parse(current||previous||'null')||fresh();if(!current&&previous){migrated=true;s.version=VERSION}else if(s.version!==VERSION)s=fresh()}catch{s=fresh()}
 function normalize(){const n=fresh();s={...n,...s};s.res={...n.res,...(s.res||{})};s.prog={...n.prog,...(s.prog||{})};s.runXp={...n.runXp,...(s.runXp||{})};s.loopXp={...n.loopXp,...(s.loopXp||{})};s.lifetime={...n.lifetime,...(s.lifetime||{})};s.autoActions={...n.autoActions,...(s.autoActions||{})};s.priorities={...n.priorities,...(s.priorities||{})};s.foodTimers={...n.foodTimers,...(s.foodTimers||{})};s.foodsEaten={...n.foodsEaten,...(s.foodsEaten||{})};s.storySeen={...(s.storySeen||{})};s.active='';s.nextAction='';s.progress=0;recalcMax(false)}
 function save(){s.version=VERSION;localStorage.setItem(SAVE_KEY,JSON.stringify(s))}
 function level(x){return Math.floor(Math.sqrt(Math.max(0,x)/20))}
@@ -50,4 +69,4 @@ function loseHp(amount){const actual=Math.min(Math.max(0,s.hp),Math.max(0,amount
 function currentDecay(id){return(DECAY_BASE+DECAY_PER_ACTIVE_MINUTE*(s.runSeconds/60))*ACTIONS[id].strain}
 function event(text){s.events.unshift({t:s.runSeconds,text});s.events=s.events.slice(0,20)}
 function storyOnce(key,text){if(s.storySeen[key])return false;s.storySeen[key]=true;s.latestStory=text;event(text);return true}
-normalize();
+normalize();if(migrated){event('Save migrated from v0.3.6 to v0.3.7.');save();}
