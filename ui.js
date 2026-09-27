@@ -1,20 +1,62 @@
 'use strict';
 const actionWrap=document.getElementById('actions');
-for(const id of ACTION_ORDER){const a=ACTIONS[id],card=document.createElement('div');card.className='action';card.id='card_'+id;card.innerHTML=`<div class="actionRow"><button class="actionExpand"><span class="actionName"></span><span class="time"></span></button><button class="mini runBtn">RUN</button><button class="mini queueBtn">QUEUE</button><button class="mini autoBtn">AUTO</button><button class="mini priorityBtn">P5</button></div><div class="actionProgress"><i></i></div><div class="actionBody"><div class="meta"></div><div class="mastery"></div></div>`;actionWrap.appendChild(card);const body=card.querySelector('.actionBody');card.querySelector('.actionExpand').onclick=()=>body.classList.toggle('open');card.querySelector('.runBtn').onclick=()=>s.active===id?stop(false):start(id);card.querySelector('.queueBtn').onclick=()=>queue(id);card.querySelector('.autoBtn').onclick=()=>toggleAuto(id);card.querySelector('.priorityBtn').onclick=()=>cyclePriority(id)}
+for(const id of ACTION_ORDER){
+  const a=ACTIONS[id],card=document.createElement('div');
+  card.className='action'; card.id='card_'+id;
+  card.innerHTML=`<div class="actionRow"><button class="actionExpand"><span class="actionName"></span><span class="time"></span></button><button class="mini runBtn">RUN</button><button class="mini queueBtn">QUEUE</button><button class="mini autoBtn">AUTO</button><button class="mini priorityBtn">P5</button></div><div class="actionProgress"><i></i></div><div class="actionBody"><div class="meta"></div><div class="mastery"></div></div>`;
+  actionWrap.appendChild(card);
+  const body=card.querySelector('.actionBody');
+  card.querySelector('.actionExpand').onclick=()=>body.classList.toggle('open');
+  card.querySelector('.runBtn').onclick=()=>s.active===id?stop(false):start(id);
+  card.querySelector('.queueBtn').onclick=()=>queue(id);
+  card.querySelector('.autoBtn').onclick=()=>toggleAuto(id);
+  card.querySelector('.priorityBtn').onclick=()=>cyclePriority(id);
+}
 document.getElementById('autoEatBtn').onclick=()=>{s.autoEat=!s.autoEat;event(`Auto-Eat ${s.autoEat?'enabled':'disabled'}. Food timers ${s.autoEat?'resume':'freeze'}.`);save();render()};
-let last=performance.now();
+let last=performance.now(),lastJourneyCount=-1;
 function tick(now){const dt=Math.min((now-last)/1000,.25);last=now;if(s.active){const id=s.active;if(!can(id)){stop(true)}else{s.runSeconds+=dt;loseHp(currentDecay(id)*dt);s.progress+=dt;if(s.hp<=0){s.hp=0;render();die()}else if(s.progress>=duration(id)){s.progress-=duration(id);complete(id);if(!can(id))stop(true)}}}processFoodTimers(dt);if(!s.active)advanceQueueOrAuto();render();requestAnimationFrame(tick)}
 function fmt(sec){const n=Math.floor(sec),m=Math.floor(n/60),x=n%60;return String(m).padStart(2,'0')+':'+String(x).padStart(2,'0')}
-function foodTimerText(id){const f=FOODS[id],rem=Number(s.foodTimers[id]??f.cooldown),amount=Number(s.res[id]||0);if(!s.autoEat)return`PAUSED ${rem.toFixed(1)}s`;if(amount<=0)return`FROZEN ${rem.toFixed(1)}s`;if(rem<=.01)return'READY';return rem.toFixed(1)+'s'}
+function foodTimerText(id){const f=FOODS[id],rem=Number(s.foodTimers[id]??f.cooldown),amount=Number(s.res[id]||0);if(!s.autoEat)return`PAUSED ${rem.toFixed(1)}s`;if(amount<=0)return`FROZEN ${rem.toFixed(1)}s`;if(rem<=.01){const missing=s.maxHp-s.hp;return missing+.001>=f.heal?'READY':`READY · waits for ${f.heal} HP space`}return rem.toFixed(1)+'s'}
 function resourceVisible(k){if(k==='berries')return s.prog.berry_patch;if(k==='mushrooms')return s.prog.mushroom_patch;return s.prog.debris_cleared}
 function skillVisible(sk){if(sk==='Survival'||sk==='Vitality')return true;if(sk==='Foraging')return s.prog.berry_patch;if(sk==='Mycology')return s.prog.mushroom_patch;if(sk==='Woodcutting'||sk==='Crafting')return s.prog.house_inside;return true}
+function renderJourney(){
+  const reached=JOURNEY.filter(journeyReached),box=document.getElementById('journey');
+  if(reached.length===lastJourneyCount)return;
+  lastJourneyCount=reached.length;
+  box.innerHTML='';
+  reached.forEach((item,i)=>{const b=document.createElement('button');b.className='journeyItem';b.textContent=`✓ ${String(i+1).padStart(2,'0')} · ${item.title}`;b.onclick=()=>{const info=document.getElementById('journeyInfo');info.textContent=item.info;info.hidden=false};box.appendChild(b)});
+  requestAnimationFrame(()=>{box.scrollTop=box.scrollHeight});
+}
 function render(){
- document.getElementById('hpText').textContent=`HP ${Math.max(0,Math.floor(s.hp))} / ${Math.floor(s.maxHp)}`;document.getElementById('hpFill').style.width=(100*Math.max(0,s.hp)/s.maxHp)+'%';document.getElementById('genText').textContent='GEN '+s.generation;document.getElementById('runText').textContent='RUN '+fmt(s.runSeconds);document.getElementById('eatText').textContent='AUTO-EAT '+(s.autoEat?'ON':'OFF');document.getElementById('permText').textContent='POINTS '+s.perm;document.getElementById('permInside').textContent=s.perm;document.getElementById('autoEatBtn').textContent='Eat '+(s.autoEat?'ON':'OFF');
- document.getElementById('activeText').textContent=s.active?`RUNNING · ${currentDecay(s.active).toFixed(2)} HP/s`:'IDLE · no HP loss';document.getElementById('queueText').textContent='NEXT: '+(s.nextAction?ACTIONS[s.nextAction].name:'none');document.getElementById('story').textContent=s.latestStory;
- const steps=[['Find safe food',s.prog.berry_patch],['Stabilize with berries',s.prog.stabilized],['Study the mushroom patch',s.prog.mushroom_patch],['Reach the ruined house',s.prog.house_seen],['Enter the ruined house',s.prog.house_inside],['Begin restoring the shelter',s.prog.debris_cleared]];let found=false;document.getElementById('journey').innerHTML=steps.map((x,i)=>{const done=!!x[1],mark=done?'✓':(!found?'▶':'·');if(!done)found=true;return`<div class="${done?'done':''}">${mark} ${i+1}. ${x[0]}</div>`}).join('');
- document.getElementById('resources').innerHTML=RESOURCE_ORDER.filter(resourceVisible).map(k=>{if(FOODS[k]){const f=FOODS[k],rate=f.heal/f.cooldown;return`<div class="resource foodrow"><span>${RESOURCE_NAMES[k]}</span><b>${s.res[k]} / ${cap()} · ⏱ ${foodTimerText(k)}<br><small>+${f.heal} HP · ${rate.toFixed(1)}/s</small></b></div>`}return`<div class="resource"><span>${RESOURCE_NAMES[k]}</span><b>${s.res[k]} / ${cap()}</b></div>`}).join('')||'<div class="small">Nothing useful found yet.</div>';
- document.getElementById('skills').innerHTML=SKILLS.filter(skillVisible).map(sk=>{const rl=sk==='Vitality'?vitalityLevel(s.runXp[sk]):level(s.runXp[sk]),ll=sk==='Vitality'?vitalityLevel(s.loopXp[sk]):level(s.loopXp[sk]);return`<div class="skillrow"><span class="skillname">${sk}</span><span class="skillxp">Run Lv.${rl} · ${s.runXp[sk].toFixed(2)} XP<br>Loop Lv.${ll} · ${s.loopXp[sk].toFixed(2)} XP${sk==='Vitality'?` · Max HP +${rl+ll*2}`:''}</span></div>`}).join('');
- for(const id of ACTION_ORDER){const a=ACTIONS[id],d=document.getElementById('card_'+id),vis=visible(id),active=s.active===id,life=s.lifetime[id]||0,rep=!!a.repeatable,autoUnlocked=rep&&life>=AUTOMATION_UNLOCK,autoOn=!!s.autoActions[id],priority=Number(s.priorities[id]??5);d.style.display=vis?'block':'none';d.querySelector('.actionName').textContent=a.name;d.querySelector('.time').textContent=duration(id).toFixed(1)+'s'+(active?' ▶':'');const sk=a.skill,rl=sk==='Vitality'?vitalityLevel(s.runXp[sk]):level(s.runXp[sk]),ll=sk==='Vitality'?vitalityLevel(s.loopXp[sk]):level(s.loopXp[sk]);d.querySelector('.meta').textContent=a.desc+` · ${sk} Run Lv.${rl} / Loop Lv.${ll}`+(id==='mushrooms'?` · Toxic risk ${(mycologyRisk()*100).toFixed(1)}%`:``);const rb=d.querySelector('.runBtn');rb.textContent=active?'STOP':'RUN';rb.disabled=!active&&!can(id);const qb=d.querySelector('.queueBtn');qb.disabled=!vis;qb.textContent=s.nextAction===id?'QUEUED':'QUEUE';const ab=d.querySelector('.autoBtn'),pb=d.querySelector('.priorityBtn');if(!rep){ab.disabled=true;ab.textContent='AUTO—';pb.disabled=true;pb.textContent='P—'}else{ab.disabled=!autoUnlocked;ab.textContent=autoUnlocked?(autoOn?'AUTO✓':'AUTO'):'AUTO🔒';pb.disabled=false;pb.textContent='P'+priority}const decay=currentDecay(id);d.querySelector('.mastery').textContent=rep?(autoUnlocked?`Lifetime ${life} · Auto unlocked`:`Lifetime ${life} / ${AUTOMATION_UNLOCK} to unlock Auto`)+` · Priority ${priority}/10 · Strain ${a.strain.toFixed(2)}× · Decay ${decay.toFixed(2)} HP/s`:`Story/progression action · Strain ${a.strain.toFixed(2)}× · Decay ${decay.toFixed(2)} HP/s`;d.querySelector('.actionProgress i').style.width=active?Math.min(100,100*s.progress/duration(id))+'%':'0%'}
- document.getElementById('events').innerHTML=s.events.map(e=>`<div>${fmt(e.t)} &nbsp; ${e.text}</div>`).join('');
+  document.getElementById('hpText').textContent=`HP ${Math.max(0,Math.floor(s.hp))} / ${Math.floor(s.maxHp)}`;
+  document.getElementById('hpFill').style.width=(100*Math.max(0,s.hp)/s.maxHp)+'%';
+  document.getElementById('genText').textContent='GEN '+s.generation;
+  document.getElementById('runText').textContent='RUN '+fmt(s.runSeconds);
+  document.getElementById('eatText').textContent='AUTO-EAT '+(s.autoEat?'ON':'OFF');
+  document.getElementById('permText').textContent='POINTS '+s.perm;
+  document.getElementById('permInside').textContent=s.perm;
+  document.getElementById('autoEatBtn').textContent='Eat '+(s.autoEat?'ON':'OFF');
+  document.getElementById('activeText').textContent=s.active?`RUNNING · ${currentDecay(s.active).toFixed(2)} HP/s`:'IDLE · no HP loss';
+  document.getElementById('queueText').textContent='NEXT: '+(s.nextAction?ACTIONS[s.nextAction].name:'none');
+  document.getElementById('story').textContent=s.latestStory;
+  renderJourney();
+  document.getElementById('resources').innerHTML=RESOURCE_ORDER.filter(resourceVisible).map(k=>{if(FOODS[k]){const f=FOODS[k],rate=f.heal/f.cooldown;return`<div class="resource foodrow"><span>${RESOURCE_NAMES[k]}</span><b>${s.res[k]} / ${cap()} · ⏱ ${foodTimerText(k)}<br><small>+${f.heal} HP · ${rate.toFixed(1)}/s · full heal only</small></b></div>`}return`<div class="resource"><span>${RESOURCE_NAMES[k]}</span><b>${s.res[k]} / ${cap()}</b></div>`}).join('')||'<div class="small">Nothing useful found yet.</div>';
+  document.getElementById('skills').innerHTML=SKILLS.filter(skillVisible).map(sk=>{const rl=sk==='Vitality'?vitalityLevel(s.runXp[sk]):level(s.runXp[sk]),ll=sk==='Vitality'?vitalityLevel(s.loopXp[sk]):level(s.loopXp[sk]);return`<div class="skillrow"><span class="skillname">${sk}</span><span class="skillxp">Run Lv.${rl} · ${s.runXp[sk].toFixed(2)} XP<br>Loop Lv.${ll} · ${s.loopXp[sk].toFixed(2)} XP${sk==='Vitality'?` · Max HP +${rl+ll*2}`:''}</span></div>`}).join('');
+  for(const id of ACTION_ORDER){
+    const a=ACTIONS[id],d=document.getElementById('card_'+id),vis=visible(id)&&(a.repeatable||!completedOneTime(id)),active=s.active===id,life=s.lifetime[id]||0,rep=!!a.repeatable,autoUnlocked=rep&&life>=AUTOMATION_UNLOCK,autoOn=!!s.autoActions[id],priority=Number(s.priorities[id]??5);
+    d.style.display=vis?'block':'none';
+    d.querySelector('.actionName').textContent=a.name;
+    d.querySelector('.time').textContent=duration(id).toFixed(2)+'s'+(active?' ▶':'');
+    const sk=a.skill,rl=sk==='Vitality'?vitalityLevel(s.runXp[sk]):level(s.runXp[sk]),ll=sk==='Vitality'?vitalityLevel(s.loopXp[sk]):level(s.loopXp[sk]);
+    d.querySelector('.meta').textContent=a.desc+`\n${actionXpText(id)}\n${sk} Run Lv.${rl} / Loop Lv.${ll}`+(id==='mushrooms'?` · Toxic risk ${(mycologyRisk()*100).toFixed(1)}%`:``);
+    const rb=d.querySelector('.runBtn');rb.textContent=active?'STOP':'RUN';rb.disabled=!active&&!can(id);
+    const qb=d.querySelector('.queueBtn');qb.disabled=!vis;qb.textContent=s.nextAction===id?'QUEUED':'QUEUE';
+    const ab=d.querySelector('.autoBtn'),pb=d.querySelector('.priorityBtn');
+    if(!rep){ab.disabled=true;ab.textContent='AUTO—';pb.disabled=true;pb.textContent='P—'}else{ab.disabled=!autoUnlocked;ab.textContent=autoUnlocked?(autoOn?'AUTO✓':'AUTO'):'AUTO🔒';pb.disabled=false;pb.textContent='P'+priority}
+    const decay=currentDecay(id),timing=`Base ${a.base.toFixed(2)}s → Current ${duration(id).toFixed(2)}s · Speed ×${speed(sk).toFixed(3)}`;
+    d.querySelector('.mastery').textContent=timing+'\n'+(rep?((autoUnlocked?`Lifetime ${life} · Auto unlocked`:`Lifetime ${life} / ${AUTOMATION_UNLOCK} to unlock Auto`)+` · Priority ${priority}/10 · Strain ${a.strain.toFixed(2)}× · Decay ${decay.toFixed(2)} HP/s`):`Story/progression action · Strain ${a.strain.toFixed(2)}× · Decay ${decay.toFixed(2)} HP/s`);
+    d.querySelector('.actionProgress i').style.width=active?Math.min(100,100*s.progress/duration(id))+'%':'0%';
+  }
+  document.getElementById('events').innerHTML=s.events.map(e=>`<div>${fmt(e.t)} &nbsp; ${e.text}</div>`).join('');
 }
 render();setInterval(save,3000);requestAnimationFrame(tick);
