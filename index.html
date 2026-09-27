@@ -3,74 +3,37 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
-<title>ARVEN Mobile Test</title>
-<style>
-:root{--bg:#0b1110;--panel:#121b18;--panel2:#17231f;--border:#355246;--green:#69c291;--gold:#d3aa63;--blue:#63a7c9;--red:#c96f6f;--text:#e8f0ec;--muted:#9aada4}
-*{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif}body{min-height:100vh}
-.wrap{max-width:980px;margin:auto;padding:12px}.top{position:sticky;top:0;z-index:10;background:rgba(11,17,16,.96);backdrop-filter:blur(8px);padding:8px 0}
-.card{background:var(--panel);border:2px solid var(--border);border-radius:12px;padding:12px;margin:10px 0;box-shadow:0 4px 18px #0005}.title{font-size:26px;font-weight:800;letter-spacing:.04em}.sub{font-size:12px;color:var(--muted);text-transform:uppercase}.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}.stat{font-size:13px;color:#c6d4ce;padding:4px 7px;border:1px solid #263c33;border-radius:8px;background:#0e1714}.bar{height:12px;background:#1b2a25;border:1px solid #31443b;border-radius:8px;overflow:hidden}.fill{height:100%;background:var(--green);width:100%}.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.section-title{font-size:12px;font-weight:800;color:var(--green);letter-spacing:.08em;margin-bottom:7px}.resource{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid #20342c}.action{width:100%;text-align:left;background:#17221e;border:1px solid #355246;border-radius:9px;color:var(--text);padding:12px;margin:6px 0;font-size:15px;min-height:58px}.action:disabled{opacity:.4}.action.active{border-color:var(--gold);box-shadow:inset 0 0 0 1px var(--gold)}.small{font-size:12px;color:var(--muted);margin-top:4px}.progress{height:6px;background:#1c2a2e;border-radius:8px;overflow:hidden;margin-top:6px}.progress>i{display:block;height:100%;width:0;background:var(--blue)}button.toggle{background:#1a2a24;border:1px solid var(--green);color:var(--text);border-radius:9px;padding:9px 12px;font-weight:700}.journey div{padding:5px 0}.done{color:var(--green)}.events{font-size:13px;color:#b6c5bf}.events div{padding:3px 0}.danger{color:var(--red)}
-@media(max-width:700px){.wrap{padding:8px}.grid{grid-template-columns:1fr}.title{font-size:23px}.card{padding:10px;margin:8px 0}.action{font-size:16px;padding:14px;min-height:64px}.stat{font-size:12px}.top{padding-top:max(8px,env(safe-area-inset-top))}}
-</style>
+<meta name="theme-color" content="#13201c" />
+<title>ARVEN Mobile Test v0.3.4</title>
+<link rel="stylesheet" href="style.css?v=034" />
 </head>
 <body>
 <div class="wrap">
   <div class="top">
     <div class="card">
-      <div class="row" style="justify-content:space-between"><div><div class="title">ARVEN</div><div class="sub">v0.3.3 mobile preview</div></div><button class="toggle" id="autoEatBtn">Auto-Eat: ON</button></div>
-      <div style="margin-top:10px"><div class="row" style="justify-content:space-between"><b id="vitText">VITALITY 100 / 100</b><span class="small" id="activeText">IDLE · no Vitality loss</span></div><div class="bar"><div class="fill" id="vitFill"></div></div></div>
-      <div class="row" style="margin-top:9px"><span class="stat" id="genText">GENERATION 1</span><span class="stat" id="runText">RUN 00:00</span><span class="stat" id="loopText">LOOP XP 0</span><span class="stat" id="permText">PERMANENT POINTS 0</span><span class="stat" id="eatText">AUTO-EAT · 10.0s</span></div>
+      <div class="row between"><div><div class="title">ARVEN</div><div class="sub">v0.3.4 · mobile preview</div></div><button class="btn green" id="autoEatBtn">Auto-Eat: ON</button></div>
+      <div style="margin-top:5px"><div class="row between"><b id="vitText">VITALITY 100 / 100</b><span class="small" id="activeText">IDLE · no Vitality loss</span></div><div class="bar"><div class="fill" id="vitFill"></div></div></div>
+      <div class="row" style="margin-top:5px"><span class="stat" id="genText"></span><span class="stat" id="runText"></span><span class="stat" id="eatText"></span><span class="stat" id="permText"></span></div>
+      <div class="queueBox" id="queueText">NEXT ACTION: none</div>
     </div>
   </div>
 
-  <div class="grid">
+  <div class="layout">
     <div>
-      <div class="card"><div class="section-title">CHAPTER 1 — THE COLD CLEARING</div><div id="story">You wake in a cold clearing beneath a sky you almost remember. Chanterelles push through the wet birch leaves, and the forest stands silent around you.</div></div>
-      <div class="card journey"><div class="section-title">JOURNEY</div><div id="j0">▶ 1. Build a Lean-to Shelter</div><div id="j1">· 2. Find Granite Stone</div><div id="j2">· 3. Craft a Stone Knife</div><div id="j3">· 4. Open the Dark Forest Trail</div></div>
-      <div class="card"><div class="section-title">ACTIONS</div><div id="actions"></div></div>
+      <details class="section" open><summary>CHAPTER 1 — THE COLD CLEARING</summary><div class="inside" id="story"></div></details>
+      <details class="section" open><summary>JOURNEY</summary><div class="inside journey" id="journey"></div></details>
+      <details class="section" open><summary>ACTIONS</summary><div class="inside"><div class="small">Tap an action to expand it. Choose Once or Repeat, run it now, or place it in the one-slot queue.</div><div id="actions"></div></div></details>
     </div>
     <div>
-      <div class="card"><div class="section-title">RESOURCES</div><div id="resources"></div></div>
-      <div class="card"><div class="section-title">SKILLS — RUN / LOOP XP</div><div id="skills"></div></div>
-      <div class="card"><div class="section-title">PERMANENT UPGRADES</div><div class="small">Chapter Reset and permanent-point spending come later in Chapter 1.</div></div>
-      <div class="card"><div class="section-title">RECENT EVENTS</div><div class="events" id="events"></div></div>
+      <details class="section" open><summary>RESOURCES & FOOD</summary><div class="inside" id="resources"></div></details>
+      <details class="section" open><summary>SKILLS — RUN XP / LOOP XP</summary><div class="inside" id="skills"></div></details>
+      <details class="section"><summary>PERMANENT UPGRADES</summary><div class="inside small">Permanent Points: <b id="permInside">0</b><br>Chapter Reset and permanent-point spending come later in Chapter 1.</div></details>
+      <details class="section"><summary>RECENT EVENTS</summary><div class="inside events" id="events"></div></details>
     </div>
   </div>
 </div>
-<script>
-const ACTIONS={
- forage:{name:'Forage Chanterelle Mushrooms',desc:'Gain 1 Chanterelle Mushroom · infinite source',base:3.6,drain:1.1,skill:'Foraging'},
- cook:{name:'Cook Chanterelle Stew',desc:'Uses 1 Chanterelle Mushroom · gain 1 Chanterelle Stew',base:2.0,drain:.45,skill:'Survival'},
- chop:{name:'Fell Young Birch Trees',desc:'Gain 1 Birch Log · infinite source',base:5,drain:1.45,skill:'Woodcutting'},
- shelter:{name:'Build a Lean-to Shelter',desc:'Costs 2 Birch Logs · +20 max Vitality this run',base:7.5,drain:1.25,skill:'Crafting'},
- mine:{name:'Break Granite from the Rockslide',desc:'Gain 1 Granite Stone · infinite source',base:6.2,drain:1.7,skill:'Mining'},
- fibers:{name:'Strip Stinging Nettle Fiber',desc:'Gain 1 Nettle Fiber · infinite source',base:4.4,drain:1.2,skill:'Foraging'},
- knife:{name:'Craft a Stone Knife',desc:'Costs 1 Birch Log + 1 Granite Stone + 1 Nettle Fiber',base:8.5,drain:1.5,skill:'Crafting'},
- trail:{name:'Open the Dark Forest Trail',desc:'Requires Stone Knife · Chapter 1 milestone',base:10,drain:2,skill:'Survival'}
-};
-const skills=['Survival','Foraging','Woodcutting','Mining','Crafting'];
-const names={mushrooms:'🍄 Chanterelle Mushrooms',wood:'🪵 Young Birch Logs',stone:'🪨 Granite Stones',fiber:'🌿 Stinging Nettle Fiber',food:'🍲 Chanterelle Stew'};
-const key='arven_mobile_033';
-function fresh(){let rx={},lx={};skills.forEach(s=>rx[s]=lx[s]=0);return{vitality:100,max:100,generation:1,run:0,perm:0,res:{mushrooms:0,wood:0,stone:0,fiber:0,food:0},cap:2,prog:{shelter:false,knife:false,trail:false},rx,lx,active:'',progress:0,auto:true,eat:0,events:[{t:0,text:'You wake on the damp forest floor beneath a pale morning sky.'}]}}
-let s;try{s=JSON.parse(localStorage.getItem(key))||fresh()}catch{s=fresh()}if(!s.rx)s=fresh();s.active='';s.progress=0;
-const lvl=x=>Math.floor(Math.sqrt(x/20)), speed=sk=>1+lvl(s.rx[sk])*.045+lvl(s.lx[sk])*.02, dur=id=>ACTIONS[id].base/speed(ACTIONS[id].skill), cap=()=>s.cap;
-function unlocked(id){if(['forage','cook','chop','shelter'].includes(id))return true;if(['mine','fibers'].includes(id))return s.prog.shelter;if(id==='knife')return s.prog.shelter;if(id==='trail')return s.prog.knife;return false}
-function can(id){if(!unlocked(id))return false;let r=s.res;if(id==='forage')return r.mushrooms<cap();if(id==='cook')return r.mushrooms>=1&&r.food<cap();if(id==='chop')return r.wood<cap();if(id==='shelter')return !s.prog.shelter&&r.wood>=2;if(id==='mine')return r.stone<cap();if(id==='fibers')return r.fiber<cap();if(id==='knife')return !s.prog.knife&&r.wood>=1&&r.stone>=1&&r.fiber>=1;if(id==='trail')return !s.prog.trail&&s.prog.knife;return false}
-function xp(sk,v){s.rx[sk]+=v;s.lx[sk]+=v}
-function event(t){s.events.unshift({t:s.run,text:t});s.events=s.events.slice(0,8)}
-function complete(id){let r=s.res,a=ACTIONS[id];xp(a.skill,a.base*3);if(id==='forage')r.mushrooms++;if(id==='cook'){r.mushrooms--;r.food++;event('You cook a bowl of Chanterelle Stew.')}if(id==='chop')r.wood++;if(id==='shelter'){r.wood-=2;s.prog.shelter=true;s.max+=20;s.vitality+=20;event('The lean-to shelter is complete.')}if(id==='mine')r.stone++;if(id==='fibers')r.fiber++;if(id==='knife'){r.wood--;r.stone--;r.fiber--;s.prog.knife=true;event('You finish a sharp Stone Knife.')}if(id==='trail'){s.prog.trail=true;event('The Dark Forest Trail is open. Something moves beyond the trees.')}save()}
-function die(){event('You die. Something remains in the loop.');s.generation++;s.vitality=100;s.max=100;s.run=0;s.res={mushrooms:0,wood:0,stone:0,fiber:0,food:0};s.prog={shelter:false,knife:false,trail:false};skills.forEach(k=>s.rx[k]=0);s.active='';s.progress=0;s.eat=0;save()}
-function save(){localStorage.setItem(key,JSON.stringify(s))}
-function clickAction(id){if(s.active===id){s.active='';s.progress=0}else if(can(id)){s.active=id;s.progress=0}render()}
-document.getElementById('autoEatBtn').onclick=()=>{s.auto=!s.auto;save();render()};
-const actWrap=document.getElementById('actions');Object.keys(ACTIONS).forEach(id=>{let b=document.createElement('button');b.className='action';b.id='a_'+id;b.onclick=()=>clickAction(id);b.innerHTML='<b></b><div class="small"></div><div class="progress"><i></i></div>';actWrap.appendChild(b)});
-let last=performance.now();function tick(now){let dt=Math.min((now-last)/1000,.25);last=now;if(s.active){if(!can(s.active)){s.active='';s.progress=0}else{let a=ACTIONS[s.active];s.run+=dt;s.vitality-=a.drain*dt;s.progress+=dt;if(s.vitality<=0){s.vitality=0;die()}else if(s.progress>=dur(s.active)){s.progress-=dur(s.active);let id=s.active;complete(id);if(!can(id)){s.active='';s.progress=0}}}}if(s.auto){s.eat+=dt;if(s.eat>=10){s.eat%=10;if(s.res.food>0&&s.vitality<s.max-.5){s.res.food--;s.vitality=Math.min(s.max,s.vitality+28);xp('Survival',4);event('You automatically eat Chanterelle Stew and regain 28 Vitality.');save()}}}render();requestAnimationFrame(tick)}
-function fmt(x){let t=Math.floor(x),m=Math.floor(t/60),q=t%60;return String(m).padStart(2,'0')+':'+String(q).padStart(2,'0')}
-function render(){document.getElementById('vitText').textContent=`VITALITY ${Math.max(0,Math.floor(s.vitality))} / ${s.max}`;document.getElementById('vitFill').style.width=(100*s.vitality/s.max)+'%';document.getElementById('genText').textContent='GENERATION '+s.generation;document.getElementById('runText').textContent='RUN '+fmt(s.run);document.getElementById('loopText').textContent='LOOP XP '+Math.floor(skills.reduce((n,k)=>n+s.lx[k],0));document.getElementById('permText').textContent='PERMANENT POINTS '+s.perm;document.getElementById('activeText').textContent=s.active?'RUNNING: '+ACTIONS[s.active].name:'IDLE · no Vitality loss';document.getElementById('autoEatBtn').textContent='Auto-Eat: '+(s.auto?'ON':'OFF');document.getElementById('eatText').textContent='AUTO-EAT · '+Math.max(0,10-s.eat).toFixed(1)+'s';
-let story=s.prog.trail?'The trail is open. Claws scrape against stone somewhere between the trees. The combat zone begins beyond this point.':s.prog.knife?'The Stone Knife changes what is possible. The Dark Forest can now be reached if you cut a path through the thorns.':s.prog.shelter?'The lean-to is finished. Behind the low rockslide lie granite and strong nettle fibers — enough to shape your first real tool.':'You wake in a cold clearing beneath a sky you almost remember. Chanterelles push through the wet birch leaves, and the forest stands silent around you.';document.getElementById('story').textContent=story;
-let js=[s.prog.shelter,s.res.stone>0||s.prog.knife,s.prog.knife,s.prog.trail],labels=['Build a Lean-to Shelter','Find Granite Stone','Craft a Stone Knife','Open the Dark Forest Trail'],found=false;for(let i=0;i<4;i++){let e=document.getElementById('j'+i),mark=js[i]?'✓':(!found?'▶':'·');e.textContent=`${mark} ${i+1}. ${labels[i]}`;e.className=js[i]?'done':'';if(!js[i])found=true}
-let rr='';Object.keys(names).forEach(k=>rr+=`<div class="resource"><span>${names[k]}</span><b>${s.res[k]} / ${cap()}</b></div>`);document.getElementById('resources').innerHTML=rr;
-Object.keys(ACTIONS).forEach(id=>{let a=ACTIONS[id],b=document.getElementById('a_'+id),ok=unlocked(id),active=s.active===id;b.disabled=!active&&!can(id);b.classList.toggle('active',active);b.querySelector('b').textContent=a.name+(active?' · RUNNING':'');b.querySelector('.small').textContent=(ok?a.desc:'🔒 Not unlocked yet')+` · ${dur(id).toFixed(1)} sec · ${a.skill} R${lvl(s.rx[a.skill])}/L${lvl(s.lx[a.skill])}`;b.querySelector('i').style.width=(active?Math.min(100,100*s.progress/dur(id)):0)+'%'});
-let sh='';skills.forEach(k=>sh+=`<div class="resource"><span>${k}</span><span>Run Lv.${lvl(s.rx[k])} (${Math.floor(s.rx[k])} XP) · Loop Lv.${lvl(s.lx[k])} (${Math.floor(s.lx[k])} XP)</span></div>`);document.getElementById('skills').innerHTML=sh;document.getElementById('events').innerHTML=s.events.map(x=>`<div>${fmt(x.t)} &nbsp; ${x.text}</div>`).join('')}
-render();requestAnimationFrame(tick);setInterval(save,3000);
-</script>
-</body></html>
+<script src="config.js?v=034"></script>
+<script src="engine.js?v=034"></script>
+<script src="ui.js?v=034"></script>
+</body>
+</html>
