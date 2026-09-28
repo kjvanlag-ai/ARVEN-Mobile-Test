@@ -1,1 +1,1 @@
-ARVEN / RELIVOR v0.3.10 — real Godot 4.7.2 Web build — mobile HiDPI fix
+ARVEN / RELIVOR v0.3.11 — real Godot 4.7.2 Web build — rounded classic UI + HiDPI
