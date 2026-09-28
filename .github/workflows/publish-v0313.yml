@@ -1,0 +1,45 @@
+name: Publish real Godot v0.3.13
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/publish-v0313.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout public mobile test repository
+        uses: actions/checkout@v4
+
+      - name: Download tested v0.3.13 Godot Web artifact
+        run: |
+          URL='https://sdmntprnortheu.oaiusercontent.com/files/00000000-5608-81f4-a2f7-6695dbca8334/raw?se=2026-09-28T14%3A59%3A03Z&sp=r&sv=2026-02-06&sr=b&scid=560dee43-f08f-55d3-bde7-5efb601d32cd&skoid=6658dbdd-f305-4d30-8f6b-d62218202cb9&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-09-28T14%3A37%3A22Z&ske=2026-09-29T14%3A37%3A22Z&sks=b&skv=2026-02-06&sig=YbjIKETbxq2wxHHKo3Y%2BT3diH2fP8KP8AA6rMWm2ZKo%3D'
+          curl -L --fail --retry 3 "$URL" -o artifact.zip
+          mkdir artifact
+          unzip -q artifact.zip -d artifact
+          test -f artifact/web/index.html
+          test -f artifact/web/index.wasm
+          test -f artifact/web/index.pck
+          grep -q 'v0.3.13' artifact/web/BUILD.txt
+
+      - name: Replace live mobile build
+        run: |
+          find . -maxdepth 1 -type f -delete
+          cp -a artifact/web/. .
+          rm -rf artifact artifact.zip
+          touch .nojekyll
+          echo 'ARVEN / RELIVOR v0.3.13 — real Godot 4.7.2 Web build — single-scroll mobile UI + overlays + HiDPI' > BUILD.txt
+
+      - name: Commit live v0.3.13 build
+        run: |
+          git config user.name 'ARVEN Build Bot'
+          git config user.email 'actions@users.noreply.github.com'
+          git add -A
+          git commit -m 'Publish ARVEN v0.3.13 single-scroll mobile UI'
+          git push
