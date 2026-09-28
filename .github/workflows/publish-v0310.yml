@@ -1,0 +1,44 @@
+name: Publish real Godot v0.3.10
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/publish-v0310.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout public mobile test repository
+        uses: actions/checkout@v4
+
+      - name: Download tested v0.3.10 Godot Web artifact
+        run: |
+          URL='https://sdmntprdenmarkeast.oaiusercontent.com/files/00000000-e134-8210-9657-185fde3c4aad/raw?se=2026-09-28T11%3A44%3A35Z&sp=r&sv=2026-02-06&sr=b&scid=633b28e3-0c65-57c7-b790-d370504033a9&skoid=a3a8eefe-d4bd-4909-ab1d-2a75a2302fac&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-09-28T05%3A50%3A12Z&ske=2026-09-29T05%3A50%3A12Z&sks=b&skv=2026-02-06&sig=OkQeIAm2g6ovxwQyQVHl2iLc6jHiuSORQjJ%2BPbO19rw%3D'
+          curl -L --fail --retry 3 "$URL" -o artifact.zip
+          mkdir artifact
+          unzip -q artifact.zip -d artifact
+          test -f artifact/web/index.html
+          test -f artifact/web/index.wasm
+          test -f artifact/web/index.pck
+
+      - name: Replace live mobile build
+        run: |
+          find . -maxdepth 1 -type f -delete
+          cp -a artifact/web/. .
+          rm -rf artifact artifact.zip
+          touch .nojekyll
+          echo 'ARVEN / RELIVOR v0.3.10 — real Godot 4.7.2 Web build — mobile HiDPI fix' > BUILD.txt
+
+      - name: Commit live v0.3.10 build
+        run: |
+          git config user.name 'ARVEN Build Bot'
+          git config user.email 'actions@users.noreply.github.com'
+          git add -A
+          git commit -m 'Publish real Godot ARVEN v0.3.10 mobile HiDPI fix'
+          git push
