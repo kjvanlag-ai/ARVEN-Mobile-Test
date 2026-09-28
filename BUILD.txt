@@ -1,1 +1,1 @@
-ARVEN / RELIVOR v0.3.11 — real Godot 4.7.2 Web build — rounded classic UI + HiDPI
+ARVEN / RELIVOR v0.3.12 — real Godot 4.7.2 Web build — two-column mobile dashboard + HiDPI
