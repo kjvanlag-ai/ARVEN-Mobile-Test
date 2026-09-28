@@ -1,0 +1,35 @@
+name: Publish ARVEN v0.3.14
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/publish-v0314.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download verified Web-only build
+        env:
+          BUILD_URL: 'https://sdmntprdenmarkeast.oaiusercontent.com/files/00000000-7aac-8210-920f-c356bcd75b3b/raw?se=2026-09-28T17%3A54%3A46Z&sp=r&sv=2026-02-06&sr=b&scid=3fd3bf45-c674-4d7a-8e3d-84fd197510be&skoid=5bfb38a5-43fb-4c63-80a1-6ae1e97e2e16&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-09-28T13%3A53%3A37Z&ske=2026-09-29T13%3A53%3A37Z&sks=b&skv=2026-02-06&sig=/BF/t90zFEMUXM%2BU7AwpbzIVSGn/yOHxx/OzPjbFLl8%3D'
+        run: |
+          curl -L --fail --retry 3 "$BUILD_URL" -o /tmp/arven-web.zip
+          echo '9f985220925985e4bd1487400d1a1f2fc0940ba52435b2395e2dbdeaa426ba90  /tmp/arven-web.zip' | sha256sum -c -
+          mkdir /tmp/arven-web
+          unzip -q /tmp/arven-web.zip -d /tmp/arven-web
+          test -f /tmp/arven-web/index.html
+          test -f /tmp/arven-web/index.wasm
+          test -f /tmp/arven-web/index.pck
+          grep -q 'v0.3.14' /tmp/arven-web/BUILD.txt
+      - name: Publish tested build
+        run: |
+          cp -a /tmp/arven-web/. .
+          touch .nojekyll
+          echo 'ARVEN / RELIVOR v0.3.14 — cinematic forest UI, Journey timings, LEGACY — Godot 4.7.2' > BUILD.txt
+          git config user.name 'ARVEN Build Bot'
+          git config user.email 'actions@users.noreply.github.com'
+          git add -A
+          git commit -m 'Publish ARVEN v0.3.14 cinematic forest UI'
+          git push
