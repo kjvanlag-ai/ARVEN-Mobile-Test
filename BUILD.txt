@@ -1,1 +1,1 @@
-ARVEN / RELIVOR v0.3.13 — real Godot 4.7.2 Web build — single-scroll mobile UI + overlays + HiDPI
+ARVEN / RELIVOR v0.3.14 — cinematic forest UI, Journey timings, LEGACY — Godot 4.7.2
