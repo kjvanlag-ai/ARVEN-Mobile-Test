@@ -1,1 +1,4 @@
-ARVEN / RELIVOR v0.3.17 - Compact desktop dashboard, wood/metal UI, single scroll, saved STORY toggle
+ARVEN / RELIVOR v0.3.18
+REDDIT TESTBUILD / BETA
+Chapter 1.1 Awakening
+One story reader; uninterrupted gameplay; browser-local saves; one global scroll.
