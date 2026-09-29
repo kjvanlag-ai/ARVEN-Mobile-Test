@@ -1,1 +1,1 @@
-ARVEN / RELIVOR v0.3.16 - Single page scroll + saved STORY ON/OFF
+ARVEN / RELIVOR v0.3.17 - Compact desktop dashboard, wood/metal UI, single scroll, saved STORY toggle
