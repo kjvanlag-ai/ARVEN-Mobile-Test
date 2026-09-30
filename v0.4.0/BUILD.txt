@@ -1,4 +1,6 @@
-ARVEN / RELIVOR v0.4.0
-REDDIT TESTBUILD / BETA
-Chapter 1 - Eight Frames - LOCAL CANDIDATE
-Active-time Hunger; automatic combat; relivor.save.v2; pending browser release gates.
+RELIVOR v0.4.0 candidate - Auto-Eat update
+2026-09-30
+Always enabled. Independent 10.0-second food timers. Exact freeze/resume and saved clocks.
+147 mechanic/regression/UI/storage checks passed.
+Pack: index-v0.4.0-auto-eat-84d991a46073.pck
+SHA-256: 84d991a46073463229bed0223dbe7f030fc07ac6d4e18bd4d5def2d27add2fe3
