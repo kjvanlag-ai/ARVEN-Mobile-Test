@@ -1,0 +1,4 @@
+ARVEN / RELIVOR v0.4.2
+REDDIT TESTBUILD / BETA
+Chapter 1 - Eight Frames - VERSIONED TEST BUILD
+10x normal skill XP; Vitality 1 XP/active second; 600 XP per +1 Max HP; relivor.save.v0.4.2; pinned action and horizontal queue.
