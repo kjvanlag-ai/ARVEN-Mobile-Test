@@ -1,0 +1,4 @@
+ARVEN / RELIVOR v0.4.1
+REDDIT TESTBUILD / BETA
+Chapter 1 - Eight Frames - VERSIONED TEST BUILD
+10x global skill XP; persistent mastery/priorities; relivor.save.v0.4.1; independent food timers.
