@@ -1,0 +1,5 @@
+RELIVOR v0.4.6 — Approved visual target implementation pass
+Godot 4.7.2 / Web / 2026-10-02
+Real functional HUD, scene, current action, queue, horizontal skills, compact dashboard.
+Separate v0.4.6 save; read-only migration from v0.4.5 and earlier.
+Original gameplay and balance preserved.
