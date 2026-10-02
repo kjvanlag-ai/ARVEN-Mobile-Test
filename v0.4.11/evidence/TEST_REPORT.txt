@@ -1,0 +1,29 @@
+RELIVOR v0.4.11 - 2026-10-02
+Base: latest v0.4.10. Three targeted UI corrections:
+- Inventory only shows quantities > 0; single Inventory empty message.
+  No item/cap/save removal. Hidden food retains cooldowns.
+- Jobs, Crafting & Construction, Exploration grouped immediately after HP/Hunger,
+  before Current Action, Queue, Skills, Inventory. Empty categories have no heading
+  or gap. Existing action components and unlock rules retained.
+- Skills: 46px rows, 24px icons, right-side teal 8px Run bar and amber 3px
+  Generation bar. One shared frame and legend. Full-row existing info popup.
+  Vitality has one permanent bar, level and +X Max HP; no Run bar.
+
+PASS: 143 targeted Godot UI checks: inventory 0/1/0, every food cooldown,
+complete serialized save unchanged by rendering, missing-material recipe,
+390/430/1440 layouts, row dimensions, all unlocked skills through 8 frames,
+empty category visibility, Run, Queue, Info, Auto priority, center touch-scroll,
+whole-row info and correct multiplier for all skills.
+PASS: 29 existing fishing checks including 15-second loop, single scene,
+completion/idle tail, action resume, reduced motion, touch scroll.
+PASS: exported Edge/Chromium WebGL at 390x844, 430x844, 1440x900,
+actual moved Run click changes active action; no browser page errors.
+Visually inspected all widths, skill list/inventory, and actual skill-info popup.
+Mobile screenshot is a real browser render with touch emulation, not a mockup.
+No physical phone/Safari test.
+
+Simulation, saves, balance data, action animation and all graphics are byte-identical
+to v0.4.10. Existing skill-info calculations and popup code unchanged.
+One final Web export, one versioned publication. Previous builds retained.
+Artifacts saved through existing local Google Drive folder workflow.
+Google Drive cloud synchronization completion is not independently verified.

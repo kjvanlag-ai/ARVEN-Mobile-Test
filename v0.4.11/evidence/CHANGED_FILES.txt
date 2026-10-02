@@ -1,0 +1,7 @@
+BUILD.txt
+project.godot
+RELEASE.json
+VERSION.txt
+scripts/main.gd
+scripts/skill_field.gd
+tools/test_v0411.gd
