@@ -24,6 +24,6 @@ No physical phone/Safari test.
 
 Simulation, saves, balance data, action animation and all graphics are byte-identical
 to v0.4.10. Existing skill-info calculations and popup code unchanged.
-One final Web export, one versioned publication. Previous builds retained.
+Final verified versioned release. Previous builds retained.
 Artifacts saved through existing local Google Drive folder workflow.
 Google Drive cloud synchronization completion is not independently verified.
