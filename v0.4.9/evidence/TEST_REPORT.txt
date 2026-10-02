@@ -1,0 +1,28 @@
+RELIVOR v0.4.9 — 2026-10-02
+
+Independent 30-second fishing presentation, fixed camera, warm existing lake.
+Original painted rod/hand/fish/float assets retained. Flexible rod mesh bends above
+its rigid grip. Continuous cast, float drift, strike, submerged approach, lift and
+settling motion. Line is anchored at rod tip and fish mouth. No reward caption or
+completion-triggered fish sprite. All actual rewards remain simulation feedback.
+
+276 Godot checks passed (27 targeted + 249 existing gameplay checks).
+9 local WebGL browser checks passed; zero browser errors.
+Targeted checks: several completions per visual cycle; 30-second repeat; natural
+completion and held end; new action during tail; manual Stop; death; reset;
+resume stored work while visuals restart; progress bar uses real action time.
+Visual-only idle freezes the complete save including HP, XP, inventory, mastery,
+gameplay seconds and food cooldowns. Simulation, save code and balance data are
+byte-identical to v0.4.8. Main UI change is limited to presentation integration,
+visual-tail scheduling guard, scroll pass-through and displayed version.
+320/390/430/1440px layout checks and touch drag checks pass.
+Reduced-motion screenshots are pixel-identical across 500ms.
+
+MP4: actual exported Godot WebGL build recorded at 390x844, complete 30-second
+cycle followed by real Run-button change to Cut Wood. Seeded QA progression,
+normal game rules, no animation mockup or time acceleration.
+Preview encoded H.264/yuv420p with faststart for mobile playback.
+
+Limitations: no physical iPhone/Safari or Android-device test. Desktop browser
+is Edge/Chromium. No device performance benchmark. Google Drive files are saved
+under D:/GoogleDrive/ARVEN; cloud sync completion is managed by Google Drive.
