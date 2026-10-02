@@ -1,0 +1,24 @@
+Changed source files relative to v0.4.6 (new version at 08 - Implementation/v0.4.7):
+game/scripts/main.gd — integrates illustrated fishing sequence, gold emblem, progress style and display version
+game/scripts/action_sequence.gd — reusable progress-driven four-stage renderer (new)
+game/scripts/action_sequence.gd.uid — Godot resource identity (new)
+game/assets/fishing_sequence.png — generated four-scene illustration atlas (new)
+game/assets/fishing_sequence.png.import — Godot import settings (new)
+game/assets/fishing_emblem.svg — gold and teal fishing emblem (new)
+game/assets/fishing_emblem.svg.import — Godot import settings (new)
+game/project.godot — build version; keeps native save directory identity
+game/VERSION.txt — 0.4.7
+game/BUILD.txt — current build description
+game/RELEASE.json — current release metadata
+game/tools/test_fishing_ui.gd — targeted UI checks (new)
+game/tools/test_fishing_ui.gd.uid — Godot test resource identity (new)
+browser_check.cjs — local/deployed browser verification (new)
+CHANGELOG.txt — release notes (new)
+ART_NOTES.txt — built-in image generation provenance and exact prompt (new)
+
+Generated files:
+web/index.html, index.js, index.wasm, index-v0.4.7.pck, icons and audio worklets; BUILD.txt, FONT-LICENSE.txt, .nojekyll.
+qa/ — targeted screenshots, test logs, fixture, browser results and gameplay hashes.
+
+Unchanged: simulation.gd, local_save.gd, queue_timeline.gd and every game-data file.
+The earlier Exploration/hero layout work is inherited from the local v0.4.6 source.

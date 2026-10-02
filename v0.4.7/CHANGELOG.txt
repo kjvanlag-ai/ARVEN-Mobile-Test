@@ -1,0 +1,24 @@
+RELIVOR v0.4.7 — Fishing presentation
+
+Changelog
+- Catch Perch now has four illustrated, numbered stages: Cast line, Float drifting, Fish strike!, Reel in perch.
+- Responsive 2x2 mobile / four-across desktop layout, teal active border, completed marks and four-node timeline.
+- Gold fishing emblem, larger glowing teal progress bar, fixed readable captions and lake-gradient background.
+- Motion follows actual work progress; reduced motion removes image drift, zoom and splash strokes.
+- Previous Exploration placement and hero integration are preserved.
+- Gameplay, action times, skill gain, inventory, queue, hunger, progression and save format are unchanged.
+- Display/build version is 0.4.7; existing v0.4.6 storage key and native save directory are intentionally retained.
+
+Validation
+- 27 focused Godot checks: three widths, four stages, no state mutation, long queue, touch scroll, reduced motion, action switching.
+- Local and deployed Chromium browser smoke checks cover actual fishing rewards, queue continuation and save reload.
+- Simulation, save handler, queue component and all game-data files match v0.4.6 SHA-256 hashes.
+- No physical iPhone hardware test was available.
+
+Performance compromises
+- One shared 1254x1254 illustrated atlas (2.65 MB PNG), cropped into four cards.
+- No video, heavy particles, shaders or independent animation clock.
+- Small image drift and bounded ripple/splash strokes instead of fully articulated rod/fish animation.
+- Mobile uses two rows to retain readable labels; future illustrated actions can register their own atlas and phase boundaries.
+
+Deployed URL: https://kjvanlag-ai.github.io/ARVEN-Mobile-Test/v0.4.7/

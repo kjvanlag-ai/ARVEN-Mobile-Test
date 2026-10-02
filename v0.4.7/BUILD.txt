@@ -1,0 +1,4 @@
+RELIVOR v0.4.7 — Illustrated fishing mini-sequence
+Godot 4.7.2 / Web / 2026-10-02
+Catch Perch: four illustrated stages, responsive cards, progress timeline, reduced motion.
+Gameplay and save format unchanged; continues using the existing v0.4.6 storage key.
