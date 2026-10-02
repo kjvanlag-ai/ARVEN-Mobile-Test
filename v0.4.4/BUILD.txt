@@ -1,0 +1,6 @@
+RELIVOR v0.4.4
+Godot 4.7.2 / Web test build
+Visible live action prototype: Catch Perch only.
+Procedural layered vector art; normalized gameplay work is authoritative.
+CAST 0-20%; WAIT 20-70%; BITE 70-85%; REEL IN 85-100%.
+Independent v0.4.4 save; reads v0.4.3/v0.4.2/v0.4.1 without modifying them.
