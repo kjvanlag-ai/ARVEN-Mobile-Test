@@ -1,0 +1,26 @@
+RELIVOR v0.4.10 — 2026-10-02
+
+Only two targeted presentation changes:
+- Fixed visual cycle 30.0 -> 15.0 seconds. The existing choreography samples at
+  twice the rate; artwork and movements retained. Real gameplay progress unchanged.
+- One full-panel fishing scene behind title/progress. Redundant static lake hidden
+  during fishing and idle tail. Inner frame/caption strip removed; dark text
+  gradient fades to transparent. Mobile scene is smaller than the previous panel.
+
+PASS: 29 targeted Godot checks: loop boundary, repeated catches without restart,
+real progress, switch, natural finish/held frame, new action during idle tail,
+manual Stop/death/reset, unchanged complete save during visual-only idle,
+320/390/430/1440px widths and touch drag.
+PASS: 8 local browser checks: title, idle transition, unchanged complete save
+through visual tail, reduced-motion preference, real Run-button action switch,
+reload, no browser page errors, and >15 seconds of real-time repeated fishing.
+Reduced-motion screenshots pixel-identical. Mobile screenshot is actual exported
+Godot WebGL rendering at 390x844 in Edge/Chromium with touch emulation, not a mockup.
+Visually inspected fishing, idle tail, action switch and touch-scrolled jobs.
+No physical phone/Safari test.
+
+Simulation, save code, all balance data and all existing graphics byte-identical
+to v0.4.9. No gameplay timing/XP/balance changes. No graphics or archives deleted.
+One Web export and one publication commit; previous versions retained.
+Source, build, screenshot and this note saved in D:/GoogleDrive/ARVEN.
+Google Drive manages cloud synchronization; its completion is not verified here.

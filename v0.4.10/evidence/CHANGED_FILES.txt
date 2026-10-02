@@ -1,0 +1,7 @@
+BUILD.txt
+project.godot
+RELEASE.json
+VERSION.txt
+scripts/action_sequence.gd
+scripts/main.gd
+tools/test_v0410.gd
