@@ -1,0 +1,8 @@
+RELIVOR v0.4.5 — Cinematic interface overhaul
+Godot 4.7.2 / Web release build / 2026-10-02
+Bronze inset frames, illustrated skill cards, compact responsive HUD,
+integrated Lake Edge scene, action storyboard and horizontal queue cards.
+Teal Run XP and amber Generation XP; permanent-only Vitality.
+Existing gameplay data, simulation rules and Catch Perch animation preserved.
+Independent v0.4.5 save; reads v0.4.4/v0.4.3/v0.4.2/v0.4.1 without modifying them.
+Serve index.html over HTTP. This package has not been deployed publicly.
