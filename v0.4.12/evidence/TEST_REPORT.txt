@@ -1,0 +1,31 @@
+RELIVOR v0.4.12 - TEST NOTE - 2026-10-02
+PASS: 71 targeted Godot checks, 143 existing UI checks, 29 fishing checks.
+PASS: 10 browser checks, no browser page errors. Edge/Chromium WebGL with touch
+emulation at widths 390, 430, 1440. No physical-phone/Safari test.
+
+10-Wood test fixture, inventory cap 5, unchanged production Fishing Rod recipe:
+Cut Wood -> Craft Fishing Rod -> Cut Wood -> Craft Fishing Rod -> later entries.
+Wood repeats to 5; first contribution ends at 50%; next 5 Wood completes one rod.
+Queue order and later fishing/cooking entries remain intact.
+1/10=10%; 5/10=50%; 5 plus 2=7/10=70%; halfway through second 2 is 60%.
+Switch/reload preserves processed contributions and unfinished work; inventory
+changes do not alter progress. Reservation itself counts as zero completed work.
+Ten Wood consumed once; one mastery/reward; time-based XP remains exactly the
+configured rate for 120 seconds across two 60-second fixture contributions.
+Duplicate completion gives no extra XP, material debit or reward.
+Multi-material knife waits for flint after Wood contribution; repeatable shaft
+produces exactly one item per full recipe and resets for the next item.
+Legacy active save without new fields loads, reserves once and survives a second
+reload with no double payment or loss of staged progress.
+Recipe bar and Current Action checked numerically at 85%, and visually near 50%.
+Mobile Run/Queue/Info visible at full inventory without Auto; actual Godot signals
+and real browser Queue clicks checked for wood, perch and cook_perch.
+Browser reload retains completed work, reservation and later queued cooking.
+
+Screenshot partial-390.png uses the unchanged production Campfire recipe:
+5/10 Wood, 50%, Needs 5 Wood. A further 1 Wood is reserved and just starting work.
+The 10-Wood Fishing Rod fixture is test-only; production data files are byte-identical.
+Graphics/assets, other scripts, balance, action durations and local-save plumbing
+are byte-identical to v0.4.11. Existing queue scheduler/repetition/order retained.
+Artifacts saved in the existing Google Drive workspace. Cloud synchronization
+completion is not independently verified. Public deployment verified separately.

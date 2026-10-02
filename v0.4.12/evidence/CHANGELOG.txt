@@ -1,0 +1,16 @@
+RELIVOR v0.4.12 - 2026-10-02
+Base: v0.4.11. Only Queue UI and cumulative crafting progress corrected.
+- Run | Queue | Info remain visible for regular jobs at all tested widths.
+  Queue uses existing enqueue/schedule functions, independently of Auto and
+  current material/cap constraints. Those are evaluated at dispatch.
+- Recipe and Current Action share total recipe progress: completed contributions
+  plus worked fraction of the reserved current contribution. Reservations do not
+  count as completed work. Partial contributions, including 1 Wood, supported.
+- Optional saved craft_paid/craft_batches maps preserve material reservations and
+  completed contributions alongside existing active/suspended work. Legacy staged
+  saves migrate without counting reserved materials as already processed.
+- Recipe output/mastery/effects occur only after all requirements and work finish.
+  Repeatable recipes reset only their own completed contribution for the next item.
+Production Fishing Rod price remains 5 Wood. All data, prices, XP rates, action
+base times, graphics, animation and other scripts unchanged. Compact layout retained.
+One new exported web build; earlier version directories and archives retained.
