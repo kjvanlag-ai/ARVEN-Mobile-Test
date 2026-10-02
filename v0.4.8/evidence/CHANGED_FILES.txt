@@ -1,0 +1,15 @@
+Game source changes versus preserved local v0.4.7:
+BUILD.txt
+CHANGELOG.md
+project.godot
+RELEASE.json
+VERSION.txt
+assets/fishing_layers.png
+scripts/action_sequence.gd
+scripts/main.gd
+scripts/simulation.gd
+scripts/skill_field.gd
+tools/test_v042.gd
+tools/test_v048.gd
+
+Release support: implement.py, package_release.py, browser_check.cjs, browser_flow.cjs, before_capture.cjs, CHANGELOG.txt, TEST_REPORT.txt, ART_NOTES.txt, qa/, web/.

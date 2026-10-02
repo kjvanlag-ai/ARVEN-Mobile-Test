@@ -1,0 +1,14 @@
+RELIVOR v0.4.8 — 2026-10-02
+
+- One layered sunset fishing scene replaces four large pictures. Reuses frame1 lake;
+  new transparent rod/hand, bobber, perch and splash atlas. Cast/wait/bite/reel follow
+  actual action progress. Landed fish appears only after real completion; its brief
+  cosmetic lift cannot award XP or alter action time. Mobile illustration: 200px.
+- Mobile skills: one list, 60px rows, teal Run XP and thin amber Generation XP.
+  One legend. Vitality: permanent track, level and +Max HP only. Existing real
+  skill calculations remain in tap/hover details. Previously unlocked skills stay visible.
+- Unfinished work and combat clocks persist per action within the run. Switching,
+  stopping and save/load preserve work. Inactive actions earn nothing. Existing
+  completion-time costs remain; no new reservation system. Death clears stored work.
+- Gameplay data, hunger, food/Auto-Eat, Auto priorities, queue order, loot and XP
+  formulas unchanged. Existing save key/native save directory and schema retained.

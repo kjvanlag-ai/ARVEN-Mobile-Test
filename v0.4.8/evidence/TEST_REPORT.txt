@@ -1,0 +1,27 @@
+RELIVOR v0.4.8 — test and visual report
+
+307 Godot checks passed: 58 targeted resume/UI, 199 mechanics, 18 Vitality, 32 Auto-Eat.
+13 local browser checks passed in isolated Edge/Chromium storage, no console/page errors.
+Real buttons: Catch Perch -> Cut Wood -> reload -> Catch Perch retains saved work.
+Inactive fishing XP/work unchanged. Completion and repeat reject duplicate callbacks.
+Cooking and staged construction pay once. Legacy saves retain active progress.
+Combat HP/attack clocks survive switching. Death clears work, retains permanent XP.
+Save implementation unchanged; suspended map is optional in schema 2.
+Legacy Vitality fixture updated to omit the new field when testing old saves, and
+restore its intentionally extended action time. Gameplay balance files are byte-identical.
+
+Rendered and inspected at 390x844, 430x932, 1440x1000. Skill rows 60px; mobile
+illustration 200px plus 20px phase caption. Touch scroll, tap detail, hover detail,
+real multipliers, reduced motion and fast-action steady mode checked. No horizontal
+skill scrolling. New source preserves every frozen v0.4.7 source-file hash.
+Before image captured from deployed v0.4.7 in isolated browser storage.
+After screenshots and WebM are actual Godot WebGL gameplay, seeded with QA progression,
+not a UI mockup. Inspected captured animation frames across cast/wait/strike/reel.
+Desktop landscape/rod stretching found during visual review and corrected.
+
+Limits: no physical iPhone/Safari or Android test; no device performance benchmark.
+Artwork uses the existing lake plus generated cutout sprites, not a pixel-identical
+reproduction of the approved reference. No missing required fishing layers remain.
+A landed catch is intentionally shown only after simulation completion. Reduced-motion
+and sub-two-second actions suppress the moving layers; gameplay timings are unchanged.
+Public deployment/hash verification is recorded separately in DEPLOYMENT.txt.
