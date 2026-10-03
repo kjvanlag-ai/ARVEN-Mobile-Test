@@ -1,0 +1,56 @@
+{
+	"active_seconds": 225.550000000017,
+	"first_meal_reached": true,
+	"hp_after_meal": 42.3884849994155,
+	"hp_before_meal": 12.3884849994155,
+	"steps": [
+		{
+			"action": "wood",
+			"dead": false,
+			"hp": 91.0804111933477,
+			"time": 28.8000000000003
+		},
+		{
+			"action": "rod",
+			"dead": false,
+			"hp": 72.6817029495541,
+			"time": 82.9999999999974
+		},
+		{
+			"action": "wood",
+			"dead": false,
+			"hp": 63.2176458749724,
+			"time": 108.549999999996
+		},
+		{
+			"action": "campfire",
+			"dead": false,
+			"hp": 51.2619899450354,
+			"time": 138.899999999997
+		},
+		{
+			"action": "wood",
+			"dead": false,
+			"hp": 41.5905708447188,
+			"time": 162.050000000003
+		},
+		{
+			"action": "campfire",
+			"dead": false,
+			"hp": 29.5568177124185,
+			"time": 189.300000000009
+		},
+		{
+			"action": "perch",
+			"dead": false,
+			"hp": 18.2240604728957,
+			"time": 213.550000000014
+		},
+		{
+			"action": "cook_perch",
+			"dead": false,
+			"hp": 12.3884849994155,
+			"time": 225.550000000017
+		}
+	]
+}

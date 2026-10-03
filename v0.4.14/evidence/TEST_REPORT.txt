@@ -1,0 +1,33 @@
+RELIVOR v0.4.14 - TARGETED TEST NOTE
+187 balance/migration/UI checks, 77 existing queue/crafting/background checks,
+29 existing fishing checks: 293 checks passed. 17 local WebGL browser checks passed.
+No open test failures. Physical-phone/Safari testing not performed.
+
+- Six normal skills, both progressions, transitions 0/1/4/25/100: requirements x2
+  and exact level boundaries checked. XP gain and simultaneous 1% Loop share unchanged.
+- Old synthetic save: levels, percentages, per-level speed, Vitality, HP, later active
+  queue and action work retained. Three reloads do not rescale XP; marker survives rebirth.
+- Hunger rate and integrated HP drain exactly x2 at 0/60/300/900 active seconds,
+  both without shelter and with shelter factor 0.5. Same game-clock advancement.
+- At 1200.25 active seconds, Vitality XP/levels/permanent Max HP match v0.4.13.
+- Idle 300 seconds: zero HP loss, no game-clock advance or XP.
+- UI shows 0.30 HP/s fresh, Run requirement 120 and Generation requirement 1.50.
+- Isolated browser: old save and old backup archived byte-for-byte and retained over
+  three loads. Progress migrated only once. Paused queue/suspended work kept. Fresh
+  profile starts at zero; actual Run click confirms XP rate, Vitality and HP integral.
+
+ONE SHORT FRESH OPENING (no player save, no grants or compensation)
+Route: Wood to cap -> Rod -> Wood to cap -> Campfire contribution -> Wood to cap ->
+Campfire completion -> one Perch -> Cook Perch -> existing Auto-Eat cooldown while idle.
+First meal reached: True.
+Active time: 225.55 seconds.
+HP before meal: 12.39; after 30 HP healing: 42.39.
+The normal 10-second eating cooldown was allowed to run while idle, with zero decay.
+Opening is tight but attainable on this route. No additional balance changes made.
+
+Preservation: data differs only in the three requested threshold/base values. All
+assets and unrelated scripts identical. Combat/food/queue/resume/XP earning/level
+calculation/UI rendering functions compared directly with v0.4.13 and unchanged.
+Old releases/archives retained. One tested versioned build/publication. Public
+verification is recorded in DEPLOYMENT.txt. Artifacts saved via existing Google
+Drive workspace; cloud-sync completion is not independently verified.

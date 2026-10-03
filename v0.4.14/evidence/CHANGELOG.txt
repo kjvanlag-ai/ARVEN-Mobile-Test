@@ -1,0 +1,21 @@
+RELIVOR v0.4.14 - 2026-10-03 - base v0.4.13
+Only two balance changes:
+1. Normal skill Run XP per level 60 -> 120; Generation XP per level 0.75 -> 1.50.
+   v0.4.13 uses flat requirements, so every transition is exactly twice the old
+   requirement. No growth/exponent changed. XP earning remains 10x active seconds;
+   simultaneous Loop XP remains 1% of Run XP. Level speed bonuses/mastery unchanged.
+   Vitality is excluded: requirement 600, one XP/active second and Max HP unchanged.
+2. Hunger base 0.15 -> 0.30. Rate and integrated HP loss therefore double exactly
+   once. Exponential growth 0.0022, active clock and shelter factor 0.5 unchanged.
+   Idle has no HP decay. Existing UI calculates the new HP/s from the same rate.
+
+Old saves migrate normal-skill XP units once (x2 stored normal Run/Loop XP), keeping
+attained levels and fraction toward the next level. xp_curve_revision=1 prevents
+repeated migration. Fresh saves already have the marker. Vitality/HP/work/queue
+remain intact. Immutable .pre-v0.4.14 and .backup.pre-v0.4.14 archives preserve the
+original save and original rolling backup before migrated progress can be saved.
+Native archives now correctly use the current save directory. Tests skip player
+storage and use synthetic saves/isolated browser contexts. No automatic reset.
+
+No changes to images, layout, animation, recipes, queue, resume, enemy damage,
+food healing/cooldowns, skills' effects or other balance values. Prior builds kept.

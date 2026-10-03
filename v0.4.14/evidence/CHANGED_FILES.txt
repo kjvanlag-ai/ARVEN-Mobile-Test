@@ -1,0 +1,12 @@
+BUILD.txt
+CHANGELOG.md
+project.godot
+RELEASE.json
+VERSION.txt
+data/balance.json
+scripts/local_save.gd
+scripts/main.gd
+scripts/simulation.gd
+tools/baseline_v0413_balance.json
+tools/baseline_v0413_simulation.gd
+tools/test_v0414.gd
