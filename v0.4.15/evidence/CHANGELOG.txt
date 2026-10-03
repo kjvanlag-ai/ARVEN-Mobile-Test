@@ -1,0 +1,15 @@
+RELIVOR v0.4.15 - 2026-10-03 - base v0.4.14
+1. Start next run now appears in Current Action above the queue after death,
+   including Story OFF and empty Inventory. Death messaging takes priority over
+   Queue waiting. Shared, idempotent begin_next_run releases the death wait and
+   invokes the existing scheduler; it never calls new_run or increments generation.
+   Queues prepared after death retain order and duplicates. No automatic restart.
+2. Compact skill rows now show Run Lv. X and Gen Lv. Y over the complete bar tracks.
+   Levels come from each skill, not the player generation counter. Rounded bars
+   are 21 logical pixels high in 54-pixel rows and occupy about half the row.
+   Vitality retains one permanent bar and +HP. Tap/hover details are preserved;
+   the Info panel explicitly displays the same Run and Gen levels.
+
+Balance/data/assets unchanged from v0.4.14: doubled normal XP requirements and
+Hunger retained, Vitality unchanged. Existing death reset, scheduler, queue,
+action resume, recipes, XP rewards, saves/backups and 15-second animation retained.

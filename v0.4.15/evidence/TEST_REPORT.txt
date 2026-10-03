@@ -1,0 +1,31 @@
+RELIVOR v0.4.15 - TARGETED TEST NOTE
+130 targeted checks + 187 v0.4.14 balance/save checks + 77 queue/crafting/background
+checks + 29 fishing-animation checks = 423 passed; zero failures.
+17 isolated local WebGL browser checks passed with no page errors.
+
+Death/restart: death prepares Gen 2 once; run-local resources/levels reset normally.
+Permanent skill XP, Vitality, mastery and Auto priorities survive. Story OFF,
+empty Inventory and reload all show the Current Action restart button. Real browser
+double-click starts the queued wood job at index 2 while keeping all four entries,
+including duplicate Wood, without another generation/reset. Empty queue stays
+ready with no active job or elapsed work. Manual Stop stays paused. Subsequent
+death stays dead until another deliberate restart. Scheduler algorithm unchanged.
+
+Bars: checked 390/430-pixel mobile and 1440-pixel desktop layouts, full-track label
+positions, 0%/50%/near-100% and exact 100% fill geometry, three-digit level fit,
+individual Gen levels distinct from generation 999, Info agreement, tap and hover.
+Vitality has one permanent bar and +123 HP in the fixture. Actual screenshots
+visually inspected at all three widths. Mobile scrolling remains functional.
+
+All tests use synthetic saves and isolated browser contexts. No player save or
+backup was loaded or modified. All data/assets and unrelated scripts compared
+byte-for-byte with v0.4.14. Existing simulation death/reset, scheduler, queue,
+restore, XP, speed and Hunger functions compared directly and unchanged.
+The existing v0.4.14 opening regression still reaches its first meal; no balance
+compensation or long playthrough was performed.
+
+One versioned export/publication; earlier builds retained. Public deployment and
+live browser verification are recorded separately in DEPLOYMENT.txt.
+Screenshots, archives and notes saved in the GoogleDrive workspace. Cloud sync
+completion not independently verified. Mobile tests use Edge touch emulation;
+no physical phone or Safari test. No unresolved test failures.
