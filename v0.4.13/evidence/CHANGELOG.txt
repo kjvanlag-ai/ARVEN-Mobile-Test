@@ -1,0 +1,25 @@
+RELIVOR v0.4.13 - 2026-10-03
+Base: v0.4.12. Two targeted corrections.
+
+BACKGROUND: Only the existing full-page backdrop draws the landscape. Current
+Action's art TextureRect is hidden and has no landscape texture; fishing no longer
+draws LAKE. The existing hand/rod/line/float/fish/ripples paint transparently using
+the same centered COVER transform as the backdrop. The float maps onto lake water
+in the source image on mobile and desktop. No images or animation tempo changed.
+Idle uses content height. The natural fishing tail finishes its 15-second cycle,
+then its transparent stage collapses back to compact idle. Job switching clears it.
+
+QUEUE: schedule selects the first currently runnable entry, preserving all waiting
+entries, duplicates and their relative order. Active work is not preempted. Its
+saved queue_index identifies the exact entry across repeat, completion and restore;
+complete removes only that index after natural stop. Legacy head-active saves
+migrate to index zero. Full-inventory entries wait instead of silently disappearing.
+Manual Stop remains paused. Manual queues retain priority over Auto. No jobs or
+resources are inserted automatically. Existing partial crafting is unchanged.
+
+WAITING UI: Queue cards label the true active index NOW and display concrete
+waiting reasons for blocked entries. If none can run, Current Action shows Queue
+waiting plus the reasons, with no fake progress. Stopped plans show Queue paused.
+
+Recipes, balance, skills, inventory rendering, asset files and 15-second cycle
+remain unchanged. Earlier builds retained. One versioned release/publication.

@@ -1,0 +1,45 @@
+RELIVOR v0.4.13 - TEST NOTE - 2026-10-03
+PASS: 77 targeted checks + 71 crafting + 143 UI + 29 fishing = 320 Godot checks.
+PASS: 22 local browser checks in real Edge/Chromium WebGL. No browser page errors.
+Mobile touch emulation 390x844, desktop 1440x900; Godot also checks 430x932.
+No physical-phone/Safari test. Screenshots are real rendered game captures.
+
+QUEUE
+- Catch Perch -> Craft Fishing Rod -> Cut Wood with no wood/rod: wood runs at
+  index 2 until full, only that entry leaves, rod runs at index 1, then perch.
+  Replayed end-to-end in the browser at normal production rates, including reload
+  while wood at index 2 is active. Exactly one rod/mastery, five wood reserved once.
+- No runnable entry: original order retained, visible Fishing Rod/Wood reasons,
+  no elapsed work, XP, resources or rewards. Cooking reports Waiting: Campfire.
+- Duplicate wood entries retain separate turns; explicit later-duplicate save/load
+  and completion remove that exact index, not the first matching action string.
+- Full-inventory waiting wood survives while later campfire consumes wood.
+  Campfire progresses 5/10 -> new wood -> 10/10, exactly one completion.
+- Stop stays stopped across schedule, elapsed time and reload. Manual Run works
+  and leaves queued entries. Manual queue preempts Auto but invents no resources.
+- v0.4.12 active queue save migrates; mismatched active index is rejected.
+- Existing 1/10, 5+2=7/10, reservation, multi-material, repeatable-item and XP tests
+  all pass unchanged. No duplicated payment, XP or reward.
+
+BACKGROUND / ANIMATION
+- One landscape owner: visible backdrop; art has no texture and remains hidden;
+  action_sequence contains no LAKE texture draw. No new/modified asset images.
+- Idle has zero fixed scene minimum and actual scene height below 240px at all
+  tested sizes. No separate landscape box. Tail completion returns to compact idle.
+- Float position inversely maps to source-image water at y=0.57 and x=0.55..0.84
+  using the exact page-background COVER scale/crop; visible in fishing stage.
+- Existing 15-second visual clock, catch independence, natural tail, reduced motion,
+  manual interruption, death/reset, and touch-scroll regression checks pass.
+- Browser fishing/tail captures show the common landscape. During visual-only tail,
+  elapsed gameplay/XP do not change and exactly one catch remains. Real Run click
+  switches to wood. Mobile scroll captured over the shared scene.
+
+Files: idle-390/1440, waiting-390/1440, fishing-390/1440, queue-wood-390,
+queue-rod-390, queue-fishing-390, queue-1440, tail-390, tail-finished-390,
+job-switch-390 and scroll-390 screenshots. Public verification recorded separately.
+
+Preservation checked by hashes: all data and assets, unrelated scripts. Inventory
+rendering and skill-info functions compared directly. Save schema/key unchanged;
+only optional queue_index added. Prior version directories/archives remain intact.
+Saved via the existing Google Drive workspace; cloud sync completion is not
+independently verified. Source, Web and Evidence archives include SHA-256 hashes.
