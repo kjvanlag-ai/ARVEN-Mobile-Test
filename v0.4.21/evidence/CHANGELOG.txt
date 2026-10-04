@@ -1,0 +1,6 @@
+RELIVOR v0.4.21 - SKILL BARS FINAL POLISH
+Fixed RUN / level / track / percentage columns. Both progression rows permanently visible; teal RUN and amber GEN share the same track geometry.
+Larger existing skill icons, cream values, warm fine edges and restrained highlights. Existing 42px desktop / 44px mobile row height retained.
+Presentation-only 360ms rollover: fill to 100%, brief full state, next level and remainder. Resets snap correctly; rapid gains converge to latest authoritative state. Percent floors until track genuinely reaches 100%.
+Vitality retains one permanent track and the real HP bonus. Hover/tap details preserved.
+No changes to formulas, XP, requirements, simulation, saves, queue, actor, scene, assets or layout outside skill rendering. Main.gd changes only the displayed release version.

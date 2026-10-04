@@ -1,0 +1,7 @@
+RELIVOR v0.4.21 validation
+Parser/import PASS. 524 native checks: 187 economy/save + 71 crafting/resume + 193 skill/death/restart + 73 inventory/fishing/layout/controls. Zero failures.
+Skill checks cover both tracks at zero/full, independent real levels, fixed geometry across 9->10,99->100,999->1000,9999->10000, complete-fill stage, correct remainder, rapid gains, resets, read-only animation, existing tap/hover details and mobile widths.
+Actual desktop1448x1086 and mobile390/430 captures inspected. Whole-page composition and row heights retained. Separate scrolled mobile captures show all skills.
+Level-up sequence is captured from the real game scene with an isolated QA state advanced by the real simulation. It is not a mockup. All data/assets/simulation/save/fisher code byte-identical to v0.4.20; main.gd differs only in release identifier.
+Browser results and public file verification are archived alongside deployment evidence. No player saves modified.
+Final local WebGL:14/14 checks PASS, zero browser errors. Real WebGL level-up video covers both RUN and GEN9->10; frame contact confirms stationary rows. Live results follow in DEPLOYMENT.txt / Live_Verification archive.

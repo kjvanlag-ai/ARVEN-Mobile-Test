@@ -1,0 +1,2 @@
+RELIVOR v0.4.21 - Skill bars final polish
+Baseline: v0.4.20. Fixed progression columns and 360ms presentation-only level rollover. Gameplay/save format and all assets unchanged.
