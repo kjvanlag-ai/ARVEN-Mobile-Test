@@ -1,0 +1,12 @@
+RELIVOR v0.4.16 — 2026-10-04 — base v0.4.15
+Visual integration of supplied ArtPack v1.1 and Inventory v1.1 into the existing Godot game.
+One clean lake scene with separate seated body, forearm, rod, line, float and ripples.
+Manifest coordinates and draw order retained. Only arm/rod articulate; body stays fixed.
+Existing independent 15-second visual state machine retained with stop/death/reset/job interruption.
+Desktop scene/current-action/queue/skills/jobs plus right inventory. Mobile reflow at 390/430.
+Dynamic three-column inventory with painted PNGs, live count/cap, zero-quantity removal,
+hover details and touch item panel with live HP-heal/cooldown. Swipe release is guarded.
+Supplied panel, tile and button textures; original Cinzel font and all actual game controls retained.
+Mipmaps enabled for new PNG art to avoid downscale aliasing.
+Gameplay simulation, local save storage, queue logic, skills and all data files byte-identical to v0.4.15.
+No balance, recipe, XP, action-time, resource-cap or save-key changes. No save wipe.

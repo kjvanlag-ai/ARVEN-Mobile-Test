@@ -1,0 +1,22 @@
+RELIVOR v0.4.16 — TEST REPORT
+Godot4.7.2 import/parser and release web export successful.
+435 Godot checks passed: v0414=187, v0415=130, v0412=71, targeted v0416=47.
+Covers prior balance/save migration, hunger, Vitality, death/Start next run, individual Run/Gen bars,
+queue/scheduler, partial crafting/payment/resume, inventory0->1->0, food details, item tap/swipe guard,
+fishing15s loop independent of levels/progress/completions, other-job interruption, Stop/death/reset,
+no visual XP/items/mastery/time/rewards, 390/430 desktop width and touch scrolling.
+Final local WebGL test:12 checks passed, zero page/console errors.
+Real Run clicks: Catch Perch -> Cut Wood -> Catch Perch. Real Stop persists through reload.
+Inventory and XP preserved through web localStorage save/load (float tolerance1e-9 for JSON roundtrip).
+Desktop1448x1086 and mobile390x844/430x844 screenshots visually inspected, including scrolled inventory
+and item-info popup. Swipe no longer opens an item accidentally. Popup constrained to300x220.
+A separate real-gameplay recording holds Catch Perch continuously for17.5s; simulation awards one real
+catch. MP4 is trimmed from actual exported Godot WebGL browser capture, not ArtPack preview footage.
+Side-by-side reference review saved; see VISUAL_COMPARISON.txt for all ten acceptance points and limits.
+12 data/core files byte-compared with v0.4.15. Simulation, recipes, balance, saves and queue unchanged.
+All fixtures use isolated test profiles; no actual player save read, wiped or modified.
+Local iterations corrected mipmap aliasing, mobile click-through, popup sizing and test float equality.
+Superseded trial browser logs may contain the strict float-comparison failure; verified-browser-checks.json
+is the final result. No unresolved failures in the final checks. One public deployment after local QA.
+Public byte verification and live browser results are recorded separately in DEPLOYMENT.txt.
+Artifacts saved in the existing GoogleDrive directories. Drive sync completion not independently checked.

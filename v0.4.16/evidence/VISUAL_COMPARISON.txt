@@ -1,0 +1,40 @@
+RELIVOR v0.4.16 — SIDE-BY-SIDE REVIEW / REMAINING DIFFERENCES
+Evidence: side-by-side.png has the approved reference on the left and actual WebGL screenshot on the right.
+No reference image is used by the running game. All labels and counters are live game data.
+
+1. Fisher size: manifest body scale 0.259; source visible height about 304 reference-space pixels.
+   The approved character has different silhouette/clothing. The seated figure has similar visual weight.
+2. Placement: manifest body origin (232.8,52.65), elbow (459.425,243.015), grip (519,221).
+   Arm and rod share the elbow transform; body is static. Main scene begins about 21px higher on desktop
+   because the actual game header is more compact. No body oscillation.
+3. Crop: desktop scene roughly 1048x405 at viewport1448x1086 versus reference1028x405.
+   Mobile scene is240px high, aspect-cover cropped with the identical actor/background transform.
+4. Inventory tiles: about110x148 versus reference101x102; extra height accommodates real full item
+   names and a separate quantity/cap line. No fake empty slots. Three columns at390/430 and desktop.
+5. Illustrations: actual supplied PNGs,70px image area; some visible silhouettes are smaller than
+   the original reference. Labels remain real game names: e.g. Flint, Nettle Fiber, Edible Mushroom.
+6. Gold: supplied nine-slice panel/tile/button PNGs; cleaner, thinner corner ornamentation than the
+   reference. Exact ornate contours require a revised panel_frame.png/button.png closer to original.
+7. Materials: dark provided tile material behind panel frames. The reference has more environmental
+   blending and richly painted wood. No separate landscape is placed behind panels.
+8. Spacing: current action directly below scene, queue below it, skills/jobs side-by-side. All real
+   Run/Queue/Info controls remain, so it needs more vertical room than the reference's simplified jobs.
+9. Typography: retained existing Cinzel and Godot UI font. Reference's original font/logo unavailable;
+   header and action typography are therefore visibly different and the logo is smaller.
+10. Overall: sunset, lake, wolf, tent, castle/waterfall, seated silhouette and right inventory match
+    the requested composition. NOT a100% match. Actual gameplay has more text/controls and fewer
+    decorative panels. No fake skill-tree/navigation/day-night/Explore buttons or duplicate lake.
+
+ASSET LIMITS / WHAT WOULD NEED IMPROVEMENT
+lake_background.png: reconstructed sun/castle/waterfall/vegetation differ; exact matching requires
+repainting these landmarks from the approved original while retaining the clean background.
+fisher-body.png and fisher-right-forearm.png: different cloak/boot/silhouette and limited articulation.
+A natural full cast/reel requires matching upper-arm/hand poses or an articulated character rig.
+Current implementation intentionally uses a calm small tug, not a fabricated full cast or catch sprite.
+bobber.svg and ripple.svg: simpler than the painted reference; matching painted effects would improve them.
+panel_frame.png/button.png: need richer matching ornaments. No original branded RELIVOR logo/font supplied.
+Inventory PNGs are reconstructed illustrations, not pixel-identical cutouts.
+Moss and Clay are not existing items, so their supplied files remain unused; no resources were added.
+Stone art is mapped to existing Flint, raw_pelt to Boar Hide/Wolf Pelt. Both skins share this illustration.
+
+No physical-phone/Safari testing. Browser mobile evidence uses Edge touch emulation.
