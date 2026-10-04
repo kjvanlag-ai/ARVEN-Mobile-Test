@@ -1,0 +1,9 @@
+RELIVOR v0.4.17 validation
+Parser/import and one final Web export succeeded without script errors.
+451 native checks passed: test_v0414=187; test_v0412=71; test_v0417_skills=130; test_v0417=63. Covers save/load, economy, partial crafting/resume, inventory0→1→0, caps/food info, Run/Queue/Info, skills, death/restart and fishing stop conditions.
+14 local Edge WebGL checks passed; zero browser errors. Actual job switches, Stop/reload/resume, inventory/permanent XP save roundtrip, Queue append,390/430 viewport and touch scroll, Start next run with prepared queue.
+Actual1448x1086 and390/430x844 screenshots inspected. Scrolled mobile inventory and item info captured separately. No duplicate scene; existing fishing renderer unchanged.
+Real WebGL MP4 covers a full15-second visual cycle. Rewards still come solely from real simulation.
+30 gameplay/data/rendering/PNG files byte-identical to v0.4.16; queue data/input functions unchanged. See unchanged-gameplay.json. Save key preserved; isolated test saves only.
+Archived source, web, evidence and media in existing Google Drive structure. Cloud synchronization not independently verified.
+Public results are recorded separately in DEPLOYMENT.txt after one publication.

@@ -1,0 +1,19 @@
+RELIVOR v0.4.17 — actual WebGL versus approved reference
+Left approved image; right actual1448x1086 game using isolated QA save. Real simulation values, no player save overwritten.
+A Layout: scene/action/queue above compact skills/jobs; filled right column.
+B Scene: (24,144),1038x405; reference approximately(34,142),1028x405.
+C Fisher: unchanged v0.4.16 body, separate arm/rod and15s visual cycle.
+D Right column:354px; inventory, existing equipment/construction, mastery and generation. Sparse inventory shows actual skill speed values.
+E Tiles:112px high, around107px wide, aspect1:1.05; previously148px high.
+F Art: alpha-bounded aspect-preserving fit fills92% of illustration area.
+G Frames: supplied ornament frame throughout,27px corners instead12px.
+H Material: supplied inventory material reused consistently with warm borders/highlights.
+I Skills:44px rows,18px teal Run/amber Generation bars, actual levels/percentages. Vitality permanent XP only.
+J Jobs:45px normal desktop rows; real Run/Queue/Info, expanded Auto/priority retained.
+K Header: Cinzel48 desktop/34 mobile; existing tree icon reimported sharper.
+L Empty areas: empty save status removed, tighter spacing and populated sidebar. Jobs naturally shorter with current unlocks.
+ACCEPTANCE: actual desktop,390/430 mobile, sparse inventory, action info and side-by-side inspected. Clear improvement from v0.4.16, no100% match claim.
+DIFFERENCES: bespoke reference wordmark/filigree absent; actual dual XP bars and gameplay controls differ from decorative reference labels/buttons. Scene/fisher retained as requested with their existing differences.
+ASSET BLOCKER: assets/icon_chapter.svg plus font-rendered title cannot reproduce painted reference logo. Exact match needs isolated transparent embossed RELIVOR wordmark/tree crest.
+ASSET BLOCKER: assets/artpack/ui/panel_frame.png uses different corner ornaments. Exact match needs reference-matching transparent nine-slice frame edges/corners.
+ASSET BLOCKER: assets/artpack/ui/inventory_tile.png dark material differs from painted reference wood. Exact match needs compatible seamless dark wood texture. Current supplied texture used consistently, no replacement art invented.

@@ -1,0 +1,8 @@
+RELIVOR v0.4.17 — VISUAL MATCH PASS
+Based on v0.4.16. No gameplay, balance, save schema/key or animation logic changes.
+Unified supplied textured material and bronze ornament frames. Cinzel brand enlarged.
+Desktop scene remains intact; compact Current Action, Queue, Skills and Jobs below.
+Right column now contains dynamic Inventory, existing equipment/construction, Auto/mastery and run/generation information.
+Inventory tiles reduced to 112px and use alpha-bounded aspect-preserving art scaling.
+Skills have compact teal Run and amber Generation bars with actual levels and percentages; Vitality has permanent XP only.
+390/430px reflow retains one touch-scrolling column and 240px scene.
