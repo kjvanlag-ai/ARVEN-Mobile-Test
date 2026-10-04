@@ -1,0 +1,9 @@
+RELIVOR v0.4.19 validation
+461 native checks:187 economy/save;71 partial crafting/resume;130 skills/death/restart;73 visual/inventory/controls/ArtPack assertions. All passed.
+Parser/import and final Web export checked. Existing save key/schema retained; no player saves touched.
+Inventory0→1→0, actual food info, Run/Queue/Info,15-second read-only fishing cycle, interruption on other job/Stop/death/reset, restart and responsive layouts covered.
+29 gameplay/data/old ArtPack PNG files byte-identical; animation state/clock functions unchanged, only rendering transform adjusted.
+All8 v1.2 PNGs used without file modification. SHA256SUMS.txt verified; one stale corner-ornament manifest hash documented separately.
+Actual1448x1086 side-by-side,390/430 screenshots and actual WebGL fishing MP4 inspected before publication. Isolated fixture has4 queued actions,8 inventory items and varied live XP/mastery state.
+14 final local Edge/WebGL checks passed, zero browser errors. Public verification is recorded in DEPLOYMENT.txt after publication. One public deployment after acceptance.
+Source/Web/Evidence archives saved in existing Google Drive version directories; cloud synchronization not independently verified.

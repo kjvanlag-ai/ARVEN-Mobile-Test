@@ -1,0 +1,4 @@
+RELIVOR v0.4.19 — ArtPack v1.2 integration
+Supplied painted logo replaces font/tree branding. Supplied nine-slice frame (84px source margins), dark wood, panel surface, physical inventory slots, status-bar background and sparse separator/ornament accents integrated.
+v0.4.18 layout and behavior retained. Existing fisher group rendered12% smaller and modestly left; shared body/arm/rod/line/ripple transform.15-second clock and simulation unchanged.
+No gameplay/balance/save format/key changes. Original supplied PNG bytes retained.

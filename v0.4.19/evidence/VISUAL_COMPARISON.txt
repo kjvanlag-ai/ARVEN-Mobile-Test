@@ -1,0 +1,12 @@
+RELIVOR v0.4.19 visual acceptance
+Reference left, actual1448x1086 game right. v0.4.18 composition preserved: header/status,1030x405 scene, action card, queue ribbon, skills/job grid, inventory/sidebar and footer.
+Integrated all8 supplied v1.2 assets: relivor_logo_v2.png, panel_frame_v2.png, dark_wood_texture.png, panel_surface_v2.png, inventory_slot_v2.png, gold_separator_v2.png, corner_ornament_v2.png, status_bar_bg_v2.png.
+Panel frame uses84px source nine-slice margins rendered24px; previous frame removed. Panel surfaces at55% plus40% dark overlay; wood backdrop subdued. Existing actual values/fills remain live.
+Fisher: existing layers scaled uniformly0.88 about scene point390,390 and shifted38 scene pixels left; net origin adjustment8.8,46.8. Relative arm/rod pivots unchanged, line/ripple/bobber use same transform.15-second timing/state untouched. Smaller actor and left placement compare better against reference. Scene artwork unchanged.
+Inventory actual PNGs/counts/names over new slot; zero quantities omitted. Screenshot fixture has8 real items and4 queued actions plus active manual Catch Perch. Isolated QA save only.
+Material improvement: brown worn wood and aged gold replace dominant green panels; sculpted item slots and painted logo use actual supplied PNGs. Scene proportions, mobile240px height and real controls preserved.
+Remaining differences: exact reference ornaments, panel texture/density, original scene/fisher artwork details and real gameplay content still differ. Logo format scales down inside existing header; baked tagline is very small.
+ASSET LIMITATIONS: panel_frame_v2.png has transparent interruptions between corners and straight edges in the supplied PNG; these remain visible, particularly on narrow panels. A continuous-edge version with matching source patch joins would improve it.
+relivor_logo_v2.png contains coarse/mottled alpha near the crest and a small baked tagline; a cleaned compact header variant with separate tagline would improve small-size rendering.
+No new artwork generated and no100% match claim.
+PACK METADATA: manifest.json has stale hash for corner_ornament_v2.png. Actual ca0150946f87637863994ad371da3e924ef1bcfc01a64b2ab0d42a2cee430f5a matches ZIP and SHA256SUMS.txt. All checksum-list entries verified. Original metadata preserved for provenance.
