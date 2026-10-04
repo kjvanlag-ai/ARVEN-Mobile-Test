@@ -1,0 +1,22 @@
+RELIVOR v0.4.18 — visual acceptance
+Approved reference at left; actual1448x1086 game at right. Compared with v0.4.17 desktop and390/430 screenshots as baseline.
+TOPBAR: one framed bronze row with brand, real location, active run time, generation/version, decorative tagline and existing Settings/Save.
+HP/HUNGER: separate48px modules, actual values and bars.
+SCENE: retained artwork/actor layers, approximately1030x405 at24,142. No second landscape. Large Lake Edge label retained.
+CURRENT ACTION: illustrated76px area, title/description, genuine progress/time, skill badge, Info and Stop. Approximately110px high.
+QUEUE: numbered horizontal ribbon with icons, real waiting reasons and chevrons. QA save has four queued entries plus manual active Catch Perch. Rod entry correctly says Already completed; no fabricated queue rendering.
+SKILLS: compact42px desktop/44px mobile rows, actual RUN/GEN level and percentage, teal/amber bars. Vitality persistent only.
+JOBS: desktop two-column job cards with drawn play button, Queue+ and Infoi; mobile one-column text buttons. Expanded details/priority unchanged.
+INVENTORY: three compact columns, larger alpha-bounded PNGs, small names and separate count/cap bottom line. No empty slots.
+RIGHT SIDEBAR: read-only equipment badges, mastery bars/Auto priority, generation badge, Vitality XP and location progress. Existing crafting remains accessible.
+BOTTOM NAV: desktop64px footer at bottom; Story, unlocked Exploration focus, Home, Progress and Settings use existing behavior. Explore disabled while locked. Progress and Settings open existing shared dialog.
+EMPTY SPACE: composition runs to footer; job panel retains natural space where actual unlocked jobs are fewer than the reference. No fake cards.
+MATERIALS: supplied texture with brown/green tint, inner light/shadow and shared bronze frame.
+TYPOGRAPHY: Cinzel identity/section titles, warm cream values, compact XP notation. Web play glyph fallback was caught and replaced with font-independent drawn triangle.
+QA: isolated save contains8 real inventory items, partial HP, active Hunger, four real queue entries, varied skill XP, real equipment/mastery/Vitality data. Fixture never ships as normal game state or overwrites player save.
+ACCEPTANCE: actual native and final Web screenshots compared before publication; clear structural improvement, no100% match claim.
+STILL DIFFERENT: reference bespoke logo, exact decorative frame/wood and icon art; dual XP bars, real controls and available jobs differ from painted reference. Existing fisher remains larger/more central than the painted reference, preserved per request.
+ASSET BLOCKER1: assets/icon_chapter.svg and font title lack transparent painted RELIVOR wordmark/crest. Need isolated embossed gold wordmark/crest.
+ASSET BLOCKER2: assets/artpack/ui/panel_frame.png lacks exact reference ornaments; need matching nine-slice corners and edges.
+ASSET BLOCKER3: assets/artpack/ui/inventory_tile.png remains green/mineral under tint; need reference dark wood texture with grain/wear/light variation.
+FISHER: no new asset requested or generated in this pass; existing scene/pose difference explicitly retained.

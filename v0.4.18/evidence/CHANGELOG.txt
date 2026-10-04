@@ -1,0 +1,2 @@
+RELIVOR v0.4.18 — fantasy interface composition
+Integrated status header; separate HP/Hunger; illustrated action card; numbered queue ribbon; desktop job grid; badges and progress in sidebar; real footer navigation. Preserves gameplay, saves, scene and fishing animation.

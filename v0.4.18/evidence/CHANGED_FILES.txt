@@ -1,0 +1,20 @@
+BUILD.txt
+CHANGELOG.txt
+RELEASE.json
+VERSION.txt
+project.godot
+scripts/inventory_tile.gd
+scripts/main.gd
+scripts/premium_panel.gd
+scripts/queue_timeline.gd
+scripts/sidebar_readout.gd
+scripts/sidebar_readout.gd.uid
+scripts/skill_field.gd
+tools/paused_layout.gd.uid
+tools/test_v0418.gd
+tools/test_v0418.gd.uid
+tools/test_v0418_skills.gd
+tools/test_v0418_skills.gd.uid
+tools/visual_v0418.gd
+tools/visual_v0418.gd.uid
+Release tooling and visual evidence: browser.cjs,mobile.cjs,record.cjs,compare.cjs,package.py,verify_public.py; reports and isolated QA fixture.

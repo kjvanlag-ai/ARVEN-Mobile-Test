@@ -1,0 +1,10 @@
+RELIVOR v0.4.18 validation
+457 native checks passed:187 economy/save,71 partial crafting/resume,130 skills/death/restart,69 inventory/fishing/layout/controls/navigation.
+Godot parser/import and final Web export clean. Two preliminary local exports were replaced during validation (inherited version metadata and missing Web play glyph); no preliminary publication.
+14 final local Edge/WebGL checks passed with zero browser errors: version, Catch Perch, Run job switching, Stop, save/load/resume, Queue append,390/430 viewport/touch scrolling, Start next run with prepared queue.
+Inventory0→1→0, food heal/cooldown, real Run/Queue/Info, fishing15s read-only cycle and stop/death/reset covered by native checks. Native tests exercise footer Home/Progress and separate vital panels.
+1448x1086 desktop and390/430 mobile screenshot visual inspection; final side-by-side reference comparison. Isolated QA save has four queued entries and8 actual items. No player saves touched.
+Actual WebGL gameplay recorded for17 seconds covering full15-second fishing cycle; separate recording fixture keeps manual repeated Catch Perch active.
+30 simulation/data/fishing/PNG files byte-identical to v0.4.17. Save format/key untouched. Only UI/presentation and QA changes.
+One publication planned after acceptance. Final public file and browser verification recorded in DEPLOYMENT.txt after publication.
+Source/Web/Evidence archives in existing Google Drive version structure. Cloud synchronization not independently verified.
