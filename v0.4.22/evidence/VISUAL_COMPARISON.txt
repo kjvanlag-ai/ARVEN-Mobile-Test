@@ -1,0 +1,3 @@
+Supplied v0.4.22 direction retained: Danish primary UI, dark fantasy panels, five large illustrated desktop skill cards and single-column mobile cards. No previous small-strip layout restored. Scene, actor and surrounding composition preserved.
+Large cards require normal vertical scrolling to Jobs below them on desktop; fixed footer Opgaver reaches that content. Mobile preserves natural vertical scrolling and full illustrated cards.
+Remaining: Running and Fighting have no painted PNGs. Existing supplied illustrations have their own style; no claim of100% matching any concept. A child-user usability test has not been performed; readability and real controls were checked technically and visually.

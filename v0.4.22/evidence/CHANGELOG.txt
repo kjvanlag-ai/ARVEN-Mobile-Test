@@ -1,0 +1,7 @@
+RELIVOR v0.4.22 - Danish illustrated skill cards
+Built from the supplied v0.4.22 redesign; no return to v0.4.21 layout.
+Fixed missing inherited perch_visual.gd preload dependency. Large painted cards preserved.
+Fixed tiny progression typography, narrow-track overlap risk, mobile image stretching and responsive desktop card column count. Five columns at1448, one at390/430; fixed progression coordinates and inherited360ms rollover retained.
+Completed display translations for material requirements, waiting/death/story messages, dialogs and queue skill categories. Internal IDs and saves unchanged.
+All gameplay data, simulation, save and active fishing animation code byte-identical to v0.4.21. All five supplied skill PNG bytes untouched.
+Remaining assets: Running/Udforskning and Fighting/Kamp have no painted ui_v2 skill PNG; existing artwork used per instruction.

@@ -1,0 +1,2 @@
+RELIVOR v0.4.22
+Danish UI and supplied illustrated skill-card redesign. Gameplay/save compatibility preserved.

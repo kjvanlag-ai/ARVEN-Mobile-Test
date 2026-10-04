@@ -1,0 +1,106 @@
+Compared with the supplied v0.4.22 source:
+BUILD.txt
+CHANGELOG.txt
+RELEASE.json
+assets/Cinzel-OFL.txt
+assets/cinzel.ttf.import
+assets/fishing_emblem.svg.import
+assets/frame1.png.import
+assets/icon_axe.svg.import
+assets/icon_chapter (1).svg.import
+assets/icon_chapter.svg.import
+assets/icon_clay.svg.import
+assets/icon_cook (1).svg.import
+assets/icon_cook.svg.import
+assets/icon_craft.svg.import
+assets/icon_fight.svg.import
+assets/icon_fish (1).svg.import
+assets/icon_fish.svg.import
+assets/icon_generation (1).svg.import
+assets/icon_generation.svg.import
+assets/icon_heart (1).svg.import
+assets/icon_heart.svg.import
+assets/icon_hide.svg.import
+assets/icon_hunger.svg.import
+assets/icon_meat.svg.import
+assets/icon_moss.svg.import
+assets/icon_run.svg.import
+assets/icon_save (1).svg.import
+assets/icon_save.svg.import
+assets/icon_settings (1).svg.import
+assets/icon_settings.svg.import
+assets/icon_stone (1).svg.import
+assets/icon_stone.svg.import
+assets/icon_story (1).svg.import
+assets/icon_story.svg.import
+assets/icon_strap.svg.import
+assets/icon_wood (1).svg.import
+assets/icon_wood.svg.import
+scripts/action_strip.gd.uid
+scripts/live_action.gd.uid
+scripts/local_save.gd.uid
+scripts/main.gd
+scripts/main.gd.uid
+scripts/perch_visual.gd
+scripts/perch_visual.gd.uid
+scripts/premium_panel.gd.uid
+scripts/queue_timeline.gd
+scripts/queue_timeline.gd.uid
+scripts/sidebar_readout.gd
+scripts/simulation.gd.uid
+scripts/skill_field.gd
+scripts/skill_field.gd.uid
+tools/baseline_v0413_balance.json
+tools/baseline_v0413_simulation.gd
+tools/baseline_v0413_simulation.gd.uid
+tools/finalize_web.py
+tools/skills_evidence.gd
+tools/test_v0412.gd
+tools/test_v0412.gd.uid
+tools/test_v0414.gd
+tools/test_v0414.gd.uid
+tools/test_v0422.gd
+tools/test_v0422.gd.uid
+tools/test_v0422_skills.gd
+tools/test_v0422_skills.gd.uid
+tools/visual_v0422.gd
+tools/visual_v0422.gd.uid
+assets/ui_v2/skills/cooking.png.import
+assets/ui_v2/skills/crafting.png.import
+assets/ui_v2/skills/fishing.png.import
+assets/ui_v2/skills/vitality.png.import
+assets/ui_v2/skills/woodcutting.png.import
+assets/artpack_v13/assets/inventory_slot_v3 (1).png.import
+assets/artpack_v13/assets/inventory_slot_v3.png.import
+assets/artpack_v13/assets/panel_frame_v3 (1).png.import
+assets/artpack_v13/assets/panel_frame_v3.png.import
+assets/artpack_v13/assets/panel_surface_v3 (1).png.import
+assets/artpack_v13/assets/panel_surface_v3.png.import
+assets/artpack_v13/assets/relivor_logo_header (1).png.import
+assets/artpack_v13/assets/relivor_logo_header.png.import
+assets/artpack_v12/assets/corner_ornament_v2 (1).png.import
+assets/artpack_v12/assets/corner_ornament_v2.png.import
+assets/artpack_v12/assets/dark_wood_texture (1).png.import
+assets/artpack_v12/assets/dark_wood_texture.png.import
+assets/artpack_v12/assets/gold_separator_v2 (1).png.import
+assets/artpack_v12/assets/gold_separator_v2.png.import
+assets/artpack_v12/assets/status_bar_bg_v2 (1).png.import
+assets/artpack_v12/assets/status_bar_bg_v2.png.import
+assets/artpack/character/fisher-body.png.import
+assets/artpack/character/fisher-right-forearm.png.import
+assets/artpack/character/fishing-rod.png.import
+assets/artpack/items/clay.png.import
+assets/artpack/items/cooked_perch.png.import
+assets/artpack/items/fiber.png.import
+assets/artpack/items/mushroom.png.import
+assets/artpack/items/raw_pelt.png.import
+assets/artpack/items/raw_perch.png.import
+assets/artpack/items/stone.png.import
+assets/artpack/items/wood.png.import
+assets/artpack/scene/bobber.svg.import
+assets/artpack/scene/lake_background.png.import
+assets/artpack/scene/ripple.svg.import
+assets/artpack/ui/button.png.import
+assets/artpack/ui/inventory_tile.png.import
+
+Runtime fixes: restored inherited perch_visual.gd dependency; main.gd Danish display strings and responsive card columns; skill_field.gd readable fixed progression geometry and aspect-preserving art; queue_timeline.gd Danish category detection and unclipped empty-queue hint; sidebar_readout.gd Danish units. All five supplied skill PNGs unchanged. Gameplay/data/simulation/save/active fisher code unchanged. Cinzel license restored from baseline. QA tools and release metadata added.

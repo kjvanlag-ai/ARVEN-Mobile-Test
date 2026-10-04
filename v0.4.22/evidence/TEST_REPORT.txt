@@ -1,0 +1,9 @@
+RELIVOR v0.4.22 validation
+DANSK UI: PASS. NYE SKILL-KORT: PASS. SAVE COMPATIBILITY: PASS.
+567 native checks:187 economy/save +71 crafting/resume +236 skills/Danish/cards/save compatibility/death/restart +73 inventory/fishing/UI/navigation. Zero failures.
+v0.4.21 isolated saved state loaded and every field retained through serialize/restore. Same native user directory and browser storage key. No player save wipe.
+Actual desktop1448x1086 and mobile390/430 inspected. Five desktop cards, one mobile column. Large PNGs imported and displayed; crop preserves aspect ratio. Both progression rows fixed, Vitality permanent-only. Digit-boundary9/99/999/9999 level changes do not move cards or tracks. Actual simulation level-up screenshots included.
+UI data/XP/formulas/recipes/simulation/local_save/action_sequence byte-identical to v0.4.21. Existing controls and queue operate on real state. Actual later skills Running and Fighting retain allowed legacy artwork, no invented skills.
+Original source lacked perch_visual.gd required by live_action.gd; inherited dependency restored byte-identically. Original low mobile card height caused tiny text and stretched art; local card geometry repaired. No new artwork generated.
+Browser smoke and deployed file checks recorded separately. Source/evidence archives saved in normal version structure; Drive synchronization not independently verified.
+Final local WebGL14/14 PASS, zero browser errors. Fresh-profile Danish screenshot inspected. Empty-queue help clipping repaired during final QA. Actual17-second gameplay MP4 includes real catches and progression. Font license missing from supplied copy restored from baseline.
