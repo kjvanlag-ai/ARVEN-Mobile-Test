@@ -1,0 +1,6 @@
+RELIVOR v0.4.20 — completed with ArtPack v1.4
+Retains v1.3 header logo/separate desktop tagline and calmer panel surface.
+Replaces only the stopped candidate's two frame PNG contents at existing paths: panel_frame_v3.png now holds panel_frame_v4.png; inventory_slot_v3.png now holds inventory_slot_v4.png. No UI code/layout/padding change for this repair.
+Frame source margins96px/runtime24px; half-size inventory source48px/runtime12px, unchanged from candidate.
+FRAME BLOCKER PASS: straight rails continue under all four corner ornaments in actual Godot10x captures, including513x49px HP/Hunger.
+Gameplay/save/fishing code and scene unchanged from v0.4.19. Prior failed candidate archives retained separately. No v0.4.21 created.

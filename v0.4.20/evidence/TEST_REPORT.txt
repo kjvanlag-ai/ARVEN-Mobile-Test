@@ -1,0 +1,9 @@
+RELIVOR v0.4.20 release validation
+FRAME BLOCKER: PASS after ArtPack v1.4 replacement at existing paths. Actual10x TL/TR/BL/BR visual checks documented in VISUAL_COMPARISON.txt; HP/Hunger513x49px,96px source/24px runtime corners.
+461 native checks passed:187 economy/save;71 partial crafting/resume;130 skills/death/restart;73 inventory/fishing/layout/assets/controls. Parser/import successful, lossless PNG import compress/mode=0.
+Includes inventory0→1→0,caps,food heal/cooldown,Run/Queue/Info,save/load,15s fishing clock/interruptions,death/restart and responsive touch behavior.
+30 simulation/data/fishing/old PNG files identical to published v0.4.19. Between stopped candidate and this repair, runtime code unchanged; only two production PNGs changed. Logo/surface/actor transform untouched. No save wipe.
+Actual1448x1086,390/430 and reference side-by-side inspected. Existing isolated QA save used, no player save affected.
+Final local/browser and public checks recorded in browser-checks.json and DEPLOYMENT.txt. One publication only after visual acceptance. Actual gameplay MP4 retained in normal release procedure although animation unchanged.
+Source/Web/Evidence archives saved in existing Google Drive version directories. Previous failed candidate archives preserved. Cloud synchronization not independently verified.
+Final local WebGL: 14/14 checks PASS, zero browser errors. Actual browser frame joins also inspected at 10x. Gameplay MP4: 17 seconds from the real exported build.
