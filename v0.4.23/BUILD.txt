@@ -1,0 +1,6 @@
+RELIVOR v0.4.23
+English UI restored.
+Chapter 1 redesigned to 12 exploration areas.
+Chapter food rule: 1-3 food families, never more than 3; Chapter 1 uses Mushroom, Perch and Boar.
+Running and Fighting now have illustrated skill-card assets.
+Gameplay formulas and save schema are unchanged.

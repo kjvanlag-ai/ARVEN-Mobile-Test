@@ -1,0 +1,3201 @@
+{
+  "checks": [
+    {
+      "name": "old frame 1 Lake Edge -> 3 Lake Shore: restores",
+      "passed": true
+    },
+    {
+      "name": "old frame 1 Lake Edge -> 3 Lake Shore: current semantic location",
+      "passed": true
+    },
+    {
+      "name": "old frame 1 Lake Edge -> 3 Lake Shore: furthest semantic location",
+      "passed": true
+    },
+    {
+      "name": "old frame 1 Lake Edge -> 3 Lake Shore: revision stamped",
+      "passed": true
+    },
+    {
+      "name": "old frame 1 Lake Edge -> 3 Lake Shore: compatible active work preserved",
+      "passed": true
+    },
+    {
+      "name": "old frame 1 Lake Edge -> 3 Lake Shore: retired and future queue entries filtered",
+      "passed": true
+    },
+    {
+      "name": "old frame 1 Lake Edge -> 3 Lake Shore: suspended work filtered without data loss",
+      "passed": true
+    },
+    {
+      "name": "old frame 1 Lake Edge -> 3 Lake Shore: persistent xp unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 1 Lake Edge -> 3 Lake Shore: persistent vitality unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 1 Lake Edge -> 3 Lake Shore: persistent generation unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 1 Lake Edge -> 3 Lake Shore: persistent mastery unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 1 Lake Edge -> 3 Lake Shore: persistent auto unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 1 Lake Edge -> 3 Lake Shore: persistent unlocked unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 1 Lake Edge -> 3 Lake Shore: persistent settings unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 1 Lake Edge -> 3 Lake Shore: persistent chapter_complete unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 1 Lake Edge -> 3 Lake Shore: persistent best_bear_damage unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 1 Lake Edge -> 3 Lake Shore: persistent future_extension unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 1 Lake Edge -> 3 Lake Shore: run xp unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 1 Lake Edge -> 3 Lake Shore: run inventory unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 1 Lake Edge -> 3 Lake Shore: run cap unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 1 Lake Edge -> 3 Lake Shore: run weapon unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 1 Lake Edge -> 3 Lake Shore: run stages unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 1 Lake Edge -> 3 Lake Shore: run craft_paid unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 1 Lake Edge -> 3 Lake Shore: run craft_batches unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 1 Lake Edge -> 3 Lake Shore: run hp unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 1 Lake Edge -> 3 Lake Shore: run seconds unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 1 Lake Edge -> 3 Lake Shore: run hunger_multiplier unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 1 Lake Edge -> 3 Lake Shore: run food_timers unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 1 Lake Edge -> 3 Lake Shore: run paused unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 1 Lake Edge -> 3 Lake Shore: run dead unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 1 Lake Edge -> 3 Lake Shore: run future_extension unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 1 Lake Edge -> 3 Lake Shore: only retired done flags removed",
+      "passed": true
+    },
+    {
+      "name": "old frame 1 Lake Edge -> 3 Lake Shore: schema and XP curve untouched",
+      "passed": true
+    },
+    {
+      "name": "old frame 2 The Outer Forest -> 5 Pine Trail: restores",
+      "passed": true
+    },
+    {
+      "name": "old frame 2 The Outer Forest -> 5 Pine Trail: current semantic location",
+      "passed": true
+    },
+    {
+      "name": "old frame 2 The Outer Forest -> 5 Pine Trail: furthest semantic location",
+      "passed": true
+    },
+    {
+      "name": "old frame 2 The Outer Forest -> 5 Pine Trail: revision stamped",
+      "passed": true
+    },
+    {
+      "name": "old frame 2 The Outer Forest -> 5 Pine Trail: compatible active work preserved",
+      "passed": true
+    },
+    {
+      "name": "old frame 2 The Outer Forest -> 5 Pine Trail: retired and future queue entries filtered",
+      "passed": true
+    },
+    {
+      "name": "old frame 2 The Outer Forest -> 5 Pine Trail: suspended work filtered without data loss",
+      "passed": true
+    },
+    {
+      "name": "old frame 2 The Outer Forest -> 5 Pine Trail: persistent xp unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 2 The Outer Forest -> 5 Pine Trail: persistent vitality unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 2 The Outer Forest -> 5 Pine Trail: persistent generation unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 2 The Outer Forest -> 5 Pine Trail: persistent mastery unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 2 The Outer Forest -> 5 Pine Trail: persistent auto unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 2 The Outer Forest -> 5 Pine Trail: persistent unlocked unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 2 The Outer Forest -> 5 Pine Trail: persistent settings unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 2 The Outer Forest -> 5 Pine Trail: persistent chapter_complete unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 2 The Outer Forest -> 5 Pine Trail: persistent best_bear_damage unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 2 The Outer Forest -> 5 Pine Trail: persistent future_extension unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 2 The Outer Forest -> 5 Pine Trail: run xp unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 2 The Outer Forest -> 5 Pine Trail: run inventory unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 2 The Outer Forest -> 5 Pine Trail: run cap unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 2 The Outer Forest -> 5 Pine Trail: run weapon unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 2 The Outer Forest -> 5 Pine Trail: run stages unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 2 The Outer Forest -> 5 Pine Trail: run craft_paid unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 2 The Outer Forest -> 5 Pine Trail: run craft_batches unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 2 The Outer Forest -> 5 Pine Trail: run hp unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 2 The Outer Forest -> 5 Pine Trail: run seconds unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 2 The Outer Forest -> 5 Pine Trail: run hunger_multiplier unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 2 The Outer Forest -> 5 Pine Trail: run food_timers unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 2 The Outer Forest -> 5 Pine Trail: run paused unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 2 The Outer Forest -> 5 Pine Trail: run dead unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 2 The Outer Forest -> 5 Pine Trail: run future_extension unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 2 The Outer Forest -> 5 Pine Trail: only retired done flags removed",
+      "passed": true
+    },
+    {
+      "name": "old frame 2 The Outer Forest -> 5 Pine Trail: schema and XP curve untouched",
+      "passed": true
+    },
+    {
+      "name": "old frame 3 Creek Hollow -> 6 Creek Crossing: restores",
+      "passed": true
+    },
+    {
+      "name": "old frame 3 Creek Hollow -> 6 Creek Crossing: current semantic location",
+      "passed": true
+    },
+    {
+      "name": "old frame 3 Creek Hollow -> 6 Creek Crossing: furthest semantic location",
+      "passed": true
+    },
+    {
+      "name": "old frame 3 Creek Hollow -> 6 Creek Crossing: revision stamped",
+      "passed": true
+    },
+    {
+      "name": "old frame 3 Creek Hollow -> 6 Creek Crossing: compatible active work preserved",
+      "passed": true
+    },
+    {
+      "name": "old frame 3 Creek Hollow -> 6 Creek Crossing: retired and future queue entries filtered",
+      "passed": true
+    },
+    {
+      "name": "old frame 3 Creek Hollow -> 6 Creek Crossing: suspended work filtered without data loss",
+      "passed": true
+    },
+    {
+      "name": "old frame 3 Creek Hollow -> 6 Creek Crossing: persistent xp unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 3 Creek Hollow -> 6 Creek Crossing: persistent vitality unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 3 Creek Hollow -> 6 Creek Crossing: persistent generation unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 3 Creek Hollow -> 6 Creek Crossing: persistent mastery unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 3 Creek Hollow -> 6 Creek Crossing: persistent auto unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 3 Creek Hollow -> 6 Creek Crossing: persistent unlocked unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 3 Creek Hollow -> 6 Creek Crossing: persistent settings unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 3 Creek Hollow -> 6 Creek Crossing: persistent chapter_complete unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 3 Creek Hollow -> 6 Creek Crossing: persistent best_bear_damage unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 3 Creek Hollow -> 6 Creek Crossing: persistent future_extension unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 3 Creek Hollow -> 6 Creek Crossing: run xp unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 3 Creek Hollow -> 6 Creek Crossing: run inventory unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 3 Creek Hollow -> 6 Creek Crossing: run cap unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 3 Creek Hollow -> 6 Creek Crossing: run weapon unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 3 Creek Hollow -> 6 Creek Crossing: run stages unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 3 Creek Hollow -> 6 Creek Crossing: run craft_paid unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 3 Creek Hollow -> 6 Creek Crossing: run craft_batches unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 3 Creek Hollow -> 6 Creek Crossing: run hp unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 3 Creek Hollow -> 6 Creek Crossing: run seconds unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 3 Creek Hollow -> 6 Creek Crossing: run hunger_multiplier unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 3 Creek Hollow -> 6 Creek Crossing: run food_timers unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 3 Creek Hollow -> 6 Creek Crossing: run paused unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 3 Creek Hollow -> 6 Creek Crossing: run dead unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 3 Creek Hollow -> 6 Creek Crossing: run future_extension unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 3 Creek Hollow -> 6 Creek Crossing: only retired done flags removed",
+      "passed": true
+    },
+    {
+      "name": "old frame 3 Creek Hollow -> 6 Creek Crossing: schema and XP curve untouched",
+      "passed": true
+    },
+    {
+      "name": "old frame 4 Stony Rise -> 7 Stony Rise: restores",
+      "passed": true
+    },
+    {
+      "name": "old frame 4 Stony Rise -> 7 Stony Rise: current semantic location",
+      "passed": true
+    },
+    {
+      "name": "old frame 4 Stony Rise -> 7 Stony Rise: furthest semantic location",
+      "passed": true
+    },
+    {
+      "name": "old frame 4 Stony Rise -> 7 Stony Rise: revision stamped",
+      "passed": true
+    },
+    {
+      "name": "old frame 4 Stony Rise -> 7 Stony Rise: compatible active work preserved",
+      "passed": true
+    },
+    {
+      "name": "old frame 4 Stony Rise -> 7 Stony Rise: retired and future queue entries filtered",
+      "passed": true
+    },
+    {
+      "name": "old frame 4 Stony Rise -> 7 Stony Rise: suspended work filtered without data loss",
+      "passed": true
+    },
+    {
+      "name": "old frame 4 Stony Rise -> 7 Stony Rise: persistent xp unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 4 Stony Rise -> 7 Stony Rise: persistent vitality unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 4 Stony Rise -> 7 Stony Rise: persistent generation unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 4 Stony Rise -> 7 Stony Rise: persistent mastery unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 4 Stony Rise -> 7 Stony Rise: persistent auto unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 4 Stony Rise -> 7 Stony Rise: persistent unlocked unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 4 Stony Rise -> 7 Stony Rise: persistent settings unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 4 Stony Rise -> 7 Stony Rise: persistent chapter_complete unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 4 Stony Rise -> 7 Stony Rise: persistent best_bear_damage unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 4 Stony Rise -> 7 Stony Rise: persistent future_extension unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 4 Stony Rise -> 7 Stony Rise: run xp unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 4 Stony Rise -> 7 Stony Rise: run inventory unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 4 Stony Rise -> 7 Stony Rise: run cap unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 4 Stony Rise -> 7 Stony Rise: run weapon unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 4 Stony Rise -> 7 Stony Rise: run stages unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 4 Stony Rise -> 7 Stony Rise: run craft_paid unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 4 Stony Rise -> 7 Stony Rise: run craft_batches unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 4 Stony Rise -> 7 Stony Rise: run hp unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 4 Stony Rise -> 7 Stony Rise: run seconds unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 4 Stony Rise -> 7 Stony Rise: run hunger_multiplier unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 4 Stony Rise -> 7 Stony Rise: run food_timers unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 4 Stony Rise -> 7 Stony Rise: run paused unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 4 Stony Rise -> 7 Stony Rise: run dead unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 4 Stony Rise -> 7 Stony Rise: run future_extension unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 4 Stony Rise -> 7 Stony Rise: only retired done flags removed",
+      "passed": true
+    },
+    {
+      "name": "old frame 4 Stony Rise -> 7 Stony Rise: schema and XP curve untouched",
+      "passed": true
+    },
+    {
+      "name": "old frame 5 Old Hunter Trail -> 8 Old Hunter Camp: restores",
+      "passed": true
+    },
+    {
+      "name": "old frame 5 Old Hunter Trail -> 8 Old Hunter Camp: current semantic location",
+      "passed": true
+    },
+    {
+      "name": "old frame 5 Old Hunter Trail -> 8 Old Hunter Camp: furthest semantic location",
+      "passed": true
+    },
+    {
+      "name": "old frame 5 Old Hunter Trail -> 8 Old Hunter Camp: revision stamped",
+      "passed": true
+    },
+    {
+      "name": "old frame 5 Old Hunter Trail -> 8 Old Hunter Camp: compatible active work preserved",
+      "passed": true
+    },
+    {
+      "name": "old frame 5 Old Hunter Trail -> 8 Old Hunter Camp: retired and future queue entries filtered",
+      "passed": true
+    },
+    {
+      "name": "old frame 5 Old Hunter Trail -> 8 Old Hunter Camp: suspended work filtered without data loss",
+      "passed": true
+    },
+    {
+      "name": "old frame 5 Old Hunter Trail -> 8 Old Hunter Camp: persistent xp unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 5 Old Hunter Trail -> 8 Old Hunter Camp: persistent vitality unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 5 Old Hunter Trail -> 8 Old Hunter Camp: persistent generation unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 5 Old Hunter Trail -> 8 Old Hunter Camp: persistent mastery unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 5 Old Hunter Trail -> 8 Old Hunter Camp: persistent auto unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 5 Old Hunter Trail -> 8 Old Hunter Camp: persistent unlocked unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 5 Old Hunter Trail -> 8 Old Hunter Camp: persistent settings unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 5 Old Hunter Trail -> 8 Old Hunter Camp: persistent chapter_complete unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 5 Old Hunter Trail -> 8 Old Hunter Camp: persistent best_bear_damage unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 5 Old Hunter Trail -> 8 Old Hunter Camp: persistent future_extension unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 5 Old Hunter Trail -> 8 Old Hunter Camp: run xp unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 5 Old Hunter Trail -> 8 Old Hunter Camp: run inventory unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 5 Old Hunter Trail -> 8 Old Hunter Camp: run cap unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 5 Old Hunter Trail -> 8 Old Hunter Camp: run weapon unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 5 Old Hunter Trail -> 8 Old Hunter Camp: run stages unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 5 Old Hunter Trail -> 8 Old Hunter Camp: run craft_paid unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 5 Old Hunter Trail -> 8 Old Hunter Camp: run craft_batches unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 5 Old Hunter Trail -> 8 Old Hunter Camp: run hp unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 5 Old Hunter Trail -> 8 Old Hunter Camp: run seconds unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 5 Old Hunter Trail -> 8 Old Hunter Camp: run hunger_multiplier unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 5 Old Hunter Trail -> 8 Old Hunter Camp: run food_timers unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 5 Old Hunter Trail -> 8 Old Hunter Camp: run paused unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 5 Old Hunter Trail -> 8 Old Hunter Camp: run dead unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 5 Old Hunter Trail -> 8 Old Hunter Camp: run future_extension unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 5 Old Hunter Trail -> 8 Old Hunter Camp: only retired done flags removed",
+      "passed": true
+    },
+    {
+      "name": "old frame 5 Old Hunter Trail -> 8 Old Hunter Camp: schema and XP curve untouched",
+      "passed": true
+    },
+    {
+      "name": "old frame 6 Wolf Hollow -> 11 Wolf Hollow: restores",
+      "passed": true
+    },
+    {
+      "name": "old frame 6 Wolf Hollow -> 11 Wolf Hollow: current semantic location",
+      "passed": true
+    },
+    {
+      "name": "old frame 6 Wolf Hollow -> 11 Wolf Hollow: furthest semantic location",
+      "passed": true
+    },
+    {
+      "name": "old frame 6 Wolf Hollow -> 11 Wolf Hollow: revision stamped",
+      "passed": true
+    },
+    {
+      "name": "old frame 6 Wolf Hollow -> 11 Wolf Hollow: compatible active work preserved",
+      "passed": true
+    },
+    {
+      "name": "old frame 6 Wolf Hollow -> 11 Wolf Hollow: retired and future queue entries filtered",
+      "passed": true
+    },
+    {
+      "name": "old frame 6 Wolf Hollow -> 11 Wolf Hollow: suspended work filtered without data loss",
+      "passed": true
+    },
+    {
+      "name": "old frame 6 Wolf Hollow -> 11 Wolf Hollow: persistent xp unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 6 Wolf Hollow -> 11 Wolf Hollow: persistent vitality unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 6 Wolf Hollow -> 11 Wolf Hollow: persistent generation unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 6 Wolf Hollow -> 11 Wolf Hollow: persistent mastery unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 6 Wolf Hollow -> 11 Wolf Hollow: persistent auto unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 6 Wolf Hollow -> 11 Wolf Hollow: persistent unlocked unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 6 Wolf Hollow -> 11 Wolf Hollow: persistent settings unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 6 Wolf Hollow -> 11 Wolf Hollow: persistent chapter_complete unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 6 Wolf Hollow -> 11 Wolf Hollow: persistent best_bear_damage unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 6 Wolf Hollow -> 11 Wolf Hollow: persistent future_extension unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 6 Wolf Hollow -> 11 Wolf Hollow: run xp unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 6 Wolf Hollow -> 11 Wolf Hollow: run inventory unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 6 Wolf Hollow -> 11 Wolf Hollow: run cap unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 6 Wolf Hollow -> 11 Wolf Hollow: run weapon unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 6 Wolf Hollow -> 11 Wolf Hollow: run stages unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 6 Wolf Hollow -> 11 Wolf Hollow: run craft_paid unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 6 Wolf Hollow -> 11 Wolf Hollow: run craft_batches unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 6 Wolf Hollow -> 11 Wolf Hollow: run hp unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 6 Wolf Hollow -> 11 Wolf Hollow: run seconds unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 6 Wolf Hollow -> 11 Wolf Hollow: run hunger_multiplier unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 6 Wolf Hollow -> 11 Wolf Hollow: run food_timers unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 6 Wolf Hollow -> 11 Wolf Hollow: run paused unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 6 Wolf Hollow -> 11 Wolf Hollow: run dead unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 6 Wolf Hollow -> 11 Wolf Hollow: run future_extension unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 6 Wolf Hollow -> 11 Wolf Hollow: only retired done flags removed",
+      "passed": true
+    },
+    {
+      "name": "old frame 6 Wolf Hollow -> 11 Wolf Hollow: schema and XP curve untouched",
+      "passed": true
+    },
+    {
+      "name": "old frame 7 Bear Country -> 11 Wolf Hollow: restores",
+      "passed": true
+    },
+    {
+      "name": "old frame 7 Bear Country -> 11 Wolf Hollow: current semantic location",
+      "passed": true
+    },
+    {
+      "name": "old frame 7 Bear Country -> 11 Wolf Hollow: furthest semantic location",
+      "passed": true
+    },
+    {
+      "name": "old frame 7 Bear Country -> 11 Wolf Hollow: revision stamped",
+      "passed": true
+    },
+    {
+      "name": "old frame 7 Bear Country -> 11 Wolf Hollow: compatible active work preserved",
+      "passed": true
+    },
+    {
+      "name": "old frame 7 Bear Country -> 11 Wolf Hollow: retired and future queue entries filtered",
+      "passed": true
+    },
+    {
+      "name": "old frame 7 Bear Country -> 11 Wolf Hollow: suspended work filtered without data loss",
+      "passed": true
+    },
+    {
+      "name": "old frame 7 Bear Country -> 11 Wolf Hollow: persistent xp unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 7 Bear Country -> 11 Wolf Hollow: persistent vitality unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 7 Bear Country -> 11 Wolf Hollow: persistent generation unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 7 Bear Country -> 11 Wolf Hollow: persistent mastery unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 7 Bear Country -> 11 Wolf Hollow: persistent auto unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 7 Bear Country -> 11 Wolf Hollow: persistent unlocked unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 7 Bear Country -> 11 Wolf Hollow: persistent settings unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 7 Bear Country -> 11 Wolf Hollow: persistent chapter_complete unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 7 Bear Country -> 11 Wolf Hollow: persistent best_bear_damage unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 7 Bear Country -> 11 Wolf Hollow: persistent future_extension unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 7 Bear Country -> 11 Wolf Hollow: run xp unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 7 Bear Country -> 11 Wolf Hollow: run inventory unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 7 Bear Country -> 11 Wolf Hollow: run cap unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 7 Bear Country -> 11 Wolf Hollow: run weapon unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 7 Bear Country -> 11 Wolf Hollow: run stages unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 7 Bear Country -> 11 Wolf Hollow: run craft_paid unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 7 Bear Country -> 11 Wolf Hollow: run craft_batches unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 7 Bear Country -> 11 Wolf Hollow: run hp unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 7 Bear Country -> 11 Wolf Hollow: run seconds unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 7 Bear Country -> 11 Wolf Hollow: run hunger_multiplier unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 7 Bear Country -> 11 Wolf Hollow: run food_timers unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 7 Bear Country -> 11 Wolf Hollow: run paused unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 7 Bear Country -> 11 Wolf Hollow: run dead unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 7 Bear Country -> 11 Wolf Hollow: run future_extension unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 7 Bear Country -> 11 Wolf Hollow: only retired done flags removed",
+      "passed": true
+    },
+    {
+      "name": "old frame 7 Bear Country -> 11 Wolf Hollow: schema and XP curve untouched",
+      "passed": true
+    },
+    {
+      "name": "old frame 8 The Bear's Den -> 12 The Bear's Den: restores",
+      "passed": true
+    },
+    {
+      "name": "old frame 8 The Bear's Den -> 12 The Bear's Den: current semantic location",
+      "passed": true
+    },
+    {
+      "name": "old frame 8 The Bear's Den -> 12 The Bear's Den: furthest semantic location",
+      "passed": true
+    },
+    {
+      "name": "old frame 8 The Bear's Den -> 12 The Bear's Den: revision stamped",
+      "passed": true
+    },
+    {
+      "name": "old frame 8 The Bear's Den -> 12 The Bear's Den: compatible active work preserved",
+      "passed": true
+    },
+    {
+      "name": "old frame 8 The Bear's Den -> 12 The Bear's Den: retired and future queue entries filtered",
+      "passed": true
+    },
+    {
+      "name": "old frame 8 The Bear's Den -> 12 The Bear's Den: suspended work filtered without data loss",
+      "passed": true
+    },
+    {
+      "name": "old frame 8 The Bear's Den -> 12 The Bear's Den: persistent xp unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 8 The Bear's Den -> 12 The Bear's Den: persistent vitality unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 8 The Bear's Den -> 12 The Bear's Den: persistent generation unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 8 The Bear's Den -> 12 The Bear's Den: persistent mastery unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 8 The Bear's Den -> 12 The Bear's Den: persistent auto unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 8 The Bear's Den -> 12 The Bear's Den: persistent unlocked unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 8 The Bear's Den -> 12 The Bear's Den: persistent settings unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 8 The Bear's Den -> 12 The Bear's Den: persistent chapter_complete unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 8 The Bear's Den -> 12 The Bear's Den: persistent best_bear_damage unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 8 The Bear's Den -> 12 The Bear's Den: persistent future_extension unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 8 The Bear's Den -> 12 The Bear's Den: run xp unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 8 The Bear's Den -> 12 The Bear's Den: run inventory unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 8 The Bear's Den -> 12 The Bear's Den: run cap unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 8 The Bear's Den -> 12 The Bear's Den: run weapon unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 8 The Bear's Den -> 12 The Bear's Den: run stages unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 8 The Bear's Den -> 12 The Bear's Den: run craft_paid unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 8 The Bear's Den -> 12 The Bear's Den: run craft_batches unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 8 The Bear's Den -> 12 The Bear's Den: run hp unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 8 The Bear's Den -> 12 The Bear's Den: run seconds unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 8 The Bear's Den -> 12 The Bear's Den: run hunger_multiplier unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 8 The Bear's Den -> 12 The Bear's Den: run food_timers unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 8 The Bear's Den -> 12 The Bear's Den: run paused unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 8 The Bear's Den -> 12 The Bear's Den: run dead unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 8 The Bear's Den -> 12 The Bear's Den: run future_extension unchanged",
+      "passed": true
+    },
+    {
+      "name": "old frame 8 The Bear's Den -> 12 The Bear's Den: only retired done flags removed",
+      "passed": true
+    },
+    {
+      "name": "old frame 8 The Bear's Den -> 12 The Bear's Den: schema and XP curve untouched",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel2: restores safely",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel2: cancellation resets all active ownership fields",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel2: remaining queue order preserved",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel2: persistent xp unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel2: persistent vitality unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel2: persistent generation unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel2: persistent mastery unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel2: persistent auto unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel2: persistent unlocked unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel2: persistent settings unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel2: persistent chapter_complete unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel2: persistent best_bear_damage unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel2: persistent future_extension unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel2: run xp unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel2: run inventory unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel2: run cap unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel2: run weapon unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel2: run stages unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel2: run craft_paid unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel2: run craft_batches unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel2: run hp unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel2: run seconds unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel2: run hunger_multiplier unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel2: run food_timers unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel2: run paused unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel2: run dead unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel2: run future_extension unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel2: only retired done flags removed",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel2: schema and XP curve untouched",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel2: zero output, XP, food, completion or time after cancellation",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel3: restores safely",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel3: cancellation resets all active ownership fields",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel3: remaining queue order preserved",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel3: persistent xp unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel3: persistent vitality unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel3: persistent generation unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel3: persistent mastery unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel3: persistent auto unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel3: persistent unlocked unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel3: persistent settings unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel3: persistent chapter_complete unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel3: persistent best_bear_damage unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel3: persistent future_extension unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel3: run xp unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel3: run inventory unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel3: run cap unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel3: run weapon unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel3: run stages unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel3: run craft_paid unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel3: run craft_batches unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel3: run hp unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel3: run seconds unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel3: run hunger_multiplier unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel3: run food_timers unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel3: run paused unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel3: run dead unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel3: run future_extension unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel3: only retired done flags removed",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel3: schema and XP curve untouched",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel3: zero output, XP, food, completion or time after cancellation",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel4: restores safely",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel4: cancellation resets all active ownership fields",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel4: remaining queue order preserved",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel4: persistent xp unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel4: persistent vitality unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel4: persistent generation unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel4: persistent mastery unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel4: persistent auto unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel4: persistent unlocked unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel4: persistent settings unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel4: persistent chapter_complete unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel4: persistent best_bear_damage unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel4: persistent future_extension unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel4: run xp unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel4: run inventory unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel4: run cap unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel4: run weapon unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel4: run stages unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel4: run craft_paid unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel4: run craft_batches unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel4: run hp unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel4: run seconds unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel4: run hunger_multiplier unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel4: run food_timers unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel4: run paused unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel4: run dead unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel4: run future_extension unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel4: only retired done flags removed",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel4: schema and XP curve untouched",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel4: zero output, XP, food, completion or time after cancellation",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel5: restores safely",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel5: cancellation resets all active ownership fields",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel5: remaining queue order preserved",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel5: persistent xp unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel5: persistent vitality unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel5: persistent generation unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel5: persistent mastery unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel5: persistent auto unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel5: persistent unlocked unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel5: persistent settings unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel5: persistent chapter_complete unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel5: persistent best_bear_damage unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel5: persistent future_extension unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel5: run xp unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel5: run inventory unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel5: run cap unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel5: run weapon unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel5: run stages unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel5: run craft_paid unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel5: run craft_batches unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel5: run hp unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel5: run seconds unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel5: run hunger_multiplier unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel5: run food_timers unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel5: run paused unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel5: run dead unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel5: run future_extension unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel5: only retired done flags removed",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel5: schema and XP curve untouched",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel5: zero output, XP, food, completion or time after cancellation",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel6: restores safely",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel6: cancellation resets all active ownership fields",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel6: remaining queue order preserved",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel6: persistent xp unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel6: persistent vitality unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel6: persistent generation unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel6: persistent mastery unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel6: persistent auto unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel6: persistent unlocked unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel6: persistent settings unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel6: persistent chapter_complete unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel6: persistent best_bear_damage unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel6: persistent future_extension unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel6: run xp unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel6: run inventory unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel6: run cap unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel6: run weapon unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel6: run stages unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel6: run craft_paid unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel6: run craft_batches unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel6: run hp unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel6: run seconds unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel6: run hunger_multiplier unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel6: run food_timers unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel6: run paused unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel6: run dead unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel6: run future_extension unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel6: only retired done flags removed",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel6: schema and XP curve untouched",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel6: zero output, XP, food, completion or time after cancellation",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel7: restores safely",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel7: cancellation resets all active ownership fields",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel7: remaining queue order preserved",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel7: persistent xp unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel7: persistent vitality unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel7: persistent generation unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel7: persistent mastery unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel7: persistent auto unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel7: persistent unlocked unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel7: persistent settings unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel7: persistent chapter_complete unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel7: persistent best_bear_damage unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel7: persistent future_extension unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel7: run xp unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel7: run inventory unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel7: run cap unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel7: run weapon unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel7: run stages unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel7: run craft_paid unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel7: run craft_batches unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel7: run hp unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel7: run seconds unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel7: run hunger_multiplier unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel7: run food_timers unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel7: run paused unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel7: run dead unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel7: run future_extension unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel7: only retired done flags removed",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel7: schema and XP curve untouched",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel7: zero output, XP, food, completion or time after cancellation",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel8: restores safely",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel8: cancellation resets all active ownership fields",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel8: remaining queue order preserved",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel8: persistent xp unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel8: persistent vitality unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel8: persistent generation unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel8: persistent mastery unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel8: persistent auto unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel8: persistent unlocked unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel8: persistent settings unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel8: persistent chapter_complete unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel8: persistent best_bear_damage unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel8: persistent future_extension unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel8: run xp unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel8: run inventory unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel8: run cap unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel8: run weapon unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel8: run stages unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel8: run craft_paid unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel8: run craft_batches unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel8: run hp unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel8: run seconds unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel8: run hunger_multiplier unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel8: run food_timers unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel8: run paused unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel8: run dead unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel8: run future_extension unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel8: only retired done flags removed",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel8: schema and XP curve untouched",
+      "passed": true
+    },
+    {
+      "name": "legacy active travel8: zero output, XP, food, completion or time after cancellation",
+      "passed": true
+    },
+    {
+      "name": "legacy active eel: restores safely",
+      "passed": true
+    },
+    {
+      "name": "legacy active eel: cancellation resets all active ownership fields",
+      "passed": true
+    },
+    {
+      "name": "legacy active eel: remaining queue order preserved",
+      "passed": true
+    },
+    {
+      "name": "legacy active eel: persistent xp unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active eel: persistent vitality unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active eel: persistent generation unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active eel: persistent mastery unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active eel: persistent auto unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active eel: persistent unlocked unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active eel: persistent settings unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active eel: persistent chapter_complete unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active eel: persistent best_bear_damage unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active eel: persistent future_extension unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active eel: run xp unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active eel: run inventory unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active eel: run cap unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active eel: run weapon unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active eel: run stages unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active eel: run craft_paid unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active eel: run craft_batches unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active eel: run hp unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active eel: run seconds unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active eel: run hunger_multiplier unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active eel: run food_timers unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active eel: run paused unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active eel: run dead unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active eel: run future_extension unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active eel: only retired done flags removed",
+      "passed": true
+    },
+    {
+      "name": "legacy active eel: schema and XP curve untouched",
+      "passed": true
+    },
+    {
+      "name": "legacy active eel: zero output, XP, food, completion or time after cancellation",
+      "passed": true
+    },
+    {
+      "name": "legacy active cook_eel: restores safely",
+      "passed": true
+    },
+    {
+      "name": "legacy active cook_eel: cancellation resets all active ownership fields",
+      "passed": true
+    },
+    {
+      "name": "legacy active cook_eel: remaining queue order preserved",
+      "passed": true
+    },
+    {
+      "name": "legacy active cook_eel: persistent xp unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active cook_eel: persistent vitality unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active cook_eel: persistent generation unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active cook_eel: persistent mastery unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active cook_eel: persistent auto unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active cook_eel: persistent unlocked unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active cook_eel: persistent settings unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active cook_eel: persistent chapter_complete unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active cook_eel: persistent best_bear_damage unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active cook_eel: persistent future_extension unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active cook_eel: run xp unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active cook_eel: run inventory unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active cook_eel: run cap unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active cook_eel: run weapon unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active cook_eel: run stages unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active cook_eel: run craft_paid unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active cook_eel: run craft_batches unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active cook_eel: run hp unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active cook_eel: run seconds unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active cook_eel: run hunger_multiplier unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active cook_eel: run food_timers unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active cook_eel: run paused unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active cook_eel: run dead unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active cook_eel: run future_extension unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active cook_eel: only retired done flags removed",
+      "passed": true
+    },
+    {
+      "name": "legacy active cook_eel: schema and XP curve untouched",
+      "passed": true
+    },
+    {
+      "name": "legacy active cook_eel: zero output, XP, food, completion or time after cancellation",
+      "passed": true
+    },
+    {
+      "name": "legacy active eat_eel: restores safely",
+      "passed": true
+    },
+    {
+      "name": "legacy active eat_eel: cancellation resets all active ownership fields",
+      "passed": true
+    },
+    {
+      "name": "legacy active eat_eel: remaining queue order preserved",
+      "passed": true
+    },
+    {
+      "name": "legacy active eat_eel: persistent xp unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active eat_eel: persistent vitality unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active eat_eel: persistent generation unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active eat_eel: persistent mastery unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active eat_eel: persistent auto unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active eat_eel: persistent unlocked unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active eat_eel: persistent settings unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active eat_eel: persistent chapter_complete unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active eat_eel: persistent best_bear_damage unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active eat_eel: persistent future_extension unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active eat_eel: run xp unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active eat_eel: run inventory unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active eat_eel: run cap unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active eat_eel: run weapon unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active eat_eel: run stages unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active eat_eel: run craft_paid unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active eat_eel: run craft_batches unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active eat_eel: run hp unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active eat_eel: run seconds unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active eat_eel: run hunger_multiplier unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active eat_eel: run food_timers unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active eat_eel: run paused unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active eat_eel: run dead unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active eat_eel: run future_extension unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy active eat_eel: only retired done flags removed",
+      "passed": true
+    },
+    {
+      "name": "legacy active eat_eel: schema and XP curve untouched",
+      "passed": true
+    },
+    {
+      "name": "legacy active eat_eel: zero output, XP, food, completion or time after cancellation",
+      "passed": true
+    },
+    {
+      "name": "queue ownership case 0: restores",
+      "passed": true
+    },
+    {
+      "name": "queue ownership case 0: exact duplicate occurrence and index preserved",
+      "passed": true
+    },
+    {
+      "name": "queue ownership case 0: active partial work retained",
+      "passed": true
+    },
+    {
+      "name": "queue ownership case 0: completion removes only the original duplicate",
+      "passed": true
+    },
+    {
+      "name": "queue ownership case 1: restores",
+      "passed": true
+    },
+    {
+      "name": "queue ownership case 1: exact duplicate occurrence and index preserved",
+      "passed": true
+    },
+    {
+      "name": "queue ownership case 1: active partial work retained",
+      "passed": true
+    },
+    {
+      "name": "queue ownership case 1: completion removes only the original duplicate",
+      "passed": true
+    },
+    {
+      "name": "queue ownership case 2: restores",
+      "passed": true
+    },
+    {
+      "name": "queue ownership case 2: exact duplicate occurrence and index preserved",
+      "passed": true
+    },
+    {
+      "name": "queue ownership case 2: active partial work retained",
+      "passed": true
+    },
+    {
+      "name": "future frame active cook_boar: restore accepted",
+      "passed": true
+    },
+    {
+      "name": "future frame active cook_boar: cancellation resets all active ownership fields",
+      "passed": true
+    },
+    {
+      "name": "future frame active cook_boar: persistent xp unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active cook_boar: persistent vitality unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active cook_boar: persistent generation unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active cook_boar: persistent mastery unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active cook_boar: persistent auto unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active cook_boar: persistent unlocked unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active cook_boar: persistent settings unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active cook_boar: persistent chapter_complete unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active cook_boar: persistent best_bear_damage unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active cook_boar: persistent future_extension unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active cook_boar: run xp unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active cook_boar: run inventory unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active cook_boar: run cap unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active cook_boar: run weapon unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active cook_boar: run stages unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active cook_boar: run craft_paid unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active cook_boar: run craft_batches unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active cook_boar: run hp unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active cook_boar: run seconds unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active cook_boar: run hunger_multiplier unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active cook_boar: run food_timers unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active cook_boar: run paused unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active cook_boar: run dead unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active cook_boar: run future_extension unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active cook_boar: only retired done flags removed",
+      "passed": true
+    },
+    {
+      "name": "future frame active cook_boar: schema and XP curve untouched",
+      "passed": true
+    },
+    {
+      "name": "future frame active wooden_spear: restore accepted",
+      "passed": true
+    },
+    {
+      "name": "future frame active wooden_spear: cancellation resets all active ownership fields",
+      "passed": true
+    },
+    {
+      "name": "future frame active wooden_spear: persistent xp unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active wooden_spear: persistent vitality unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active wooden_spear: persistent generation unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active wooden_spear: persistent mastery unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active wooden_spear: persistent auto unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active wooden_spear: persistent unlocked unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active wooden_spear: persistent settings unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active wooden_spear: persistent chapter_complete unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active wooden_spear: persistent best_bear_damage unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active wooden_spear: persistent future_extension unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active wooden_spear: run xp unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active wooden_spear: run inventory unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active wooden_spear: run cap unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active wooden_spear: run weapon unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active wooden_spear: run stages unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active wooden_spear: run craft_paid unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active wooden_spear: run craft_batches unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active wooden_spear: run hp unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active wooden_spear: run seconds unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active wooden_spear: run hunger_multiplier unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active wooden_spear: run food_timers unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active wooden_spear: run paused unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active wooden_spear: run dead unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active wooden_spear: run future_extension unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active wooden_spear: only retired done flags removed",
+      "passed": true
+    },
+    {
+      "name": "future frame active wooden_spear: schema and XP curve untouched",
+      "passed": true
+    },
+    {
+      "name": "future frame active fight_wolf: restore accepted",
+      "passed": true
+    },
+    {
+      "name": "future frame active fight_wolf: cancellation resets all active ownership fields",
+      "passed": true
+    },
+    {
+      "name": "future frame active fight_wolf: persistent xp unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active fight_wolf: persistent vitality unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active fight_wolf: persistent generation unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active fight_wolf: persistent mastery unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active fight_wolf: persistent auto unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active fight_wolf: persistent unlocked unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active fight_wolf: persistent settings unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active fight_wolf: persistent chapter_complete unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active fight_wolf: persistent best_bear_damage unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active fight_wolf: persistent future_extension unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active fight_wolf: run xp unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active fight_wolf: run inventory unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active fight_wolf: run cap unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active fight_wolf: run weapon unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active fight_wolf: run stages unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active fight_wolf: run craft_paid unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active fight_wolf: run craft_batches unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active fight_wolf: run hp unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active fight_wolf: run seconds unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active fight_wolf: run hunger_multiplier unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active fight_wolf: run food_timers unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active fight_wolf: run paused unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active fight_wolf: run dead unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active fight_wolf: run future_extension unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active fight_wolf: only retired done flags removed",
+      "passed": true
+    },
+    {
+      "name": "future frame active fight_wolf: schema and XP curve untouched",
+      "passed": true
+    },
+    {
+      "name": "future frame active bear_territory: restore accepted",
+      "passed": true
+    },
+    {
+      "name": "future frame active bear_territory: cancellation resets all active ownership fields",
+      "passed": true
+    },
+    {
+      "name": "future frame active bear_territory: persistent xp unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active bear_territory: persistent vitality unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active bear_territory: persistent generation unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active bear_territory: persistent mastery unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active bear_territory: persistent auto unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active bear_territory: persistent unlocked unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active bear_territory: persistent settings unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active bear_territory: persistent chapter_complete unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active bear_territory: persistent best_bear_damage unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active bear_territory: persistent future_extension unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active bear_territory: run xp unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active bear_territory: run inventory unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active bear_territory: run cap unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active bear_territory: run weapon unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active bear_territory: run stages unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active bear_territory: run craft_paid unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active bear_territory: run craft_batches unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active bear_territory: run hp unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active bear_territory: run seconds unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active bear_territory: run hunger_multiplier unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active bear_territory: run food_timers unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active bear_territory: run paused unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active bear_territory: run dead unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active bear_territory: run future_extension unchanged",
+      "passed": true
+    },
+    {
+      "name": "future frame active bear_territory: only retired done flags removed",
+      "passed": true
+    },
+    {
+      "name": "future frame active bear_territory: schema and XP curve untouched",
+      "passed": true
+    },
+    {
+      "name": "fresh v0.4.23 has content_revision 1",
+      "passed": true
+    },
+    {
+      "name": "fresh run starts in Forest Edge",
+      "passed": true
+    },
+    {
+      "name": "fresh save does not require migration",
+      "passed": true
+    },
+    {
+      "name": "fresh current save restores",
+      "passed": true
+    },
+    {
+      "name": "fresh current save stays semantically identical after restore",
+      "passed": true
+    },
+    {
+      "name": "legacy save requires content migration",
+      "passed": true
+    },
+    {
+      "name": "idempotence fixture migrates",
+      "passed": true
+    },
+    {
+      "name": "migrated save no longer requires migration",
+      "passed": true
+    },
+    {
+      "name": "second load/save is semantically identical",
+      "passed": true
+    },
+    {
+      "name": "third load/save is semantically identical",
+      "passed": true
+    },
+    {
+      "name": "future content revision rejected without state mutation",
+      "passed": true
+    },
+    {
+      "name": "legacy suspended creek: 30s old work survives shortened current duration",
+      "passed": true
+    },
+    {
+      "name": "legacy suspended creek: exact unfinished progress/combat preserved",
+      "passed": true
+    },
+    {
+      "name": "legacy suspended creek: persistent xp unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy suspended creek: persistent vitality unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy suspended creek: persistent generation unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy suspended creek: persistent mastery unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy suspended creek: persistent auto unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy suspended creek: persistent unlocked unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy suspended creek: persistent settings unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy suspended creek: persistent chapter_complete unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy suspended creek: persistent best_bear_damage unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy suspended creek: persistent future_extension unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy suspended creek: run xp unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy suspended creek: run inventory unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy suspended creek: run cap unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy suspended creek: run weapon unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy suspended creek: run stages unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy suspended creek: run craft_paid unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy suspended creek: run craft_batches unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy suspended creek: run hp unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy suspended creek: run seconds unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy suspended creek: run hunger_multiplier unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy suspended creek: run food_timers unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy suspended creek: run paused unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy suspended creek: run dead unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy suspended creek: run future_extension unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy suspended creek: only retired done flags removed",
+      "passed": true
+    },
+    {
+      "name": "legacy suspended creek: schema and XP curve untouched",
+      "passed": true
+    },
+    {
+      "name": "legacy suspended creek: restore itself grants no completion",
+      "passed": true
+    },
+    {
+      "name": "legacy suspended creek: current marker reload preserves all work unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy suspended creek: second reload remains idempotent",
+      "passed": true
+    },
+    {
+      "name": "legacy suspended creek: real action resume succeeds",
+      "passed": true
+    },
+    {
+      "name": "legacy suspended creek: resume keeps exact progress and waits for tick",
+      "passed": true
+    },
+    {
+      "name": "legacy suspended creek: no XP/material reward on restore or resume",
+      "passed": true
+    },
+    {
+      "name": "legacy suspended creek: completes once only after real simulation tick",
+      "passed": true
+    },
+    {
+      "name": "legacy duration exception: out-of-range unrelated Perch progress remains rejected",
+      "passed": true
+    },
+    {
+      "name": "legacy duration exception: creek old-duration boundary 50s rejected",
+      "passed": true
+    },
+    {
+      "name": "unmapped legacy frame 0: rejected without state mutation",
+      "passed": true
+    },
+    {
+      "name": "unmapped legacy frame 9: rejected without state mutation",
+      "passed": true
+    },
+    {
+      "name": "unmapped legacy frame 1.5: rejected without state mutation",
+      "passed": true
+    },
+    {
+      "name": "unmapped legacy furthest 0: rejected without state mutation",
+      "passed": true
+    },
+    {
+      "name": "unmapped legacy furthest 9: rejected without state mutation",
+      "passed": true
+    },
+    {
+      "name": "unmapped legacy furthest 1.5: rejected without state mutation",
+      "passed": true
+    },
+    {
+      "name": "runtime complete eel: cancellation resets all active ownership fields",
+      "passed": true
+    },
+    {
+      "name": "runtime complete eel: no rewards, XP, food, damage or location change",
+      "passed": true
+    },
+    {
+      "name": "runtime step eel: cancellation resets all active ownership fields",
+      "passed": true
+    },
+    {
+      "name": "runtime step eel: no rewards, XP, food, damage or location change",
+      "passed": true
+    },
+    {
+      "name": "runtime complete cook_eel: cancellation resets all active ownership fields",
+      "passed": true
+    },
+    {
+      "name": "runtime complete cook_eel: no rewards, XP, food, damage or location change",
+      "passed": true
+    },
+    {
+      "name": "runtime step cook_eel: cancellation resets all active ownership fields",
+      "passed": true
+    },
+    {
+      "name": "runtime step cook_eel: no rewards, XP, food, damage or location change",
+      "passed": true
+    },
+    {
+      "name": "runtime complete eat_eel: cancellation resets all active ownership fields",
+      "passed": true
+    },
+    {
+      "name": "runtime complete eat_eel: no rewards, XP, food, damage or location change",
+      "passed": true
+    },
+    {
+      "name": "runtime step eat_eel: cancellation resets all active ownership fields",
+      "passed": true
+    },
+    {
+      "name": "runtime step eat_eel: no rewards, XP, food, damage or location change",
+      "passed": true
+    },
+    {
+      "name": "runtime complete cook_boar: cancellation resets all active ownership fields",
+      "passed": true
+    },
+    {
+      "name": "runtime complete cook_boar: no rewards, XP, food, damage or location change",
+      "passed": true
+    },
+    {
+      "name": "runtime step cook_boar: cancellation resets all active ownership fields",
+      "passed": true
+    },
+    {
+      "name": "runtime step cook_boar: no rewards, XP, food, damage or location change",
+      "passed": true
+    },
+    {
+      "name": "runtime complete fight_bear: cancellation resets all active ownership fields",
+      "passed": true
+    },
+    {
+      "name": "runtime complete fight_bear: no rewards, XP, food, damage or location change",
+      "passed": true
+    },
+    {
+      "name": "runtime step fight_bear: cancellation resets all active ownership fields",
+      "passed": true
+    },
+    {
+      "name": "runtime step fight_bear: no rewards, XP, food, damage or location change",
+      "passed": true
+    },
+    {
+      "name": "runtime complete travel2: cancellation resets all active ownership fields",
+      "passed": true
+    },
+    {
+      "name": "runtime complete travel2: no rewards, XP, food, damage or location change",
+      "passed": true
+    },
+    {
+      "name": "runtime step travel2: cancellation resets all active ownership fields",
+      "passed": true
+    },
+    {
+      "name": "runtime step travel2: no rewards, XP, food, damage or location change",
+      "passed": true
+    },
+    {
+      "name": "runtime guard positive control: Catch Perch starts",
+      "passed": true
+    },
+    {
+      "name": "runtime guard positive control: legitimate fishing rewards remain",
+      "passed": true
+    },
+    {
+      "name": "explicit chapter-2 metadata prevents Chapter-1 discovery/start even at a matching frame",
+      "passed": true
+    },
+    {
+      "name": "explicit chapter-2 metadata complete: cancellation resets all active ownership fields",
+      "passed": true
+    },
+    {
+      "name": "explicit chapter-2 metadata prevents Eel output/XP even at a Chapter-1 frame",
+      "passed": true
+    },
+    {
+      "name": "explicit chapter-2 metadata prevents Chapter-1 discovery/start even at a matching frame",
+      "passed": true
+    },
+    {
+      "name": "explicit chapter-2 metadata step: cancellation resets all active ownership fields",
+      "passed": true
+    },
+    {
+      "name": "explicit chapter-2 metadata prevents Eel output/XP even at a Chapter-1 frame",
+      "passed": true
+    },
+    {
+      "name": "backup integration: legacy restore accepted",
+      "passed": true
+    },
+    {
+      "name": "backup integration: byte-exact immutable legacy backup precedes state mutation",
+      "passed": true
+    },
+    {
+      "name": "backup integration: preserve event precedes migrated write",
+      "passed": true
+    },
+    {
+      "name": "backup integration: migrated save written with marker",
+      "passed": true
+    },
+    {
+      "name": "backup integration: current save reload accepted",
+      "passed": true
+    },
+    {
+      "name": "backup integration: second load does not recreate/overwrite backup",
+      "passed": true
+    },
+    {
+      "name": "backup failure: legacy restore rejected",
+      "passed": true
+    },
+    {
+      "name": "backup failure: save blocked and original in-memory state untouched",
+      "passed": true
+    },
+    {
+      "name": "backup failure: original legacy save cannot be overwritten",
+      "passed": true
+    },
+    {
+      "name": "backup failure during startup: no unreadable/fallback retry or overwrite",
+      "passed": true
+    },
+    {
+      "name": "current storage save skips legacy backup/migration",
+      "passed": true
+    }
+  ],
+  "failed": 0,
+  "mapping_results": [
+    {
+      "new_frame": 3,
+      "new_name": "Lake Shore",
+      "old_frame": 1,
+      "old_name": "Lake Edge",
+      "passed": true
+    },
+    {
+      "new_frame": 5,
+      "new_name": "Pine Trail",
+      "old_frame": 2,
+      "old_name": "The Outer Forest",
+      "passed": true
+    },
+    {
+      "new_frame": 6,
+      "new_name": "Creek Crossing",
+      "old_frame": 3,
+      "old_name": "Creek Hollow",
+      "passed": true
+    },
+    {
+      "new_frame": 7,
+      "new_name": "Stony Rise",
+      "old_frame": 4,
+      "old_name": "Stony Rise",
+      "passed": true
+    },
+    {
+      "new_frame": 8,
+      "new_name": "Old Hunter Camp",
+      "old_frame": 5,
+      "old_name": "Old Hunter Trail",
+      "passed": true
+    },
+    {
+      "new_frame": 11,
+      "new_name": "Wolf Hollow",
+      "old_frame": 6,
+      "old_name": "Wolf Hollow",
+      "passed": true
+    },
+    {
+      "new_frame": 11,
+      "new_name": "Wolf Hollow",
+      "old_frame": 7,
+      "old_name": "Bear Country",
+      "passed": true
+    },
+    {
+      "new_frame": 12,
+      "new_name": "The Bear's Den",
+      "old_frame": 8,
+      "old_name": "The Bear's Den",
+      "passed": true
+    }
+  ],
+  "passed": 784,
+  "total": 784
+}

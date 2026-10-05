@@ -1,0 +1,11 @@
+RELIVOR v0.4.23 — 2026-10-05
+
+Supplied English large-card UI, Running/Fighting painted PNGs and the twelve-area Chapter 1 route retained. First food sources: Mushroom (1), Perch (3), Boar (10). Eel actions remain frame99 for later content.
+
+Content revision1 distinguishes fresh/current saves from the old eight-area layout. Explicit old frame/furthest mapping: 1→3,2→5,3→6,4→7,5→8,6→11,7→11,8→12. Only repurposed travel/Eel work and incompatible future work are cancelled/removed; all earned XP, inventory (including old Eel), equipment, paid construction/craft work, Vitality, generation, mastery/Auto/settings, HP/time and permanent records remain.
+Immutable .pre-v0.4.23 archive is verified before mutation; different incoming saves receive separate hash-qualified archives. Backup failure blocks saving and fallback. Migration is idempotent; unsupported revisions fail closed.
+Invalid content is blocked at discovery/start, simulation tick and completion, before XP/rewards/payment/loot. The inherited auto-eat of already owned grandfathered Eel remains unchanged.
+Old suspended Creek work up to its old50s limit remains exact despite the supplied new18s duration; reward happens only after a real resume/tick.
+
+Earlier local import repairs retained: actual Stone SVG restored, bad live_action script path corrected, residual Danish display labels translated, clipped English progression label shortened, application version metadata corrected.
+No new art, redesign, gameplay formula, recipe, combat stat, inventory-cap or save-key change in this implementation pass. The supplied new-route action durations are retained; migration handles their legacy work.

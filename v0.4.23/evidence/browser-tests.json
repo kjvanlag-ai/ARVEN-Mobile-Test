@@ -1,0 +1,1239 @@
+{
+  "base": "http://127.0.0.1:8061/",
+  "prefix": "",
+  "legacyInput": "../v0.4.22/qa/fishing.json",
+  "totals": {
+    "checks": 278,
+    "passed": 278,
+    "failed": 0,
+    "browserErrors": 0
+  },
+  "mappings": [
+    {
+      "oldFrame": 1,
+      "oldName": "Lake Edge",
+      "newFrame": 3,
+      "newName": "Lake Shore",
+      "passed": true
+    },
+    {
+      "oldFrame": 2,
+      "oldName": "The Outer Forest",
+      "newFrame": 5,
+      "newName": "Pine Trail",
+      "passed": true
+    },
+    {
+      "oldFrame": 3,
+      "oldName": "Creek Hollow",
+      "newFrame": 6,
+      "newName": "Creek Crossing",
+      "passed": true
+    },
+    {
+      "oldFrame": 4,
+      "oldName": "Stony Rise",
+      "newFrame": 7,
+      "newName": "Stony Rise",
+      "passed": true
+    },
+    {
+      "oldFrame": 5,
+      "oldName": "Old Hunter Trail",
+      "newFrame": 8,
+      "newName": "Old Hunter Camp",
+      "passed": true
+    },
+    {
+      "oldFrame": 6,
+      "oldName": "Wolf Hollow",
+      "newFrame": 11,
+      "newName": "Wolf Hollow",
+      "passed": true
+    },
+    {
+      "oldFrame": 7,
+      "oldName": "Bear Country",
+      "newFrame": 11,
+      "newName": "Wolf Hollow",
+      "passed": true
+    },
+    {
+      "oldFrame": 8,
+      "oldName": "The Bear's Den",
+      "newFrame": 12,
+      "newName": "The Bear's Den",
+      "passed": true
+    }
+  ],
+  "checks": [
+    {
+      "name": "fresh title is RELIVOR v0.4.23",
+      "passed": true
+    },
+    {
+      "name": "fresh profile starts in Forest Edge (new area 1)",
+      "passed": true
+    },
+    {
+      "name": "fresh profile carries content revision 1",
+      "passed": true
+    },
+    {
+      "name": "fresh profile does not create a migration archive",
+      "passed": true
+    },
+    {
+      "name": "legacy 1 Lake Edge -> 3 Lake Shore",
+      "passed": true,
+      "details": {
+        "frame": 3,
+        "furthest": 3
+      }
+    },
+    {
+      "name": "legacy 1 Lake Edge -> 3 Lake Shore: content revision stamped once",
+      "passed": true
+    },
+    {
+      "name": "legacy 1 Lake Edge -> 3 Lake Shore: retired travel/Eel queue removed without reordering compatible duplicates",
+      "passed": true
+    },
+    {
+      "name": "legacy 1 Lake Edge -> 3 Lake Shore: retired suspended work removed; compatible work retained",
+      "passed": true
+    },
+    {
+      "name": "legacy 1 Lake Edge -> 3 Lake Shore: retired done flags removed; earned rod/campfire retained",
+      "passed": true
+    },
+    {
+      "name": "legacy 1 Lake Edge -> 3 Lake Shore: persistent.xp unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 1 Lake Edge -> 3 Lake Shore: persistent.mastery unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 1 Lake Edge -> 3 Lake Shore: persistent.auto unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 1 Lake Edge -> 3 Lake Shore: persistent.vitality unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 1 Lake Edge -> 3 Lake Shore: persistent.generation unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 1 Lake Edge -> 3 Lake Shore: persistent.chapter_complete unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 1 Lake Edge -> 3 Lake Shore: persistent.best_bear_damage unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 1 Lake Edge -> 3 Lake Shore: persistent.settings unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 1 Lake Edge -> 3 Lake Shore: persistent.future_extension unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 1 Lake Edge -> 3 Lake Shore: run.xp unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 1 Lake Edge -> 3 Lake Shore: run.inventory unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 1 Lake Edge -> 3 Lake Shore: run.cap unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 1 Lake Edge -> 3 Lake Shore: run.weapon unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 1 Lake Edge -> 3 Lake Shore: run.stages unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 1 Lake Edge -> 3 Lake Shore: run.craft_paid unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 1 Lake Edge -> 3 Lake Shore: run.craft_batches unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 1 Lake Edge -> 3 Lake Shore: run.hp unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 1 Lake Edge -> 3 Lake Shore: run.seconds unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 1 Lake Edge -> 3 Lake Shore: run.hunger_multiplier unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 1 Lake Edge -> 3 Lake Shore: run.food_timers unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 1 Lake Edge -> 3 Lake Shore: run.future_extension unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 1 Lake Edge -> 3 Lake Shore: immutable archive contains exact incoming bytes",
+      "passed": true
+    },
+    {
+      "name": "legacy 1 Lake Edge -> 3 Lake Shore: archive exists before every migrated primary write",
+      "passed": true
+    },
+    {
+      "name": "migrated paused full-HP save reloads twice byte-identically",
+      "passed": true
+    },
+    {
+      "name": "immutable original archive remains untouched after two reloads",
+      "passed": true
+    },
+    {
+      "name": "legacy 2 The Outer Forest -> 5 Pine Trail",
+      "passed": true,
+      "details": {
+        "frame": 5,
+        "furthest": 5
+      }
+    },
+    {
+      "name": "legacy 2 The Outer Forest -> 5 Pine Trail: content revision stamped once",
+      "passed": true
+    },
+    {
+      "name": "legacy 2 The Outer Forest -> 5 Pine Trail: retired travel/Eel queue removed without reordering compatible duplicates",
+      "passed": true
+    },
+    {
+      "name": "legacy 2 The Outer Forest -> 5 Pine Trail: retired suspended work removed; compatible work retained",
+      "passed": true
+    },
+    {
+      "name": "legacy 2 The Outer Forest -> 5 Pine Trail: retired done flags removed; earned rod/campfire retained",
+      "passed": true
+    },
+    {
+      "name": "legacy 2 The Outer Forest -> 5 Pine Trail: persistent.xp unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 2 The Outer Forest -> 5 Pine Trail: persistent.mastery unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 2 The Outer Forest -> 5 Pine Trail: persistent.auto unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 2 The Outer Forest -> 5 Pine Trail: persistent.vitality unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 2 The Outer Forest -> 5 Pine Trail: persistent.generation unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 2 The Outer Forest -> 5 Pine Trail: persistent.chapter_complete unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 2 The Outer Forest -> 5 Pine Trail: persistent.best_bear_damage unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 2 The Outer Forest -> 5 Pine Trail: persistent.settings unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 2 The Outer Forest -> 5 Pine Trail: persistent.future_extension unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 2 The Outer Forest -> 5 Pine Trail: run.xp unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 2 The Outer Forest -> 5 Pine Trail: run.inventory unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 2 The Outer Forest -> 5 Pine Trail: run.cap unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 2 The Outer Forest -> 5 Pine Trail: run.weapon unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 2 The Outer Forest -> 5 Pine Trail: run.stages unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 2 The Outer Forest -> 5 Pine Trail: run.craft_paid unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 2 The Outer Forest -> 5 Pine Trail: run.craft_batches unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 2 The Outer Forest -> 5 Pine Trail: run.hp unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 2 The Outer Forest -> 5 Pine Trail: run.seconds unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 2 The Outer Forest -> 5 Pine Trail: run.hunger_multiplier unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 2 The Outer Forest -> 5 Pine Trail: run.food_timers unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 2 The Outer Forest -> 5 Pine Trail: run.future_extension unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 2 The Outer Forest -> 5 Pine Trail: immutable archive contains exact incoming bytes",
+      "passed": true
+    },
+    {
+      "name": "legacy 2 The Outer Forest -> 5 Pine Trail: archive exists before every migrated primary write",
+      "passed": true
+    },
+    {
+      "name": "legacy 3 Creek Hollow -> 6 Creek Crossing",
+      "passed": true,
+      "details": {
+        "frame": 6,
+        "furthest": 6
+      }
+    },
+    {
+      "name": "legacy 3 Creek Hollow -> 6 Creek Crossing: content revision stamped once",
+      "passed": true
+    },
+    {
+      "name": "legacy 3 Creek Hollow -> 6 Creek Crossing: retired travel/Eel queue removed without reordering compatible duplicates",
+      "passed": true
+    },
+    {
+      "name": "legacy 3 Creek Hollow -> 6 Creek Crossing: retired suspended work removed; compatible work retained",
+      "passed": true
+    },
+    {
+      "name": "legacy 3 Creek Hollow -> 6 Creek Crossing: retired done flags removed; earned rod/campfire retained",
+      "passed": true
+    },
+    {
+      "name": "legacy 3 Creek Hollow -> 6 Creek Crossing: persistent.xp unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 3 Creek Hollow -> 6 Creek Crossing: persistent.mastery unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 3 Creek Hollow -> 6 Creek Crossing: persistent.auto unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 3 Creek Hollow -> 6 Creek Crossing: persistent.vitality unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 3 Creek Hollow -> 6 Creek Crossing: persistent.generation unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 3 Creek Hollow -> 6 Creek Crossing: persistent.chapter_complete unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 3 Creek Hollow -> 6 Creek Crossing: persistent.best_bear_damage unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 3 Creek Hollow -> 6 Creek Crossing: persistent.settings unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 3 Creek Hollow -> 6 Creek Crossing: persistent.future_extension unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 3 Creek Hollow -> 6 Creek Crossing: run.xp unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 3 Creek Hollow -> 6 Creek Crossing: run.inventory unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 3 Creek Hollow -> 6 Creek Crossing: run.cap unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 3 Creek Hollow -> 6 Creek Crossing: run.weapon unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 3 Creek Hollow -> 6 Creek Crossing: run.stages unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 3 Creek Hollow -> 6 Creek Crossing: run.craft_paid unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 3 Creek Hollow -> 6 Creek Crossing: run.craft_batches unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 3 Creek Hollow -> 6 Creek Crossing: run.hp unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 3 Creek Hollow -> 6 Creek Crossing: run.seconds unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 3 Creek Hollow -> 6 Creek Crossing: run.hunger_multiplier unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 3 Creek Hollow -> 6 Creek Crossing: run.food_timers unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 3 Creek Hollow -> 6 Creek Crossing: run.future_extension unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 3 Creek Hollow -> 6 Creek Crossing: immutable archive contains exact incoming bytes",
+      "passed": true
+    },
+    {
+      "name": "legacy 3 Creek Hollow -> 6 Creek Crossing: archive exists before every migrated primary write",
+      "passed": true
+    },
+    {
+      "name": "legacy 4 Stony Rise -> 7 Stony Rise",
+      "passed": true,
+      "details": {
+        "frame": 7,
+        "furthest": 7
+      }
+    },
+    {
+      "name": "legacy 4 Stony Rise -> 7 Stony Rise: content revision stamped once",
+      "passed": true
+    },
+    {
+      "name": "legacy 4 Stony Rise -> 7 Stony Rise: retired travel/Eel queue removed without reordering compatible duplicates",
+      "passed": true
+    },
+    {
+      "name": "legacy 4 Stony Rise -> 7 Stony Rise: retired suspended work removed; compatible work retained",
+      "passed": true
+    },
+    {
+      "name": "legacy 4 Stony Rise -> 7 Stony Rise: retired done flags removed; earned rod/campfire retained",
+      "passed": true
+    },
+    {
+      "name": "legacy 4 Stony Rise -> 7 Stony Rise: persistent.xp unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 4 Stony Rise -> 7 Stony Rise: persistent.mastery unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 4 Stony Rise -> 7 Stony Rise: persistent.auto unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 4 Stony Rise -> 7 Stony Rise: persistent.vitality unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 4 Stony Rise -> 7 Stony Rise: persistent.generation unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 4 Stony Rise -> 7 Stony Rise: persistent.chapter_complete unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 4 Stony Rise -> 7 Stony Rise: persistent.best_bear_damage unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 4 Stony Rise -> 7 Stony Rise: persistent.settings unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 4 Stony Rise -> 7 Stony Rise: persistent.future_extension unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 4 Stony Rise -> 7 Stony Rise: run.xp unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 4 Stony Rise -> 7 Stony Rise: run.inventory unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 4 Stony Rise -> 7 Stony Rise: run.cap unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 4 Stony Rise -> 7 Stony Rise: run.weapon unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 4 Stony Rise -> 7 Stony Rise: run.stages unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 4 Stony Rise -> 7 Stony Rise: run.craft_paid unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 4 Stony Rise -> 7 Stony Rise: run.craft_batches unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 4 Stony Rise -> 7 Stony Rise: run.hp unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 4 Stony Rise -> 7 Stony Rise: run.seconds unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 4 Stony Rise -> 7 Stony Rise: run.hunger_multiplier unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 4 Stony Rise -> 7 Stony Rise: run.food_timers unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 4 Stony Rise -> 7 Stony Rise: run.future_extension unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 4 Stony Rise -> 7 Stony Rise: immutable archive contains exact incoming bytes",
+      "passed": true
+    },
+    {
+      "name": "legacy 4 Stony Rise -> 7 Stony Rise: archive exists before every migrated primary write",
+      "passed": true
+    },
+    {
+      "name": "legacy 5 Old Hunter Trail -> 8 Old Hunter Camp",
+      "passed": true,
+      "details": {
+        "frame": 8,
+        "furthest": 8
+      }
+    },
+    {
+      "name": "legacy 5 Old Hunter Trail -> 8 Old Hunter Camp: content revision stamped once",
+      "passed": true
+    },
+    {
+      "name": "legacy 5 Old Hunter Trail -> 8 Old Hunter Camp: retired travel/Eel queue removed without reordering compatible duplicates",
+      "passed": true
+    },
+    {
+      "name": "legacy 5 Old Hunter Trail -> 8 Old Hunter Camp: retired suspended work removed; compatible work retained",
+      "passed": true
+    },
+    {
+      "name": "legacy 5 Old Hunter Trail -> 8 Old Hunter Camp: retired done flags removed; earned rod/campfire retained",
+      "passed": true
+    },
+    {
+      "name": "legacy 5 Old Hunter Trail -> 8 Old Hunter Camp: persistent.xp unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 5 Old Hunter Trail -> 8 Old Hunter Camp: persistent.mastery unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 5 Old Hunter Trail -> 8 Old Hunter Camp: persistent.auto unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 5 Old Hunter Trail -> 8 Old Hunter Camp: persistent.vitality unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 5 Old Hunter Trail -> 8 Old Hunter Camp: persistent.generation unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 5 Old Hunter Trail -> 8 Old Hunter Camp: persistent.chapter_complete unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 5 Old Hunter Trail -> 8 Old Hunter Camp: persistent.best_bear_damage unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 5 Old Hunter Trail -> 8 Old Hunter Camp: persistent.settings unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 5 Old Hunter Trail -> 8 Old Hunter Camp: persistent.future_extension unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 5 Old Hunter Trail -> 8 Old Hunter Camp: run.xp unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 5 Old Hunter Trail -> 8 Old Hunter Camp: run.inventory unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 5 Old Hunter Trail -> 8 Old Hunter Camp: run.cap unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 5 Old Hunter Trail -> 8 Old Hunter Camp: run.weapon unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 5 Old Hunter Trail -> 8 Old Hunter Camp: run.stages unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 5 Old Hunter Trail -> 8 Old Hunter Camp: run.craft_paid unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 5 Old Hunter Trail -> 8 Old Hunter Camp: run.craft_batches unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 5 Old Hunter Trail -> 8 Old Hunter Camp: run.hp unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 5 Old Hunter Trail -> 8 Old Hunter Camp: run.seconds unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 5 Old Hunter Trail -> 8 Old Hunter Camp: run.hunger_multiplier unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 5 Old Hunter Trail -> 8 Old Hunter Camp: run.food_timers unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 5 Old Hunter Trail -> 8 Old Hunter Camp: run.future_extension unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 5 Old Hunter Trail -> 8 Old Hunter Camp: immutable archive contains exact incoming bytes",
+      "passed": true
+    },
+    {
+      "name": "legacy 5 Old Hunter Trail -> 8 Old Hunter Camp: archive exists before every migrated primary write",
+      "passed": true
+    },
+    {
+      "name": "legacy 6 Wolf Hollow -> 11 Wolf Hollow",
+      "passed": true,
+      "details": {
+        "frame": 11,
+        "furthest": 11
+      }
+    },
+    {
+      "name": "legacy 6 Wolf Hollow -> 11 Wolf Hollow: content revision stamped once",
+      "passed": true
+    },
+    {
+      "name": "legacy 6 Wolf Hollow -> 11 Wolf Hollow: retired travel/Eel queue removed without reordering compatible duplicates",
+      "passed": true
+    },
+    {
+      "name": "legacy 6 Wolf Hollow -> 11 Wolf Hollow: retired suspended work removed; compatible work retained",
+      "passed": true
+    },
+    {
+      "name": "legacy 6 Wolf Hollow -> 11 Wolf Hollow: retired done flags removed; earned rod/campfire retained",
+      "passed": true
+    },
+    {
+      "name": "legacy 6 Wolf Hollow -> 11 Wolf Hollow: persistent.xp unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 6 Wolf Hollow -> 11 Wolf Hollow: persistent.mastery unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 6 Wolf Hollow -> 11 Wolf Hollow: persistent.auto unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 6 Wolf Hollow -> 11 Wolf Hollow: persistent.vitality unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 6 Wolf Hollow -> 11 Wolf Hollow: persistent.generation unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 6 Wolf Hollow -> 11 Wolf Hollow: persistent.chapter_complete unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 6 Wolf Hollow -> 11 Wolf Hollow: persistent.best_bear_damage unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 6 Wolf Hollow -> 11 Wolf Hollow: persistent.settings unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 6 Wolf Hollow -> 11 Wolf Hollow: persistent.future_extension unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 6 Wolf Hollow -> 11 Wolf Hollow: run.xp unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 6 Wolf Hollow -> 11 Wolf Hollow: run.inventory unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 6 Wolf Hollow -> 11 Wolf Hollow: run.cap unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 6 Wolf Hollow -> 11 Wolf Hollow: run.weapon unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 6 Wolf Hollow -> 11 Wolf Hollow: run.stages unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 6 Wolf Hollow -> 11 Wolf Hollow: run.craft_paid unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 6 Wolf Hollow -> 11 Wolf Hollow: run.craft_batches unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 6 Wolf Hollow -> 11 Wolf Hollow: run.hp unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 6 Wolf Hollow -> 11 Wolf Hollow: run.seconds unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 6 Wolf Hollow -> 11 Wolf Hollow: run.hunger_multiplier unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 6 Wolf Hollow -> 11 Wolf Hollow: run.food_timers unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 6 Wolf Hollow -> 11 Wolf Hollow: run.future_extension unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 6 Wolf Hollow -> 11 Wolf Hollow: immutable archive contains exact incoming bytes",
+      "passed": true
+    },
+    {
+      "name": "legacy 6 Wolf Hollow -> 11 Wolf Hollow: archive exists before every migrated primary write",
+      "passed": true
+    },
+    {
+      "name": "legacy 7 Bear Country -> 11 Wolf Hollow",
+      "passed": true,
+      "details": {
+        "frame": 11,
+        "furthest": 11
+      }
+    },
+    {
+      "name": "legacy 7 Bear Country -> 11 Wolf Hollow: content revision stamped once",
+      "passed": true
+    },
+    {
+      "name": "legacy 7 Bear Country -> 11 Wolf Hollow: retired travel/Eel queue removed without reordering compatible duplicates",
+      "passed": true
+    },
+    {
+      "name": "legacy 7 Bear Country -> 11 Wolf Hollow: retired suspended work removed; compatible work retained",
+      "passed": true
+    },
+    {
+      "name": "legacy 7 Bear Country -> 11 Wolf Hollow: retired done flags removed; earned rod/campfire retained",
+      "passed": true
+    },
+    {
+      "name": "legacy 7 Bear Country -> 11 Wolf Hollow: persistent.xp unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 7 Bear Country -> 11 Wolf Hollow: persistent.mastery unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 7 Bear Country -> 11 Wolf Hollow: persistent.auto unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 7 Bear Country -> 11 Wolf Hollow: persistent.vitality unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 7 Bear Country -> 11 Wolf Hollow: persistent.generation unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 7 Bear Country -> 11 Wolf Hollow: persistent.chapter_complete unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 7 Bear Country -> 11 Wolf Hollow: persistent.best_bear_damage unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 7 Bear Country -> 11 Wolf Hollow: persistent.settings unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 7 Bear Country -> 11 Wolf Hollow: persistent.future_extension unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 7 Bear Country -> 11 Wolf Hollow: run.xp unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 7 Bear Country -> 11 Wolf Hollow: run.inventory unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 7 Bear Country -> 11 Wolf Hollow: run.cap unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 7 Bear Country -> 11 Wolf Hollow: run.weapon unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 7 Bear Country -> 11 Wolf Hollow: run.stages unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 7 Bear Country -> 11 Wolf Hollow: run.craft_paid unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 7 Bear Country -> 11 Wolf Hollow: run.craft_batches unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 7 Bear Country -> 11 Wolf Hollow: run.hp unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 7 Bear Country -> 11 Wolf Hollow: run.seconds unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 7 Bear Country -> 11 Wolf Hollow: run.hunger_multiplier unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 7 Bear Country -> 11 Wolf Hollow: run.food_timers unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 7 Bear Country -> 11 Wolf Hollow: run.future_extension unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 7 Bear Country -> 11 Wolf Hollow: immutable archive contains exact incoming bytes",
+      "passed": true
+    },
+    {
+      "name": "legacy 7 Bear Country -> 11 Wolf Hollow: archive exists before every migrated primary write",
+      "passed": true
+    },
+    {
+      "name": "legacy 8 The Bear's Den -> 12 The Bear's Den",
+      "passed": true,
+      "details": {
+        "frame": 12,
+        "furthest": 12
+      }
+    },
+    {
+      "name": "legacy 8 The Bear's Den -> 12 The Bear's Den: content revision stamped once",
+      "passed": true
+    },
+    {
+      "name": "legacy 8 The Bear's Den -> 12 The Bear's Den: retired travel/Eel queue removed without reordering compatible duplicates",
+      "passed": true
+    },
+    {
+      "name": "legacy 8 The Bear's Den -> 12 The Bear's Den: retired suspended work removed; compatible work retained",
+      "passed": true
+    },
+    {
+      "name": "legacy 8 The Bear's Den -> 12 The Bear's Den: retired done flags removed; earned rod/campfire retained",
+      "passed": true
+    },
+    {
+      "name": "legacy 8 The Bear's Den -> 12 The Bear's Den: persistent.xp unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 8 The Bear's Den -> 12 The Bear's Den: persistent.mastery unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 8 The Bear's Den -> 12 The Bear's Den: persistent.auto unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 8 The Bear's Den -> 12 The Bear's Den: persistent.vitality unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 8 The Bear's Den -> 12 The Bear's Den: persistent.generation unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 8 The Bear's Den -> 12 The Bear's Den: persistent.chapter_complete unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 8 The Bear's Den -> 12 The Bear's Den: persistent.best_bear_damage unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 8 The Bear's Den -> 12 The Bear's Den: persistent.settings unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 8 The Bear's Den -> 12 The Bear's Den: persistent.future_extension unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 8 The Bear's Den -> 12 The Bear's Den: run.xp unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 8 The Bear's Den -> 12 The Bear's Den: run.inventory unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 8 The Bear's Den -> 12 The Bear's Den: run.cap unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 8 The Bear's Den -> 12 The Bear's Den: run.weapon unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 8 The Bear's Den -> 12 The Bear's Den: run.stages unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 8 The Bear's Den -> 12 The Bear's Den: run.craft_paid unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 8 The Bear's Den -> 12 The Bear's Den: run.craft_batches unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 8 The Bear's Den -> 12 The Bear's Den: run.hp unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 8 The Bear's Den -> 12 The Bear's Den: run.seconds unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 8 The Bear's Den -> 12 The Bear's Den: run.hunger_multiplier unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 8 The Bear's Den -> 12 The Bear's Den: run.food_timers unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 8 The Bear's Den -> 12 The Bear's Den: run.future_extension unchanged",
+      "passed": true
+    },
+    {
+      "name": "legacy 8 The Bear's Den -> 12 The Bear's Den: immutable archive contains exact incoming bytes",
+      "passed": true
+    },
+    {
+      "name": "legacy 8 The Bear's Den -> 12 The Bear's Den: archive exists before every migrated primary write",
+      "passed": true
+    },
+    {
+      "name": "actual v0.4.22 XP revision 1 fixture migrates Lake Edge to Lake Shore",
+      "passed": true
+    },
+    {
+      "name": "actual v0.4.22 fishing work survives content migration",
+      "passed": true
+    },
+    {
+      "name": "actual v0.4.22 permanent skill XP is not rescaled",
+      "passed": true
+    },
+    {
+      "name": "actual v0.4.22 fishing save: immutable archive contains exact incoming bytes",
+      "passed": true
+    },
+    {
+      "name": "actual v0.4.22 fishing save: archive exists before every migrated primary write",
+      "passed": true
+    },
+    {
+      "name": "archive collision: immutable archive contains exact incoming bytes",
+      "passed": true
+    },
+    {
+      "name": "archive collision: archive exists before every migrated primary write",
+      "passed": true
+    },
+    {
+      "name": "archive collision preserves the first immutable legacy save",
+      "passed": true
+    },
+    {
+      "name": "archive collision creates a separate SHA256-suffixed immutable copy",
+      "passed": true
+    },
+    {
+      "name": "compatible queued duplicate keeps its specific queue owner after filtering",
+      "passed": true
+    },
+    {
+      "name": "partial queued eel is cancelled with coherent action ownership",
+      "passed": true
+    },
+    {
+      "name": "partial eel cancellation gives no output or skill XP",
+      "passed": true
+    },
+    {
+      "name": "partial eel: compatible queue remains usable",
+      "passed": true
+    },
+    {
+      "name": "cancelled Catch Eel never rewards after six real browser seconds",
+      "passed": true
+    },
+    {
+      "name": "partial queued cook_eel is cancelled with coherent action ownership",
+      "passed": true
+    },
+    {
+      "name": "partial cook_eel cancellation gives no output or skill XP",
+      "passed": true
+    },
+    {
+      "name": "partial cook_eel: compatible queue remains usable",
+      "passed": true
+    },
+    {
+      "name": "partial queued eat_eel is cancelled with coherent action ownership",
+      "passed": true
+    },
+    {
+      "name": "partial eat_eel cancellation gives no output or skill XP",
+      "passed": true
+    },
+    {
+      "name": "partial eat_eel: compatible queue remains usable",
+      "passed": true
+    },
+    {
+      "name": "partial queued travel2 is cancelled with coherent action ownership",
+      "passed": true
+    },
+    {
+      "name": "partial travel2 cancellation gives no output or skill XP",
+      "passed": true
+    },
+    {
+      "name": "partial travel2: compatible queue remains usable",
+      "passed": true
+    },
+    {
+      "name": "immutable archive failure leaves the original legacy save byte-identical",
+      "passed": true
+    },
+    {
+      "name": "immutable archive failure performs no primary or regular backup write",
+      "passed": true
+    },
+    {
+      "name": "immutable archive failure does not fall back to backup or create unreadable archive",
+      "passed": true
+    },
+    {
+      "name": "unsupported future revision remains byte-identical through manual and automatic save",
+      "passed": true
+    },
+    {
+      "name": "unsupported future revision creates no legacy migration archive or primary/fallback write",
+      "passed": true
+    },
+    {
+      "name": "desktop real Catch Perch is running",
+      "passed": true
+    },
+    {
+      "name": "desktop canvas/document fit 1448x1086",
+      "passed": true
+    },
+    {
+      "name": "actual desktop Start switches fishing to Cut Wood",
+      "passed": true
+    },
+    {
+      "name": "actual desktop Start returns to Catch Perch",
+      "passed": true
+    },
+    {
+      "name": "actual desktop Queue appends Cut Wood",
+      "passed": true
+    },
+    {
+      "name": "actual Stop leaves fishing paused and stores partial work",
+      "passed": true
+    },
+    {
+      "name": "actual Stop/reload preserves inventory and both progression XP maps",
+      "passed": true
+    },
+    {
+      "name": "actual Stop/reload preserves paused state and partial fishing work",
+      "passed": true
+    },
+    {
+      "name": "actual saved partial fishing resumes through Start",
+      "passed": true
+    },
+    {
+      "name": "mobile 390: no document horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "mobile 390: real Catch Perch active",
+      "passed": true
+    },
+    {
+      "name": "mobile 390: touch scrolling does not activate a different job",
+      "passed": true
+    },
+    {
+      "name": "mobile 390: bottom scroll retains route and fishing",
+      "passed": true
+    },
+    {
+      "name": "mobile 430: no document horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "mobile 430: real Catch Perch active",
+      "passed": true
+    },
+    {
+      "name": "mobile 430: touch scrolling does not activate a different job",
+      "passed": true
+    },
+    {
+      "name": "mobile 430: bottom scroll retains route and fishing",
+      "passed": true
+    },
+    {
+      "name": "actual Start next run starts new area 1 without double-incrementing the prepared generation",
+      "passed": true
+    },
+    {
+      "name": "actual Start next run preserves permanent progression and prepared queue",
+      "passed": true
+    },
+    {
+      "name": "actual exported WebGL build produces zero browser errors",
+      "passed": true,
+      "details": []
+    }
+  ],
+  "errors": [],
+  "screenshots": [
+    "fresh-desktop.png",
+    "migration-lake-shore.png",
+    "legacy-fishing-restored.png",
+    "eel-cancelled.png",
+    "archive-failure-blocked.png",
+    "future-revision-blocked.png",
+    "desktop.png",
+    "desktop-tasks.png",
+    "other-job.png",
+    "action-info.png",
+    "mobile-390.png",
+    "mobile-skills-390.png",
+    "mobile-touch-scrolled-390.png",
+    "mobile-bottom-390.png",
+    "mobile-430.png",
+    "mobile-skills-430.png",
+    "mobile-touch-scrolled-430.png",
+    "mobile-bottom-430.png",
+    "death-390.png",
+    "restarted-390.png"
+  ]
+}
