@@ -1,0 +1,919 @@
+{
+  "checks": [
+    {
+      "detail": "",
+      "name": "screenshot desktop-v0424.png",
+      "passed": true
+    },
+    {
+      "detail": 1392.0,
+      "name": "main page no horizontal overflow 1448x1086",
+      "passed": true
+    },
+    {
+      "detail": 5,
+      "name": "skill columns 1448x1086",
+      "passed": true
+    },
+    {
+      "detail": {
+        "available": 173.0,
+        "text": 111.0
+      },
+      "name": "skill description fits Fishing 1448x1086",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "skill progress fits Fishing 1448x1086",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "stable skill animation Fishing 1448x1086",
+      "passed": true
+    },
+    {
+      "detail": {
+        "available": 173.0,
+        "text": 131.0
+      },
+      "name": "skill description fits Woodcutting 1448x1086",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "skill progress fits Woodcutting 1448x1086",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "stable skill animation Woodcutting 1448x1086",
+      "passed": true
+    },
+    {
+      "detail": {
+        "available": 172.0,
+        "text": 121.0
+      },
+      "name": "skill description fits Crafting 1448x1086",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "skill progress fits Crafting 1448x1086",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "stable skill animation Crafting 1448x1086",
+      "passed": true
+    },
+    {
+      "detail": {
+        "available": 172.0,
+        "text": 117.0
+      },
+      "name": "skill description fits Cooking 1448x1086",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "skill progress fits Cooking 1448x1086",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "stable skill animation Cooking 1448x1086",
+      "passed": true
+    },
+    {
+      "detail": {
+        "available": 172.0,
+        "text": 138.0
+      },
+      "name": "skill description fits Vitality 1448x1086",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "skill progress fits Vitality 1448x1086",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "stable skill animation Vitality 1448x1086",
+      "passed": true
+    },
+    {
+      "detail": {
+        "available": 173.0,
+        "text": 138.0
+      },
+      "name": "skill description fits Running 1448x1086",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "skill progress fits Running 1448x1086",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "Running painted card 1448x1086",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "stable skill animation Running 1448x1086",
+      "passed": true
+    },
+    {
+      "detail": {
+        "available": 173.0,
+        "text": 147.0
+      },
+      "name": "skill description fits Fighting 1448x1086",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "skill progress fits Fighting 1448x1086",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "Fighting painted card 1448x1086",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "stable skill animation Fighting 1448x1086",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "skill cards no overlap 1448x1086",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "screenshot skills-v0424-1448.png",
+      "passed": true
+    },
+    {
+      "detail": [],
+      "name": "English player-facing controls 1448x1086",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "Legacy button present 1448x1086",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "Legacy button opens window 1448x1086",
+      "passed": true
+    },
+    {
+      "detail": {
+        "position": "(374, 163)",
+        "size": "(700, 760)"
+      },
+      "name": "Legacy window fits 1448x1086",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "Legacy vertical ScrollContainer 1448x1086",
+      "passed": true
+    },
+    {
+      "detail": {
+        "content": "(668.0, 846.0)",
+        "scroll": "(676.0, 736.0)"
+      },
+      "name": "Legacy no horizontal overflow 1448x1086",
+      "passed": true
+    },
+    {
+      "detail": [],
+      "name": "Legacy labels no clipping 1448x1086",
+      "passed": true
+    },
+    {
+      "detail": "Legacy Points        1.990000\nPending on Rebirth   0.980100\nAvailable after Rebirth 2.970100\nRebirths             0",
+      "name": "Legacy decimal precision 1448x1086",
+      "passed": true
+    },
+    {
+      "detail": "This time     09:00\nLast clear    10:12\nBest time     09:00\nTotal clears  3\nReward on next eligible Rebirth  0.980100  ·  previous claims 2",
+      "name": "Chapter records readable 1448x1086",
+      "passed": true
+    },
+    {
+      "detail": "Current time  10:45\nLast Rebirth  11:51\nBest at depth 1  11:51",
+      "name": "Full Legacy records readable 1448x1086",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "six permanent skill upgrade controls 1448x1086",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "integer upgrade control 1448x1086",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "integer upgrade control 1448x1086",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "integer upgrade control 1448x1086",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "integer upgrade control 1448x1086",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "integer upgrade control 1448x1086",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "integer upgrade control 1448x1086",
+      "passed": true
+    },
+    {
+      "detail": [],
+      "name": "English player-facing controls Legacy 1448x1086",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "screenshot legacy-v0424-1448.png",
+      "passed": true
+    },
+    {
+      "detail": 110,
+      "name": "Legacy scroll reaches footer 1448x1086",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "Legacy footer buttons 1448x1086",
+      "passed": true
+    },
+    {
+      "detail": "[P: (12.0, 668.0), S: (668.0, 36.0)]",
+      "name": "Rebirth button reachable 1448x1086",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "Rebirth opens confirmation 1448x1086",
+      "passed": true
+    },
+    {
+      "detail": {
+        "position": "(444, 417)",
+        "size": "(560, 251)"
+      },
+      "name": "Rebirth confirmation fits 1448x1086",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "Rebirth confirmation usable 1448x1086",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "Rebirth confirmation text fits 1448x1086",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "screenshot confirm-rebirth-v0424-1448.png",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "screenshot mobile-v0424-390.png",
+      "passed": true
+    },
+    {
+      "detail": 366.0,
+      "name": "main page no horizontal overflow 390x844",
+      "passed": true
+    },
+    {
+      "detail": 1,
+      "name": "skill columns 390x844",
+      "passed": true
+    },
+    {
+      "detail": {
+        "available": 318.0,
+        "text": 111.0
+      },
+      "name": "skill description fits Fishing 390x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "skill progress fits Fishing 390x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "stable skill animation Fishing 390x844",
+      "passed": true
+    },
+    {
+      "detail": {
+        "available": 318.0,
+        "text": 131.0
+      },
+      "name": "skill description fits Woodcutting 390x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "skill progress fits Woodcutting 390x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "stable skill animation Woodcutting 390x844",
+      "passed": true
+    },
+    {
+      "detail": {
+        "available": 318.0,
+        "text": 121.0
+      },
+      "name": "skill description fits Crafting 390x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "skill progress fits Crafting 390x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "stable skill animation Crafting 390x844",
+      "passed": true
+    },
+    {
+      "detail": {
+        "available": 318.0,
+        "text": 117.0
+      },
+      "name": "skill description fits Cooking 390x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "skill progress fits Cooking 390x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "stable skill animation Cooking 390x844",
+      "passed": true
+    },
+    {
+      "detail": {
+        "available": 318.0,
+        "text": 138.0
+      },
+      "name": "skill description fits Vitality 390x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "skill progress fits Vitality 390x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "stable skill animation Vitality 390x844",
+      "passed": true
+    },
+    {
+      "detail": {
+        "available": 318.0,
+        "text": 138.0
+      },
+      "name": "skill description fits Running 390x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "skill progress fits Running 390x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "Running painted card 390x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "stable skill animation Running 390x844",
+      "passed": true
+    },
+    {
+      "detail": {
+        "available": 318.0,
+        "text": 147.0
+      },
+      "name": "skill description fits Fighting 390x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "skill progress fits Fighting 390x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "Fighting painted card 390x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "stable skill animation Fighting 390x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "skill cards no overlap 390x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "screenshot skills-v0424-390.png",
+      "passed": true
+    },
+    {
+      "detail": [],
+      "name": "English player-facing controls 390x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "Legacy button present 390x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "Legacy button opens window 390x844",
+      "passed": true
+    },
+    {
+      "detail": {
+        "position": "(12, 42)",
+        "size": "(366, 760)"
+      },
+      "name": "Legacy window fits 390x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "Legacy vertical ScrollContainer 390x844",
+      "passed": true
+    },
+    {
+      "detail": {
+        "content": "(334.0, 910.0)",
+        "scroll": "(342.0, 736.0)"
+      },
+      "name": "Legacy no horizontal overflow 390x844",
+      "passed": true
+    },
+    {
+      "detail": [],
+      "name": "Legacy labels no clipping 390x844",
+      "passed": true
+    },
+    {
+      "detail": "Legacy Points        1.990000\nPending on Rebirth   0.980100\nAvailable after Rebirth 2.970100\nRebirths             0",
+      "name": "Legacy decimal precision 390x844",
+      "passed": true
+    },
+    {
+      "detail": "This time     09:00\nLast clear    10:12\nBest time     09:00\nTotal clears  3\nReward on next eligible Rebirth  0.980100  ·  previous claims 2",
+      "name": "Chapter records readable 390x844",
+      "passed": true
+    },
+    {
+      "detail": "Current time  10:45\nLast Rebirth  11:51\nBest at depth 1  11:51",
+      "name": "Full Legacy records readable 390x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "six permanent skill upgrade controls 390x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "integer upgrade control 390x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "integer upgrade control 390x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "integer upgrade control 390x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "integer upgrade control 390x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "integer upgrade control 390x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "integer upgrade control 390x844",
+      "passed": true
+    },
+    {
+      "detail": [],
+      "name": "English player-facing controls Legacy 390x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "screenshot legacy-v0424-390.png",
+      "passed": true
+    },
+    {
+      "detail": 174,
+      "name": "Legacy scroll reaches footer 390x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "Legacy footer buttons 390x844",
+      "passed": true
+    },
+    {
+      "detail": "[P: (12.0, 668.0), S: (334.0, 36.0)]",
+      "name": "Rebirth button reachable 390x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "Rebirth opens confirmation 390x844",
+      "passed": true
+    },
+    {
+      "detail": {
+        "position": "(12, 296)",
+        "size": "(366, 251)"
+      },
+      "name": "Rebirth confirmation fits 390x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "Rebirth confirmation usable 390x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "Rebirth confirmation text fits 390x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "screenshot confirm-rebirth-v0424-390.png",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "screenshot mobile-v0424-430.png",
+      "passed": true
+    },
+    {
+      "detail": 406.0,
+      "name": "main page no horizontal overflow 430x844",
+      "passed": true
+    },
+    {
+      "detail": 1,
+      "name": "skill columns 430x844",
+      "passed": true
+    },
+    {
+      "detail": {
+        "available": 358.0,
+        "text": 111.0
+      },
+      "name": "skill description fits Fishing 430x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "skill progress fits Fishing 430x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "stable skill animation Fishing 430x844",
+      "passed": true
+    },
+    {
+      "detail": {
+        "available": 358.0,
+        "text": 131.0
+      },
+      "name": "skill description fits Woodcutting 430x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "skill progress fits Woodcutting 430x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "stable skill animation Woodcutting 430x844",
+      "passed": true
+    },
+    {
+      "detail": {
+        "available": 358.0,
+        "text": 121.0
+      },
+      "name": "skill description fits Crafting 430x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "skill progress fits Crafting 430x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "stable skill animation Crafting 430x844",
+      "passed": true
+    },
+    {
+      "detail": {
+        "available": 358.0,
+        "text": 117.0
+      },
+      "name": "skill description fits Cooking 430x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "skill progress fits Cooking 430x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "stable skill animation Cooking 430x844",
+      "passed": true
+    },
+    {
+      "detail": {
+        "available": 358.0,
+        "text": 138.0
+      },
+      "name": "skill description fits Vitality 430x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "skill progress fits Vitality 430x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "stable skill animation Vitality 430x844",
+      "passed": true
+    },
+    {
+      "detail": {
+        "available": 358.0,
+        "text": 138.0
+      },
+      "name": "skill description fits Running 430x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "skill progress fits Running 430x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "Running painted card 430x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "stable skill animation Running 430x844",
+      "passed": true
+    },
+    {
+      "detail": {
+        "available": 358.0,
+        "text": 147.0
+      },
+      "name": "skill description fits Fighting 430x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "skill progress fits Fighting 430x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "Fighting painted card 430x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "stable skill animation Fighting 430x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "skill cards no overlap 430x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "screenshot skills-v0424-430.png",
+      "passed": true
+    },
+    {
+      "detail": [],
+      "name": "English player-facing controls 430x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "Legacy button present 430x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "Legacy button opens window 430x844",
+      "passed": true
+    },
+    {
+      "detail": {
+        "position": "(12, 42)",
+        "size": "(406, 760)"
+      },
+      "name": "Legacy window fits 430x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "Legacy vertical ScrollContainer 430x844",
+      "passed": true
+    },
+    {
+      "detail": {
+        "content": "(374.0, 910.0)",
+        "scroll": "(382.0, 736.0)"
+      },
+      "name": "Legacy no horizontal overflow 430x844",
+      "passed": true
+    },
+    {
+      "detail": [],
+      "name": "Legacy labels no clipping 430x844",
+      "passed": true
+    },
+    {
+      "detail": "Legacy Points        1.990000\nPending on Rebirth   0.980100\nAvailable after Rebirth 2.970100\nRebirths             0",
+      "name": "Legacy decimal precision 430x844",
+      "passed": true
+    },
+    {
+      "detail": "This time     09:00\nLast clear    10:12\nBest time     09:00\nTotal clears  3\nReward on next eligible Rebirth  0.980100  ·  previous claims 2",
+      "name": "Chapter records readable 430x844",
+      "passed": true
+    },
+    {
+      "detail": "Current time  10:45\nLast Rebirth  11:51\nBest at depth 1  11:51",
+      "name": "Full Legacy records readable 430x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "six permanent skill upgrade controls 430x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "integer upgrade control 430x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "integer upgrade control 430x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "integer upgrade control 430x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "integer upgrade control 430x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "integer upgrade control 430x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "integer upgrade control 430x844",
+      "passed": true
+    },
+    {
+      "detail": [],
+      "name": "English player-facing controls Legacy 430x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "screenshot legacy-v0424-430.png",
+      "passed": true
+    },
+    {
+      "detail": 174,
+      "name": "Legacy scroll reaches footer 430x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "Legacy footer buttons 430x844",
+      "passed": true
+    },
+    {
+      "detail": "[P: (12.0, 668.0), S: (374.0, 36.0)]",
+      "name": "Rebirth button reachable 430x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "Rebirth opens confirmation 430x844",
+      "passed": true
+    },
+    {
+      "detail": {
+        "position": "(12, 296)",
+        "size": "(406, 251)"
+      },
+      "name": "Rebirth confirmation fits 430x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "Rebirth confirmation usable 430x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "Rebirth confirmation text fits 430x844",
+      "passed": true
+    },
+    {
+      "detail": "",
+      "name": "screenshot confirm-rebirth-v0424-430.png",
+      "passed": true
+    }
+  ]
+}

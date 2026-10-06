@@ -1,0 +1,528 @@
+{
+  "base": "http://127.0.0.1:8064/",
+  "prefix": "",
+  "totals": {
+    "checks": 92,
+    "passed": 92,
+    "failed": 0,
+    "browserErrors": 0
+  },
+  "checks": [
+    {
+      "name": "fresh browser build version v0.4.24",
+      "passed": true
+    },
+    {
+      "name": "fresh profile zero points, claims and upgrades",
+      "passed": true
+    },
+    {
+      "name": "fresh profile has no pending chapter reward",
+      "passed": true
+    },
+    {
+      "name": "fresh ineligible Rebirth makes no archive or reset",
+      "passed": true
+    },
+    {
+      "name": "same-Rebirth Woodcutting purchase 1448: v0.4.23 completed gameplay retained additively",
+      "passed": true
+    },
+    {
+      "name": "same-Rebirth Woodcutting purchase 1448: old clear pending exactly 1 with no credited points",
+      "passed": true
+    },
+    {
+      "name": "same-Rebirth Woodcutting purchase 1448: old historical PB not invented",
+      "passed": true
+    },
+    {
+      "name": "same-Rebirth Woodcutting purchase 1448: document no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "same-Rebirth Woodcutting purchase 1448: planned purchase not applied before confirmation",
+      "passed": true
+    },
+    {
+      "name": "same-Rebirth Woodcutting purchase 1448: points zero, level one, one claim",
+      "passed": true,
+      "details": {
+        "best_legacy_by_depth": {
+          "1": 0
+        },
+        "chapter_claims": {
+          "1": 1
+        },
+        "chapter_stats": {
+          "1": {
+            "best": 0,
+            "clears": 1,
+            "last": 0,
+            "previous_last": 0
+          }
+        },
+        "last_legacy_time": 0,
+        "points": 0,
+        "rebirths": 1,
+        "revision": 1,
+        "upgrades": {
+          "speed": {
+            "Woodcutting": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "same-Rebirth Woodcutting purchase 1448: ordinary gameplay reset",
+      "passed": true,
+      "details": {
+        "frame": 1,
+        "generation": 1,
+        "active": ""
+      }
+    },
+    {
+      "name": "same-Rebirth Woodcutting purchase 1448: settings survive",
+      "passed": true
+    },
+    {
+      "name": "same-Rebirth Woodcutting purchase 1448: chapter clear records survive",
+      "passed": true
+    },
+    {
+      "name": "same-Rebirth Woodcutting purchase 1448: archive has exact pre-reset save",
+      "passed": true
+    },
+    {
+      "name": "same-Rebirth Woodcutting purchase 1448: archive exists before every reset primary write",
+      "passed": true
+    },
+    {
+      "name": "same-Rebirth Woodcutting purchase 1448: one immutable archive for this Rebirth",
+      "passed": true
+    },
+    {
+      "name": "same-Rebirth Woodcutting purchase 1448: save/reload retains points, upgrade and claim",
+      "passed": true
+    },
+    {
+      "name": "same-Rebirth Woodcutting purchase 1448: immutable archive survives reload",
+      "passed": true
+    },
+    {
+      "name": "same-Rebirth Woodcutting purchase 390: v0.4.23 completed gameplay retained additively",
+      "passed": true
+    },
+    {
+      "name": "same-Rebirth Woodcutting purchase 390: old clear pending exactly 1 with no credited points",
+      "passed": true
+    },
+    {
+      "name": "same-Rebirth Woodcutting purchase 390: old historical PB not invented",
+      "passed": true
+    },
+    {
+      "name": "same-Rebirth Woodcutting purchase 390: document no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "same-Rebirth Woodcutting purchase 390: planned purchase not applied before confirmation",
+      "passed": true
+    },
+    {
+      "name": "same-Rebirth Woodcutting purchase 390: points zero, level one, one claim",
+      "passed": true,
+      "details": {
+        "best_legacy_by_depth": {
+          "1": 0
+        },
+        "chapter_claims": {
+          "1": 1
+        },
+        "chapter_stats": {
+          "1": {
+            "best": 0,
+            "clears": 1,
+            "last": 0,
+            "previous_last": 0
+          }
+        },
+        "last_legacy_time": 0,
+        "points": 0,
+        "rebirths": 1,
+        "revision": 1,
+        "upgrades": {
+          "speed": {
+            "Woodcutting": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "same-Rebirth Woodcutting purchase 390: ordinary gameplay reset",
+      "passed": true,
+      "details": {
+        "frame": 1,
+        "generation": 1,
+        "active": ""
+      }
+    },
+    {
+      "name": "same-Rebirth Woodcutting purchase 390: settings survive",
+      "passed": true
+    },
+    {
+      "name": "same-Rebirth Woodcutting purchase 390: chapter clear records survive",
+      "passed": true
+    },
+    {
+      "name": "same-Rebirth Woodcutting purchase 390: archive has exact pre-reset save",
+      "passed": true
+    },
+    {
+      "name": "same-Rebirth Woodcutting purchase 390: archive exists before every reset primary write",
+      "passed": true
+    },
+    {
+      "name": "same-Rebirth Woodcutting purchase 390: one immutable archive for this Rebirth",
+      "passed": true
+    },
+    {
+      "name": "same-Rebirth Woodcutting purchase 390: save/reload retains points, upgrade and claim",
+      "passed": true
+    },
+    {
+      "name": "same-Rebirth Woodcutting purchase 390: immutable archive survives reload",
+      "passed": true
+    },
+    {
+      "name": "same-Rebirth Woodcutting purchase 430: v0.4.23 completed gameplay retained additively",
+      "passed": true
+    },
+    {
+      "name": "same-Rebirth Woodcutting purchase 430: old clear pending exactly 1 with no credited points",
+      "passed": true
+    },
+    {
+      "name": "same-Rebirth Woodcutting purchase 430: old historical PB not invented",
+      "passed": true
+    },
+    {
+      "name": "same-Rebirth Woodcutting purchase 430: document no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "same-Rebirth Woodcutting purchase 430: planned purchase not applied before confirmation",
+      "passed": true
+    },
+    {
+      "name": "same-Rebirth Woodcutting purchase 430: points zero, level one, one claim",
+      "passed": true,
+      "details": {
+        "best_legacy_by_depth": {
+          "1": 0
+        },
+        "chapter_claims": {
+          "1": 1
+        },
+        "chapter_stats": {
+          "1": {
+            "best": 0,
+            "clears": 1,
+            "last": 0,
+            "previous_last": 0
+          }
+        },
+        "last_legacy_time": 0,
+        "points": 0,
+        "rebirths": 1,
+        "revision": 1,
+        "upgrades": {
+          "speed": {
+            "Woodcutting": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "same-Rebirth Woodcutting purchase 430: ordinary gameplay reset",
+      "passed": true,
+      "details": {
+        "frame": 1,
+        "generation": 1,
+        "active": ""
+      }
+    },
+    {
+      "name": "same-Rebirth Woodcutting purchase 430: settings survive",
+      "passed": true
+    },
+    {
+      "name": "same-Rebirth Woodcutting purchase 430: chapter clear records survive",
+      "passed": true
+    },
+    {
+      "name": "same-Rebirth Woodcutting purchase 430: archive has exact pre-reset save",
+      "passed": true
+    },
+    {
+      "name": "same-Rebirth Woodcutting purchase 430: archive exists before every reset primary write",
+      "passed": true
+    },
+    {
+      "name": "same-Rebirth Woodcutting purchase 430: one immutable archive for this Rebirth",
+      "passed": true
+    },
+    {
+      "name": "same-Rebirth Woodcutting purchase 430: save/reload retains points, upgrade and claim",
+      "passed": true
+    },
+    {
+      "name": "same-Rebirth Woodcutting purchase 430: immutable archive survives reload",
+      "passed": true
+    },
+    {
+      "name": "cancel confirmation retains exact paused gameplay",
+      "passed": true
+    },
+    {
+      "name": "cancel confirmation creates no pre-Rebirth archive",
+      "passed": true
+    },
+    {
+      "name": "combined two-point plan blocked with only one available point",
+      "passed": true
+    },
+    {
+      "name": "archive creation failure was exercised",
+      "passed": true
+    },
+    {
+      "name": "archive failure leaves exact primary state and no reset write",
+      "passed": true
+    },
+    {
+      "name": "reward curve pending claim 1",
+      "passed": true,
+      "details": {
+        "expected": 1,
+        "pending": 1
+      }
+    },
+    {
+      "name": "clear credits zero new points before Rebirth 1",
+      "passed": true
+    },
+    {
+      "name": "same completed chapter remains one reward across reloads 1",
+      "passed": true
+    },
+    {
+      "name": "reward curve payout and claim count 1",
+      "passed": true,
+      "details": {
+        "expected": 1,
+        "actual": 1,
+        "claims": 1
+      }
+    },
+    {
+      "name": "no-purchase Rebirth valid 1",
+      "passed": true
+    },
+    {
+      "name": "no-purchase claim 1: archive has exact pre-reset save",
+      "passed": true
+    },
+    {
+      "name": "no-purchase claim 1: archive exists before every reset primary write",
+      "passed": true
+    },
+    {
+      "name": "no-purchase claim 1: one immutable archive for this Rebirth",
+      "passed": true
+    },
+    {
+      "name": "decimal balance survives browser save/reload 1",
+      "passed": true
+    },
+    {
+      "name": "reward curve pending claim 2",
+      "passed": true,
+      "details": {
+        "expected": 0.99,
+        "pending": 0.99
+      }
+    },
+    {
+      "name": "clear credits zero new points before Rebirth 2",
+      "passed": true
+    },
+    {
+      "name": "same completed chapter remains one reward across reloads 2",
+      "passed": true
+    },
+    {
+      "name": "reward curve payout and claim count 2",
+      "passed": true,
+      "details": {
+        "expected": 1.99,
+        "actual": 1.99,
+        "claims": 2
+      }
+    },
+    {
+      "name": "no-purchase Rebirth valid 2",
+      "passed": true
+    },
+    {
+      "name": "no-purchase claim 2: archive has exact pre-reset save",
+      "passed": true
+    },
+    {
+      "name": "no-purchase claim 2: archive exists before every reset primary write",
+      "passed": true
+    },
+    {
+      "name": "no-purchase claim 2: one immutable archive for this Rebirth",
+      "passed": true
+    },
+    {
+      "name": "decimal balance survives browser save/reload 2",
+      "passed": true
+    },
+    {
+      "name": "reward curve pending claim 3",
+      "passed": true,
+      "details": {
+        "expected": 0.9801,
+        "pending": 0.9801
+      }
+    },
+    {
+      "name": "clear credits zero new points before Rebirth 3",
+      "passed": true
+    },
+    {
+      "name": "same completed chapter remains one reward across reloads 3",
+      "passed": true
+    },
+    {
+      "name": "reward curve payout and claim count 3",
+      "passed": true,
+      "details": {
+        "expected": 2.9701,
+        "actual": 2.9701,
+        "claims": 3
+      }
+    },
+    {
+      "name": "no-purchase Rebirth valid 3",
+      "passed": true
+    },
+    {
+      "name": "no-purchase claim 3: archive has exact pre-reset save",
+      "passed": true
+    },
+    {
+      "name": "no-purchase claim 3: archive exists before every reset primary write",
+      "passed": true
+    },
+    {
+      "name": "no-purchase claim 3: one immutable archive for this Rebirth",
+      "passed": true
+    },
+    {
+      "name": "decimal balance survives browser save/reload 3",
+      "passed": true
+    },
+    {
+      "name": "reward curve pending claim 4",
+      "passed": true,
+      "details": {
+        "expected": 0.970299,
+        "pending": 0.970299
+      }
+    },
+    {
+      "name": "clear credits zero new points before Rebirth 4",
+      "passed": true
+    },
+    {
+      "name": "same completed chapter remains one reward across reloads 4",
+      "passed": true
+    },
+    {
+      "name": "reward curve payout and claim count 4",
+      "passed": true,
+      "details": {
+        "expected": 3.940399,
+        "actual": 3.940399,
+        "claims": 4
+      }
+    },
+    {
+      "name": "no-purchase Rebirth valid 4",
+      "passed": true
+    },
+    {
+      "name": "no-purchase claim 4: archive has exact pre-reset save",
+      "passed": true
+    },
+    {
+      "name": "no-purchase claim 4: archive exists before every reset primary write",
+      "passed": true
+    },
+    {
+      "name": "no-purchase claim 4: one immutable archive for this Rebirth",
+      "passed": true
+    },
+    {
+      "name": "decimal balance survives browser save/reload 4",
+      "passed": true
+    },
+    {
+      "name": "active gameplay advanced while confirmation open",
+      "passed": true
+    },
+    {
+      "name": "confirmation archives latest gameplay rather than opening snapshot",
+      "passed": true,
+      "details": {
+        "opened": 2.0117272727272737,
+        "latest": 3.273633333333325,
+        "archived": 3.295433333333325
+      }
+    },
+    {
+      "name": "latest active archive exists before reset primary write",
+      "passed": true
+    },
+    {
+      "name": "active confirmation Rebirth completed",
+      "passed": true
+    },
+    {
+      "name": "browser had no runtime, console or network errors",
+      "passed": true,
+      "details": []
+    }
+  ],
+  "errors": [],
+  "screenshots": [
+    "browser-legacy-fresh.png",
+    "browser-legacy-window-1448.png",
+    "browser-legacy-confirm-1448.png",
+    "browser-legacy-reborn-1448.png",
+    "browser-legacy-window-390.png",
+    "browser-legacy-confirm-390.png",
+    "browser-legacy-reborn-390.png",
+    "browser-legacy-window-430.png",
+    "browser-legacy-confirm-430.png",
+    "browser-legacy-reborn-430.png",
+    "browser-legacy-canceled.png",
+    "browser-legacy-insufficient-points.png",
+    "browser-legacy-archive-blocked.png"
+  ]
+}

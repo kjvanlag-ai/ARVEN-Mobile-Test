@@ -1,0 +1,2304 @@
+{
+  "checks": [
+    {
+      "details": {
+        "actual": 0.0,
+        "expected": 0.0
+      },
+      "name": "fresh spendable Legacy Points are zero",
+      "passed": true
+    },
+    {
+      "name": "fresh Chapter 1 claim count is zero",
+      "passed": true
+    },
+    {
+      "name": "fresh profile cannot Rebirth without reward or purchase",
+      "passed": true
+    },
+    {
+      "name": "fresh-v0424: restore succeeds",
+      "passed": true
+    },
+    {
+      "name": "fresh-v0424: exact normalized state survives",
+      "passed": true
+    },
+    {
+      "name": "write isolated evidence fresh-v0424",
+      "passed": true
+    },
+    {
+      "name": "Legacy 1: real mountain action completes Chapter 1",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 0.0,
+        "expected": 0.0
+      },
+      "name": "Legacy 1: chapter clear credits no spendable points",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 1.0,
+        "expected": 1.0
+      },
+      "name": "Legacy 1: exact per-chapter decayed pending reward",
+      "passed": true
+    },
+    {
+      "name": "Legacy 1: claim count unchanged before Rebirth",
+      "passed": true
+    },
+    {
+      "name": "Legacy 1: duplicate chapter registration creates no extra clear",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 1.0,
+        "expected": 1.0
+      },
+      "name": "Legacy 1: duplicate registration creates no extra reward",
+      "passed": true
+    },
+    {
+      "name": "ordinary generation restart after completion succeeds",
+      "passed": true
+    },
+    {
+      "name": "Chapter 1 can be reached and completed again in the same Legacy",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 1.0,
+        "expected": 1.0
+      },
+      "name": "actual repeat completion after death cannot duplicate Chapter 1 reward",
+      "passed": true
+    },
+    {
+      "name": "actual repeat completion after death cannot duplicate Chapter stats",
+      "passed": true
+    },
+    {
+      "name": "before-rebirth-1: restore succeeds",
+      "passed": true
+    },
+    {
+      "name": "before-rebirth-1: exact normalized state survives",
+      "passed": true
+    },
+    {
+      "name": "write isolated evidence before-rebirth-1",
+      "passed": true
+    },
+    {
+      "name": "Legacy 1: Rebirth without purchases is valid",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 1.0,
+        "expected": 1.0
+      },
+      "name": "Legacy 1: Rebirth is the payment moment",
+      "passed": true
+    },
+    {
+      "name": "Legacy 1: Rebirth increments Chapter 1 claims exactly once",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 0.0,
+        "expected": 0.0
+      },
+      "name": "Legacy 1: claimed reward is no longer pending",
+      "passed": true
+    },
+    {
+      "name": "Legacy 1: immediate repeated no-purchase Rebirth is blocked",
+      "passed": true
+    },
+    {
+      "name": "after-rebirth-1: restore succeeds",
+      "passed": true
+    },
+    {
+      "name": "after-rebirth-1: exact normalized state survives",
+      "passed": true
+    },
+    {
+      "name": "write isolated evidence after-rebirth-1",
+      "passed": true
+    },
+    {
+      "name": "Legacy 2: real mountain action completes Chapter 1",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 1.0,
+        "expected": 1.0
+      },
+      "name": "Legacy 2: chapter clear credits no spendable points",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 0.99,
+        "expected": 0.99
+      },
+      "name": "Legacy 2: exact per-chapter decayed pending reward",
+      "passed": true
+    },
+    {
+      "name": "Legacy 2: claim count unchanged before Rebirth",
+      "passed": true
+    },
+    {
+      "name": "Legacy 2: duplicate chapter registration creates no extra clear",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 0.99,
+        "expected": 0.99
+      },
+      "name": "Legacy 2: duplicate registration creates no extra reward",
+      "passed": true
+    },
+    {
+      "name": "before-rebirth-2: restore succeeds",
+      "passed": true
+    },
+    {
+      "name": "before-rebirth-2: exact normalized state survives",
+      "passed": true
+    },
+    {
+      "name": "write isolated evidence before-rebirth-2",
+      "passed": true
+    },
+    {
+      "name": "Legacy 2: Rebirth without purchases is valid",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 1.99,
+        "expected": 1.99
+      },
+      "name": "Legacy 2: Rebirth is the payment moment",
+      "passed": true
+    },
+    {
+      "name": "Legacy 2: Rebirth increments Chapter 1 claims exactly once",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 0.0,
+        "expected": 0.0
+      },
+      "name": "Legacy 2: claimed reward is no longer pending",
+      "passed": true
+    },
+    {
+      "name": "Legacy 2: immediate repeated no-purchase Rebirth is blocked",
+      "passed": true
+    },
+    {
+      "name": "after-rebirth-2: restore succeeds",
+      "passed": true
+    },
+    {
+      "name": "after-rebirth-2: exact normalized state survives",
+      "passed": true
+    },
+    {
+      "name": "write isolated evidence after-rebirth-2",
+      "passed": true
+    },
+    {
+      "name": "Legacy 3: real mountain action completes Chapter 1",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 1.99,
+        "expected": 1.99
+      },
+      "name": "Legacy 3: chapter clear credits no spendable points",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 0.9801,
+        "expected": 0.9801
+      },
+      "name": "Legacy 3: exact per-chapter decayed pending reward",
+      "passed": true
+    },
+    {
+      "name": "Legacy 3: claim count unchanged before Rebirth",
+      "passed": true
+    },
+    {
+      "name": "Legacy 3: duplicate chapter registration creates no extra clear",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 0.9801,
+        "expected": 0.9801
+      },
+      "name": "Legacy 3: duplicate registration creates no extra reward",
+      "passed": true
+    },
+    {
+      "name": "before-rebirth-3: restore succeeds",
+      "passed": true
+    },
+    {
+      "name": "before-rebirth-3: exact normalized state survives",
+      "passed": true
+    },
+    {
+      "name": "write isolated evidence before-rebirth-3",
+      "passed": true
+    },
+    {
+      "name": "Legacy 3: Rebirth without purchases is valid",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 2.9701,
+        "expected": 2.9701
+      },
+      "name": "Legacy 3: Rebirth is the payment moment",
+      "passed": true
+    },
+    {
+      "name": "Legacy 3: Rebirth increments Chapter 1 claims exactly once",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 0.0,
+        "expected": 0.0
+      },
+      "name": "Legacy 3: claimed reward is no longer pending",
+      "passed": true
+    },
+    {
+      "name": "Legacy 3: immediate repeated no-purchase Rebirth is blocked",
+      "passed": true
+    },
+    {
+      "name": "after-rebirth-3: restore succeeds",
+      "passed": true
+    },
+    {
+      "name": "after-rebirth-3: exact normalized state survives",
+      "passed": true
+    },
+    {
+      "name": "write isolated evidence after-rebirth-3",
+      "passed": true
+    },
+    {
+      "name": "Legacy 4: real mountain action completes Chapter 1",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 2.9701,
+        "expected": 2.9701
+      },
+      "name": "Legacy 4: chapter clear credits no spendable points",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 0.9702989999999999,
+        "expected": 0.970299
+      },
+      "name": "Legacy 4: exact per-chapter decayed pending reward",
+      "passed": true
+    },
+    {
+      "name": "Legacy 4: claim count unchanged before Rebirth",
+      "passed": true
+    },
+    {
+      "name": "Legacy 4: duplicate chapter registration creates no extra clear",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 0.9702989999999999,
+        "expected": 0.970299
+      },
+      "name": "Legacy 4: duplicate registration creates no extra reward",
+      "passed": true
+    },
+    {
+      "name": "before-rebirth-4: restore succeeds",
+      "passed": true
+    },
+    {
+      "name": "before-rebirth-4: exact normalized state survives",
+      "passed": true
+    },
+    {
+      "name": "write isolated evidence before-rebirth-4",
+      "passed": true
+    },
+    {
+      "name": "Legacy 4: Rebirth without purchases is valid",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 3.9403989999999998,
+        "expected": 3.940399
+      },
+      "name": "Legacy 4: Rebirth is the payment moment",
+      "passed": true
+    },
+    {
+      "name": "Legacy 4: Rebirth increments Chapter 1 claims exactly once",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 0.0,
+        "expected": 0.0
+      },
+      "name": "Legacy 4: claimed reward is no longer pending",
+      "passed": true
+    },
+    {
+      "name": "Legacy 4: immediate repeated no-purchase Rebirth is blocked",
+      "passed": true
+    },
+    {
+      "name": "after-rebirth-4: restore succeeds",
+      "passed": true
+    },
+    {
+      "name": "after-rebirth-4: exact normalized state survives",
+      "passed": true
+    },
+    {
+      "name": "write isolated evidence after-rebirth-4",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 0.9702989999999999,
+        "expected": 0.970299
+      },
+      "name": "Chapter 1 reward uses its own previous claims",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 0.99,
+        "expected": 0.99
+      },
+      "name": "Chapter 2 reward uses its independent previous claims",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 1.960299,
+        "expected": 1.960299
+      },
+      "name": "multiple completed chapters sum their separate rewards",
+      "passed": true
+    },
+    {
+      "name": "false completion flags do not count toward completed depth",
+      "passed": true
+    },
+    {
+      "name": "multi-chapter pending rewards claim together",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 1.960299,
+        "expected": 1.960299
+      },
+      "name": "multi-chapter Rebirth pays exactly the summed pending rewards",
+      "passed": true
+    },
+    {
+      "name": "only completed chapter claims increment once",
+      "passed": true
+    },
+    {
+      "name": "Fishing: obtain first pending reward through Chapter Complete",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 1.0,
+        "expected": 1.0
+      },
+      "name": "Fishing: each +1% costs exactly one point",
+      "passed": true
+    },
+    {
+      "name": "Fishing: same-Rebirth reward can fund upgrade",
+      "passed": true
+    },
+    {
+      "name": "Fishing: planning does not apply or debit upgrades",
+      "passed": true
+    },
+    {
+      "name": "Fishing: purchase applies when Rebirth is confirmed",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 0.0,
+        "expected": 0.0
+      },
+      "name": "Fishing: first pending point is fully spent",
+      "passed": true
+    },
+    {
+      "name": "Fishing: permanent upgrade level is integer one",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 1.01,
+        "expected": 1.01
+      },
+      "name": "Fishing: zero Run and Permanent progression yields 1.01x",
+      "passed": true
+    },
+    {
+      "name": "Fishing: later no-purchase Rebirth carries decimal balance",
+      "passed": true
+    },
+    {
+      "name": "Fishing: accumulated later rewards fund second upgrade",
+      "passed": true
+    },
+    {
+      "name": "Fishing: second +1% makes integer level two",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 1.02,
+        "expected": 1.02
+      },
+      "name": "Fishing: two upgrades add to 1.02x",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 0.9701,
+        "expected": 0.9701
+      },
+      "name": "Fishing: second purchase preserves remaining decimal points",
+      "passed": true
+    },
+    {
+      "name": "upgraded-fishing: restore succeeds",
+      "passed": true
+    },
+    {
+      "name": "upgraded-fishing: exact normalized state survives",
+      "passed": true
+    },
+    {
+      "name": "write isolated evidence upgraded-fishing",
+      "passed": true
+    },
+    {
+      "name": "Woodcutting: obtain first pending reward through Chapter Complete",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 1.0,
+        "expected": 1.0
+      },
+      "name": "Woodcutting: each +1% costs exactly one point",
+      "passed": true
+    },
+    {
+      "name": "Woodcutting: same-Rebirth reward can fund upgrade",
+      "passed": true
+    },
+    {
+      "name": "Woodcutting: planning does not apply or debit upgrades",
+      "passed": true
+    },
+    {
+      "name": "Woodcutting: purchase applies when Rebirth is confirmed",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 0.0,
+        "expected": 0.0
+      },
+      "name": "Woodcutting: first pending point is fully spent",
+      "passed": true
+    },
+    {
+      "name": "Woodcutting: permanent upgrade level is integer one",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 1.01,
+        "expected": 1.01
+      },
+      "name": "Woodcutting: zero Run and Permanent progression yields 1.01x",
+      "passed": true
+    },
+    {
+      "name": "Woodcutting: later no-purchase Rebirth carries decimal balance",
+      "passed": true
+    },
+    {
+      "name": "Woodcutting: accumulated later rewards fund second upgrade",
+      "passed": true
+    },
+    {
+      "name": "Woodcutting: second +1% makes integer level two",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 1.02,
+        "expected": 1.02
+      },
+      "name": "Woodcutting: two upgrades add to 1.02x",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 0.9701,
+        "expected": 0.9701
+      },
+      "name": "Woodcutting: second purchase preserves remaining decimal points",
+      "passed": true
+    },
+    {
+      "name": "upgraded-woodcutting: restore succeeds",
+      "passed": true
+    },
+    {
+      "name": "upgraded-woodcutting: exact normalized state survives",
+      "passed": true
+    },
+    {
+      "name": "write isolated evidence upgraded-woodcutting",
+      "passed": true
+    },
+    {
+      "name": "Crafting: obtain first pending reward through Chapter Complete",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 1.0,
+        "expected": 1.0
+      },
+      "name": "Crafting: each +1% costs exactly one point",
+      "passed": true
+    },
+    {
+      "name": "Crafting: same-Rebirth reward can fund upgrade",
+      "passed": true
+    },
+    {
+      "name": "Crafting: planning does not apply or debit upgrades",
+      "passed": true
+    },
+    {
+      "name": "Crafting: purchase applies when Rebirth is confirmed",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 0.0,
+        "expected": 0.0
+      },
+      "name": "Crafting: first pending point is fully spent",
+      "passed": true
+    },
+    {
+      "name": "Crafting: permanent upgrade level is integer one",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 1.01,
+        "expected": 1.01
+      },
+      "name": "Crafting: zero Run and Permanent progression yields 1.01x",
+      "passed": true
+    },
+    {
+      "name": "Crafting: later no-purchase Rebirth carries decimal balance",
+      "passed": true
+    },
+    {
+      "name": "Crafting: accumulated later rewards fund second upgrade",
+      "passed": true
+    },
+    {
+      "name": "Crafting: second +1% makes integer level two",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 1.02,
+        "expected": 1.02
+      },
+      "name": "Crafting: two upgrades add to 1.02x",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 0.9701,
+        "expected": 0.9701
+      },
+      "name": "Crafting: second purchase preserves remaining decimal points",
+      "passed": true
+    },
+    {
+      "name": "upgraded-crafting: restore succeeds",
+      "passed": true
+    },
+    {
+      "name": "upgraded-crafting: exact normalized state survives",
+      "passed": true
+    },
+    {
+      "name": "write isolated evidence upgraded-crafting",
+      "passed": true
+    },
+    {
+      "name": "Cooking: obtain first pending reward through Chapter Complete",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 1.0,
+        "expected": 1.0
+      },
+      "name": "Cooking: each +1% costs exactly one point",
+      "passed": true
+    },
+    {
+      "name": "Cooking: same-Rebirth reward can fund upgrade",
+      "passed": true
+    },
+    {
+      "name": "Cooking: planning does not apply or debit upgrades",
+      "passed": true
+    },
+    {
+      "name": "Cooking: purchase applies when Rebirth is confirmed",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 0.0,
+        "expected": 0.0
+      },
+      "name": "Cooking: first pending point is fully spent",
+      "passed": true
+    },
+    {
+      "name": "Cooking: permanent upgrade level is integer one",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 1.01,
+        "expected": 1.01
+      },
+      "name": "Cooking: zero Run and Permanent progression yields 1.01x",
+      "passed": true
+    },
+    {
+      "name": "Cooking: later no-purchase Rebirth carries decimal balance",
+      "passed": true
+    },
+    {
+      "name": "Cooking: accumulated later rewards fund second upgrade",
+      "passed": true
+    },
+    {
+      "name": "Cooking: second +1% makes integer level two",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 1.02,
+        "expected": 1.02
+      },
+      "name": "Cooking: two upgrades add to 1.02x",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 0.9701,
+        "expected": 0.9701
+      },
+      "name": "Cooking: second purchase preserves remaining decimal points",
+      "passed": true
+    },
+    {
+      "name": "upgraded-cooking: restore succeeds",
+      "passed": true
+    },
+    {
+      "name": "upgraded-cooking: exact normalized state survives",
+      "passed": true
+    },
+    {
+      "name": "write isolated evidence upgraded-cooking",
+      "passed": true
+    },
+    {
+      "name": "Running: obtain first pending reward through Chapter Complete",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 1.0,
+        "expected": 1.0
+      },
+      "name": "Running: each +1% costs exactly one point",
+      "passed": true
+    },
+    {
+      "name": "Running: same-Rebirth reward can fund upgrade",
+      "passed": true
+    },
+    {
+      "name": "Running: planning does not apply or debit upgrades",
+      "passed": true
+    },
+    {
+      "name": "Running: purchase applies when Rebirth is confirmed",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 0.0,
+        "expected": 0.0
+      },
+      "name": "Running: first pending point is fully spent",
+      "passed": true
+    },
+    {
+      "name": "Running: permanent upgrade level is integer one",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 1.01,
+        "expected": 1.01
+      },
+      "name": "Running: zero Run and Permanent progression yields 1.01x",
+      "passed": true
+    },
+    {
+      "name": "Running: later no-purchase Rebirth carries decimal balance",
+      "passed": true
+    },
+    {
+      "name": "Running: accumulated later rewards fund second upgrade",
+      "passed": true
+    },
+    {
+      "name": "Running: second +1% makes integer level two",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 1.02,
+        "expected": 1.02
+      },
+      "name": "Running: two upgrades add to 1.02x",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 0.9701,
+        "expected": 0.9701
+      },
+      "name": "Running: second purchase preserves remaining decimal points",
+      "passed": true
+    },
+    {
+      "name": "upgraded-running: restore succeeds",
+      "passed": true
+    },
+    {
+      "name": "upgraded-running: exact normalized state survives",
+      "passed": true
+    },
+    {
+      "name": "write isolated evidence upgraded-running",
+      "passed": true
+    },
+    {
+      "name": "Fighting: obtain first pending reward through Chapter Complete",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 1.0,
+        "expected": 1.0
+      },
+      "name": "Fighting: each +1% costs exactly one point",
+      "passed": true
+    },
+    {
+      "name": "Fighting: same-Rebirth reward can fund upgrade",
+      "passed": true
+    },
+    {
+      "name": "Fighting: planning does not apply or debit upgrades",
+      "passed": true
+    },
+    {
+      "name": "Fighting: purchase applies when Rebirth is confirmed",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 0.0,
+        "expected": 0.0
+      },
+      "name": "Fighting: first pending point is fully spent",
+      "passed": true
+    },
+    {
+      "name": "Fighting: permanent upgrade level is integer one",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 1.01,
+        "expected": 1.01
+      },
+      "name": "Fighting: zero Run and Permanent progression yields 1.01x",
+      "passed": true
+    },
+    {
+      "name": "Fighting: later no-purchase Rebirth carries decimal balance",
+      "passed": true
+    },
+    {
+      "name": "Fighting: accumulated later rewards fund second upgrade",
+      "passed": true
+    },
+    {
+      "name": "Fighting: second +1% makes integer level two",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 1.02,
+        "expected": 1.02
+      },
+      "name": "Fighting: two upgrades add to 1.02x",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 0.9701,
+        "expected": 0.9701
+      },
+      "name": "Fighting: second purchase preserves remaining decimal points",
+      "passed": true
+    },
+    {
+      "name": "upgraded-fighting: restore succeeds",
+      "passed": true
+    },
+    {
+      "name": "upgraded-fighting: exact normalized state survives",
+      "passed": true
+    },
+    {
+      "name": "write isolated evidence upgraded-fighting",
+      "passed": true
+    },
+    {
+      "name": "bulk upgrade fixture has five current plus one pending point",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 6.0,
+        "expected": 6.0
+      },
+      "name": "six +1% upgrades cost exactly six points",
+      "passed": true
+    },
+    {
+      "name": "all six skill upgrades can purchase together",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 0.0,
+        "expected": 0.0
+      },
+      "name": "bulk purchase debits current and pending funds once",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 1.1600000000000001,
+        "expected": 1.1600000000000001
+      },
+      "name": "Fishing: Legacy speed adds to base, Run and Permanent bonuses",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 1.1600000000000001,
+        "expected": 1.1600000000000001
+      },
+      "name": "Fishing: tool multiplier follows combined skill-speed term",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 1.1600000000000001,
+        "expected": 1.1600000000000001
+      },
+      "name": "Woodcutting: Legacy speed adds to base, Run and Permanent bonuses",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 1.1600000000000001,
+        "expected": 1.1600000000000001
+      },
+      "name": "Woodcutting: tool multiplier follows combined skill-speed term",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 1.1600000000000001,
+        "expected": 1.1600000000000001
+      },
+      "name": "Crafting: Legacy speed adds to base, Run and Permanent bonuses",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 1.334,
+        "expected": 1.334
+      },
+      "name": "Crafting: tool multiplier follows combined skill-speed term",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 1.1600000000000001,
+        "expected": 1.1600000000000001
+      },
+      "name": "Cooking: Legacy speed adds to base, Run and Permanent bonuses",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 1.334,
+        "expected": 1.334
+      },
+      "name": "Cooking: tool multiplier follows combined skill-speed term",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 1.1600000000000001,
+        "expected": 1.1600000000000001
+      },
+      "name": "Running: Legacy speed adds to base, Run and Permanent bonuses",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 1.1600000000000001,
+        "expected": 1.1600000000000001
+      },
+      "name": "Running: tool multiplier follows combined skill-speed term",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 1.1600000000000001,
+        "expected": 1.1600000000000001
+      },
+      "name": "Fighting: Legacy speed adds to base, Run and Permanent bonuses",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 1.1600000000000001,
+        "expected": 1.1600000000000001
+      },
+      "name": "Fighting: tool multiplier follows combined skill-speed term",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 1.0,
+        "expected": 1.0
+      },
+      "name": "Fishing: existing bonuses toggle suppresses all speed bonuses",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 1.0,
+        "expected": 1.0
+      },
+      "name": "Woodcutting: existing bonuses toggle suppresses all speed bonuses",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 1.0,
+        "expected": 1.0
+      },
+      "name": "Crafting: existing bonuses toggle suppresses all speed bonuses",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 1.0,
+        "expected": 1.0
+      },
+      "name": "Cooking: existing bonuses toggle suppresses all speed bonuses",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 1.0,
+        "expected": 1.0
+      },
+      "name": "Running: existing bonuses toggle suppresses all speed bonuses",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 1.0,
+        "expected": 1.0
+      },
+      "name": "Fighting: existing bonuses toggle suppresses all speed bonuses",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 1.0,
+        "expected": 1.0
+      },
+      "name": "Vitality is excluded from Legacy speed upgrades",
+      "passed": true
+    },
+    {
+      "name": "invalid-purchase fixture has one available point",
+      "passed": true
+    },
+    {
+      "name": "unaffordable or noninteger purchase rejected: {\"Woodcutting\":2}",
+      "passed": true
+    },
+    {
+      "name": "rejected purchase leaves every gameplay and Legacy field intact",
+      "passed": true
+    },
+    {
+      "name": "unaffordable or noninteger purchase rejected: {\"Woodcutting\":0.5}",
+      "passed": true
+    },
+    {
+      "name": "rejected purchase leaves every gameplay and Legacy field intact",
+      "passed": true
+    },
+    {
+      "name": "unaffordable or noninteger purchase rejected: {\"Woodcutting\":-1}",
+      "passed": true
+    },
+    {
+      "name": "rejected purchase leaves every gameplay and Legacy field intact",
+      "passed": true
+    },
+    {
+      "name": "unaffordable or noninteger purchase rejected: {\"Woodcutting\":\"1\"}",
+      "passed": true
+    },
+    {
+      "name": "rejected purchase leaves every gameplay and Legacy field intact",
+      "passed": true
+    },
+    {
+      "name": "unaffordable or noninteger purchase rejected: {\"Vitality\":1}",
+      "passed": true
+    },
+    {
+      "name": "rejected purchase leaves every gameplay and Legacy field intact",
+      "passed": true
+    },
+    {
+      "name": "unaffordable or noninteger purchase rejected: {\"Unknown\":1}",
+      "passed": true
+    },
+    {
+      "name": "rejected purchase leaves every gameplay and Legacy field intact",
+      "passed": true
+    },
+    {
+      "name": "unaffordable or noninteger purchase rejected: {\"Woodcutting\":true}",
+      "passed": true
+    },
+    {
+      "name": "rejected purchase leaves every gameplay and Legacy field intact",
+      "passed": true
+    },
+    {
+      "name": "integer-valued numeric purchase is valid",
+      "passed": true
+    },
+    {
+      "name": "integer-valued float never creates a fractional upgrade",
+      "passed": true
+    },
+    {
+      "name": "existing unspent points can fund a purchase without pending chapter",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 0.25,
+        "expected": 0.25
+      },
+      "name": "purchase-only Rebirth preserves decimal remainder",
+      "passed": true
+    },
+    {
+      "name": "purchase-only Rebirth invents no chapter claim",
+      "passed": true
+    },
+    {
+      "name": "Woodcutting clock fixture starts real work",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 0.0505,
+        "expected": 0.0505
+      },
+      "name": "Woodcutting work advances at real 1.01x Legacy speed",
+      "passed": true
+    },
+    {
+      "name": "Fighting clock fixture starts real combat",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 0.0505,
+        "expected": 0.0505
+      },
+      "name": "Fighting player attack clock advances at 1.01x",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 0.05,
+        "expected": 0.05
+      },
+      "name": "Fighting upgrade preserves enemy attack clock",
+      "passed": true
+    },
+    {
+      "name": "reset fixture completes real Chapter 1",
+      "passed": true
+    },
+    {
+      "name": "rich gameplay fixture Rebirth succeeds",
+      "passed": true
+    },
+    {
+      "name": "Rebirth resets all normal run state exactly to fresh gameplay",
+      "passed": true
+    },
+    {
+      "name": "Rebirth resets generation progression and current timing, preserving only settings",
+      "passed": true
+    },
+    {
+      "name": "Rebirth clears run inventory",
+      "passed": true
+    },
+    {
+      "name": "Rebirth clears run done",
+      "passed": true
+    },
+    {
+      "name": "Rebirth clears run stages",
+      "passed": true
+    },
+    {
+      "name": "Rebirth clears run xp",
+      "passed": true
+    },
+    {
+      "name": "Rebirth clears run craft_paid",
+      "passed": true
+    },
+    {
+      "name": "Rebirth clears run craft_batches",
+      "passed": true
+    },
+    {
+      "name": "Rebirth clears run suspended",
+      "passed": true
+    },
+    {
+      "name": "Rebirth clears run combat",
+      "passed": true
+    },
+    {
+      "name": "Rebirth clears run eating",
+      "passed": true
+    },
+    {
+      "name": "Rebirth clears persistent gameplay xp",
+      "passed": true
+    },
+    {
+      "name": "Rebirth clears persistent gameplay mastery",
+      "passed": true
+    },
+    {
+      "name": "Rebirth clears persistent gameplay auto",
+      "passed": true
+    },
+    {
+      "name": "Rebirth clears persistent gameplay unlocked",
+      "passed": true
+    },
+    {
+      "name": "Rebirth clears persistent gameplay legacy_completed",
+      "passed": true
+    },
+    {
+      "name": "Rebirth clears persistent gameplay chapter_elapsed",
+      "passed": true
+    },
+    {
+      "name": "Rebirth clears persistent gameplay chapter_complete_times",
+      "passed": true
+    },
+    {
+      "name": "Rebirth restores starting area, generation one and normal chapter progress",
+      "passed": true
+    },
+    {
+      "name": "Rebirth restores starting equipment and inventory capacity",
+      "passed": true
+    },
+    {
+      "name": "Rebirth begins an incomplete playable chapter",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 0.0,
+        "expected": 0.0
+      },
+      "name": "Rebirth clears Vitality",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 0.0,
+        "expected": 0.0
+      },
+      "name": "Rebirth clears current Chapter timing",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 0.0,
+        "expected": 0.0
+      },
+      "name": "Rebirth clears current Full Legacy timing",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 8.83559601,
+        "expected": 8.83559601
+      },
+      "name": "Rebirth preserves unspent Legacy Points and credits pending reward",
+      "passed": true
+    },
+    {
+      "name": "Rebirth preserves every permanent Legacy upgrade",
+      "passed": true
+    },
+    {
+      "name": "Rebirth preserves previous claims and increments only this completed chapter",
+      "passed": true
+    },
+    {
+      "name": "Rebirth preserves Chapter Last, Best and Clears without incrementing Clears",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 135.0500000000014,
+        "expected": 135.0500000000014
+      },
+      "name": "Rebirth records exact Full Legacy Last time",
+      "passed": true
+    },
+    {
+      "name": "slower Rebirth preserves Full Legacy best times at all depths",
+      "passed": true
+    },
+    {
+      "name": "Rebirth preserves nested user settings",
+      "passed": true
+    },
+    {
+      "name": "reset-after-rich-gameplay: restore succeeds",
+      "passed": true
+    },
+    {
+      "name": "reset-after-rich-gameplay: exact normalized state survives",
+      "passed": true
+    },
+    {
+      "name": "write isolated evidence reset-after-rich-gameplay",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 0.0,
+        "expected": 0.0
+      },
+      "name": "idle simulated time gives no Chapter time",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 0.0,
+        "expected": 0.0
+      },
+      "name": "idle simulated time gives no Full Legacy time",
+      "passed": true
+    },
+    {
+      "name": "timing fixture starts active simulated gameplay",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 2.7499999999999996,
+        "expected": 2.75
+      },
+      "name": "Chapter This Time counts active simulated gameplay",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 2.7499999999999996,
+        "expected": 2.75
+      },
+      "name": "Full Legacy current time counts active simulated gameplay",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 2.7499999999999996,
+        "expected": 2.75
+      },
+      "name": "paused idle gameplay gives no Chapter time",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 2.7499999999999996,
+        "expected": 2.75
+      },
+      "name": "paused idle gameplay gives no Full Legacy time",
+      "passed": true
+    },
+    {
+      "name": "ordinary death creates exactly the next generation",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 2.7499999999999996,
+        "expected": 2.75
+      },
+      "name": "ordinary death and dead idle preserve Chapter timing",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 2.7499999999999996,
+        "expected": 2.75
+      },
+      "name": "ordinary death and dead idle preserve Full Legacy timing",
+      "passed": true
+    },
+    {
+      "name": "next generation resumes gameplay",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 3.9999999999999947,
+        "expected": 4.0
+      },
+      "name": "Chapter timing accumulates across generations",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 3.9999999999999947,
+        "expected": 4.0
+      },
+      "name": "Full Legacy timing accumulates across generations",
+      "passed": true
+    },
+    {
+      "name": "timing fixture reaches actual Chapter Complete",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 14.000000000000066,
+        "expected": 14.0
+      },
+      "name": "This Time freezes at exact Chapter completion time",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 14.000000000000066,
+        "expected": 14.0
+      },
+      "name": "first valid clear creates Chapter Best Time",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 0.0,
+        "expected": 0.0
+      },
+      "name": "first completed chapter has no preceding Last Clear",
+      "passed": true
+    },
+    {
+      "name": "Total Clears increments exactly once at Chapter Complete",
+      "passed": true
+    },
+    {
+      "name": "post-completion active gameplay can run",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 14.000000000000066,
+        "expected": 14.000000000000066
+      },
+      "name": "Chapter This Time stays frozen after completion",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 15.000000000000078,
+        "expected": 15.0
+      },
+      "name": "Full Legacy current time continues after chapter completion",
+      "passed": true
+    },
+    {
+      "name": "ordinary death preserves pending completed chapter",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 1.0,
+        "expected": 1.0
+      },
+      "name": "ordinary death preserves pending Chapter reward",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 14.000000000000066,
+        "expected": 14.000000000000066
+      },
+      "name": "ordinary death preserves frozen completed Chapter time",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 15.000000000000078,
+        "expected": 15.0
+      },
+      "name": "ordinary death preserves active Full Legacy current time",
+      "passed": true
+    },
+    {
+      "name": "dead-pending-frozen-timers: restore succeeds",
+      "passed": true
+    },
+    {
+      "name": "dead-pending-frozen-timers: exact normalized state survives",
+      "passed": true
+    },
+    {
+      "name": "write isolated evidence dead-pending-frozen-timers",
+      "passed": true
+    },
+    {
+      "name": "Rebirth claims completed generation and resets current timers",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 0.0,
+        "expected": 0.0
+      },
+      "name": "next Legacy starts Chapter This Time at zero",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 14.000000000000066,
+        "expected": 14.0
+      },
+      "name": "Last Clear survives into the next Legacy",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 14.000000000000066,
+        "expected": 14.0
+      },
+      "name": "Chapter PB survives Rebirth",
+      "passed": true
+    },
+    {
+      "name": "Rebirth creates no extra Chapter clear",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 15.000000000000078,
+        "expected": 15.0
+      },
+      "name": "Last Rebirth time records all active Full Legacy gameplay",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 15.000000000000078,
+        "expected": 15.0
+      },
+      "name": "first Full Legacy record stores depth-one best",
+      "passed": true
+    },
+    {
+      "name": "slower next Legacy reaches real Chapter Complete",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 30.000000000000142,
+        "expected": 30.0
+      },
+      "name": "slower clear freezes its current Chapter time",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 14.000000000000066,
+        "expected": 14.0
+      },
+      "name": "Last Clear during completion shows previous clear",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 14.000000000000066,
+        "expected": 14.0
+      },
+      "name": "slower clear does not worsen Chapter Best Time",
+      "passed": true
+    },
+    {
+      "name": "second actual clear increments Total Clears once",
+      "passed": true
+    },
+    {
+      "name": "slower Full Legacy can Rebirth",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 30.000000000000142,
+        "expected": 30.0
+      },
+      "name": "Last Clear updates to slower latest clear in next Legacy",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 15.000000000000078,
+        "expected": 15.0
+      },
+      "name": "slower depth-one Full Legacy does not worsen its PB",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 34.99999999999993,
+        "expected": 35.0
+      },
+      "name": "Last Rebirth updates even when slower",
+      "passed": true
+    },
+    {
+      "name": "faster next Legacy reaches real Chapter Complete",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 10.000000000000007,
+        "expected": 10.0
+      },
+      "name": "faster valid clear improves Chapter Best Time",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 30.000000000000142,
+        "expected": 30.0
+      },
+      "name": "faster completion retains previous Last Clear",
+      "passed": true
+    },
+    {
+      "name": "third actual clear increments Total Clears once",
+      "passed": true
+    },
+    {
+      "name": "faster Full Legacy can Rebirth",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 10.000000000000007,
+        "expected": 10.0
+      },
+      "name": "faster depth-one Full Legacy improves its PB",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 10.000000000000007,
+        "expected": 10.0
+      },
+      "name": "faster Last Clear survives Rebirth",
+      "passed": true
+    },
+    {
+      "name": "depth-two fixture rebirths",
+      "passed": true
+    },
+    {
+      "name": "Full Legacy best is compared and improved only at matching completed-chapter depth",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 80.0,
+        "expected": 80.0
+      },
+      "name": "Last Rebirth records depth-two time",
+      "passed": true
+    },
+    {
+      "name": "depth-separated-full-legacy-records: restore succeeds",
+      "passed": true
+    },
+    {
+      "name": "depth-separated-full-legacy-records: exact normalized state survives",
+      "passed": true
+    },
+    {
+      "name": "write isolated evidence depth-separated-full-legacy-records",
+      "passed": true
+    },
+    {
+      "name": "balance less than one point by 5e-8 cannot buy a one-point upgrade",
+      "passed": true
+    },
+    {
+      "name": "underfunded purchase neither resets gameplay nor creates negative points",
+      "passed": true
+    },
+    {
+      "name": "underfunded-decimal-balance: restore succeeds",
+      "passed": true
+    },
+    {
+      "name": "underfunded-decimal-balance: exact normalized state survives",
+      "passed": true
+    },
+    {
+      "name": "write isolated evidence underfunded-decimal-balance",
+      "passed": true
+    },
+    {
+      "name": "pending underfunded fixture completes actual Chapter 1",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 0.99999995,
+        "expected": 0.99999995
+      },
+      "name": "pending and current decimals total less than one point",
+      "passed": true
+    },
+    {
+      "name": "insufficient combined current-plus-pending balance blocks same-Rebirth purchase",
+      "passed": true
+    },
+    {
+      "name": "rejected pending purchase preserves Chapter reward and all progress",
+      "passed": true
+    },
+    {
+      "name": "non-finite numeric upgrade amount is rejected: inf",
+      "passed": true
+    },
+    {
+      "name": "non-finite numeric upgrade amount is rejected: -inf",
+      "passed": true
+    },
+    {
+      "name": "non-finite numeric upgrade amount is rejected: nan",
+      "passed": true
+    },
+    {
+      "name": "invalid Legacy revision rejected: \"1\"",
+      "passed": true
+    },
+    {
+      "name": "rejected Legacy revision leaves existing profile intact",
+      "passed": true
+    },
+    {
+      "name": "invalid Legacy revision rejected: 1.5",
+      "passed": true
+    },
+    {
+      "name": "rejected Legacy revision leaves existing profile intact",
+      "passed": true
+    },
+    {
+      "name": "invalid Legacy revision rejected: 0",
+      "passed": true
+    },
+    {
+      "name": "rejected Legacy revision leaves existing profile intact",
+      "passed": true
+    },
+    {
+      "name": "invalid Legacy revision rejected: -1",
+      "passed": true
+    },
+    {
+      "name": "rejected Legacy revision leaves existing profile intact",
+      "passed": true
+    },
+    {
+      "name": "invalid Legacy revision rejected: true",
+      "passed": true
+    },
+    {
+      "name": "rejected Legacy revision leaves existing profile intact",
+      "passed": true
+    },
+    {
+      "name": "invalid Legacy revision rejected: null",
+      "passed": true
+    },
+    {
+      "name": "rejected Legacy revision leaves existing profile intact",
+      "passed": true
+    },
+    {
+      "name": "noncanonical key rejected in chapter_claims: \"01\"",
+      "passed": true
+    },
+    {
+      "name": "rejected chapter/depth alias leaves existing profile intact",
+      "passed": true
+    },
+    {
+      "name": "noncanonical key rejected in chapter_claims: \"1.0\"",
+      "passed": true
+    },
+    {
+      "name": "rejected chapter/depth alias leaves existing profile intact",
+      "passed": true
+    },
+    {
+      "name": "noncanonical key rejected in chapter_claims: \"+1\"",
+      "passed": true
+    },
+    {
+      "name": "rejected chapter/depth alias leaves existing profile intact",
+      "passed": true
+    },
+    {
+      "name": "noncanonical key rejected in chapter_claims: \"0\"",
+      "passed": true
+    },
+    {
+      "name": "rejected chapter/depth alias leaves existing profile intact",
+      "passed": true
+    },
+    {
+      "name": "noncanonical key rejected in chapter_claims: \"-1\"",
+      "passed": true
+    },
+    {
+      "name": "rejected chapter/depth alias leaves existing profile intact",
+      "passed": true
+    },
+    {
+      "name": "noncanonical key rejected in chapter_claims: \"chapter1\"",
+      "passed": true
+    },
+    {
+      "name": "rejected chapter/depth alias leaves existing profile intact",
+      "passed": true
+    },
+    {
+      "name": "noncanonical key rejected in chapter_claims: \"2e0\"",
+      "passed": true
+    },
+    {
+      "name": "rejected chapter/depth alias leaves existing profile intact",
+      "passed": true
+    },
+    {
+      "name": "noncanonical key rejected in chapter_claims: \"\"",
+      "passed": true
+    },
+    {
+      "name": "rejected chapter/depth alias leaves existing profile intact",
+      "passed": true
+    },
+    {
+      "name": "noncanonical key rejected in chapter_stats: \"01\"",
+      "passed": true
+    },
+    {
+      "name": "rejected chapter/depth alias leaves existing profile intact",
+      "passed": true
+    },
+    {
+      "name": "noncanonical key rejected in chapter_stats: \"1.0\"",
+      "passed": true
+    },
+    {
+      "name": "rejected chapter/depth alias leaves existing profile intact",
+      "passed": true
+    },
+    {
+      "name": "noncanonical key rejected in chapter_stats: \"+1\"",
+      "passed": true
+    },
+    {
+      "name": "rejected chapter/depth alias leaves existing profile intact",
+      "passed": true
+    },
+    {
+      "name": "noncanonical key rejected in chapter_stats: \"0\"",
+      "passed": true
+    },
+    {
+      "name": "rejected chapter/depth alias leaves existing profile intact",
+      "passed": true
+    },
+    {
+      "name": "noncanonical key rejected in chapter_stats: \"-1\"",
+      "passed": true
+    },
+    {
+      "name": "rejected chapter/depth alias leaves existing profile intact",
+      "passed": true
+    },
+    {
+      "name": "noncanonical key rejected in chapter_stats: \"chapter1\"",
+      "passed": true
+    },
+    {
+      "name": "rejected chapter/depth alias leaves existing profile intact",
+      "passed": true
+    },
+    {
+      "name": "noncanonical key rejected in chapter_stats: \"2e0\"",
+      "passed": true
+    },
+    {
+      "name": "rejected chapter/depth alias leaves existing profile intact",
+      "passed": true
+    },
+    {
+      "name": "noncanonical key rejected in chapter_stats: \"\"",
+      "passed": true
+    },
+    {
+      "name": "rejected chapter/depth alias leaves existing profile intact",
+      "passed": true
+    },
+    {
+      "name": "noncanonical key rejected in best_legacy_by_depth: \"01\"",
+      "passed": true
+    },
+    {
+      "name": "rejected chapter/depth alias leaves existing profile intact",
+      "passed": true
+    },
+    {
+      "name": "noncanonical key rejected in best_legacy_by_depth: \"1.0\"",
+      "passed": true
+    },
+    {
+      "name": "rejected chapter/depth alias leaves existing profile intact",
+      "passed": true
+    },
+    {
+      "name": "noncanonical key rejected in best_legacy_by_depth: \"+1\"",
+      "passed": true
+    },
+    {
+      "name": "rejected chapter/depth alias leaves existing profile intact",
+      "passed": true
+    },
+    {
+      "name": "noncanonical key rejected in best_legacy_by_depth: \"0\"",
+      "passed": true
+    },
+    {
+      "name": "rejected chapter/depth alias leaves existing profile intact",
+      "passed": true
+    },
+    {
+      "name": "noncanonical key rejected in best_legacy_by_depth: \"-1\"",
+      "passed": true
+    },
+    {
+      "name": "rejected chapter/depth alias leaves existing profile intact",
+      "passed": true
+    },
+    {
+      "name": "noncanonical key rejected in best_legacy_by_depth: \"chapter1\"",
+      "passed": true
+    },
+    {
+      "name": "rejected chapter/depth alias leaves existing profile intact",
+      "passed": true
+    },
+    {
+      "name": "noncanonical key rejected in best_legacy_by_depth: \"2e0\"",
+      "passed": true
+    },
+    {
+      "name": "rejected chapter/depth alias leaves existing profile intact",
+      "passed": true
+    },
+    {
+      "name": "noncanonical key rejected in best_legacy_by_depth: \"\"",
+      "passed": true
+    },
+    {
+      "name": "rejected chapter/depth alias leaves existing profile intact",
+      "passed": true
+    },
+    {
+      "name": "noncanonical key rejected in legacy_completed: \"01\"",
+      "passed": true
+    },
+    {
+      "name": "rejected chapter/depth alias leaves existing profile intact",
+      "passed": true
+    },
+    {
+      "name": "noncanonical key rejected in legacy_completed: \"1.0\"",
+      "passed": true
+    },
+    {
+      "name": "rejected chapter/depth alias leaves existing profile intact",
+      "passed": true
+    },
+    {
+      "name": "noncanonical key rejected in legacy_completed: \"+1\"",
+      "passed": true
+    },
+    {
+      "name": "rejected chapter/depth alias leaves existing profile intact",
+      "passed": true
+    },
+    {
+      "name": "noncanonical key rejected in legacy_completed: \"0\"",
+      "passed": true
+    },
+    {
+      "name": "rejected chapter/depth alias leaves existing profile intact",
+      "passed": true
+    },
+    {
+      "name": "noncanonical key rejected in legacy_completed: \"-1\"",
+      "passed": true
+    },
+    {
+      "name": "rejected chapter/depth alias leaves existing profile intact",
+      "passed": true
+    },
+    {
+      "name": "noncanonical key rejected in legacy_completed: \"chapter1\"",
+      "passed": true
+    },
+    {
+      "name": "rejected chapter/depth alias leaves existing profile intact",
+      "passed": true
+    },
+    {
+      "name": "noncanonical key rejected in legacy_completed: \"2e0\"",
+      "passed": true
+    },
+    {
+      "name": "rejected chapter/depth alias leaves existing profile intact",
+      "passed": true
+    },
+    {
+      "name": "noncanonical key rejected in legacy_completed: \"\"",
+      "passed": true
+    },
+    {
+      "name": "rejected chapter/depth alias leaves existing profile intact",
+      "passed": true
+    },
+    {
+      "name": "noncanonical key rejected in chapter_elapsed: \"01\"",
+      "passed": true
+    },
+    {
+      "name": "rejected chapter/depth alias leaves existing profile intact",
+      "passed": true
+    },
+    {
+      "name": "noncanonical key rejected in chapter_elapsed: \"1.0\"",
+      "passed": true
+    },
+    {
+      "name": "rejected chapter/depth alias leaves existing profile intact",
+      "passed": true
+    },
+    {
+      "name": "noncanonical key rejected in chapter_elapsed: \"+1\"",
+      "passed": true
+    },
+    {
+      "name": "rejected chapter/depth alias leaves existing profile intact",
+      "passed": true
+    },
+    {
+      "name": "noncanonical key rejected in chapter_elapsed: \"0\"",
+      "passed": true
+    },
+    {
+      "name": "rejected chapter/depth alias leaves existing profile intact",
+      "passed": true
+    },
+    {
+      "name": "noncanonical key rejected in chapter_elapsed: \"-1\"",
+      "passed": true
+    },
+    {
+      "name": "rejected chapter/depth alias leaves existing profile intact",
+      "passed": true
+    },
+    {
+      "name": "noncanonical key rejected in chapter_elapsed: \"chapter1\"",
+      "passed": true
+    },
+    {
+      "name": "rejected chapter/depth alias leaves existing profile intact",
+      "passed": true
+    },
+    {
+      "name": "noncanonical key rejected in chapter_elapsed: \"2e0\"",
+      "passed": true
+    },
+    {
+      "name": "rejected chapter/depth alias leaves existing profile intact",
+      "passed": true
+    },
+    {
+      "name": "noncanonical key rejected in chapter_elapsed: \"\"",
+      "passed": true
+    },
+    {
+      "name": "rejected chapter/depth alias leaves existing profile intact",
+      "passed": true
+    },
+    {
+      "name": "noncanonical key rejected in chapter_complete_times: \"01\"",
+      "passed": true
+    },
+    {
+      "name": "rejected chapter/depth alias leaves existing profile intact",
+      "passed": true
+    },
+    {
+      "name": "noncanonical key rejected in chapter_complete_times: \"1.0\"",
+      "passed": true
+    },
+    {
+      "name": "rejected chapter/depth alias leaves existing profile intact",
+      "passed": true
+    },
+    {
+      "name": "noncanonical key rejected in chapter_complete_times: \"+1\"",
+      "passed": true
+    },
+    {
+      "name": "rejected chapter/depth alias leaves existing profile intact",
+      "passed": true
+    },
+    {
+      "name": "noncanonical key rejected in chapter_complete_times: \"0\"",
+      "passed": true
+    },
+    {
+      "name": "rejected chapter/depth alias leaves existing profile intact",
+      "passed": true
+    },
+    {
+      "name": "noncanonical key rejected in chapter_complete_times: \"-1\"",
+      "passed": true
+    },
+    {
+      "name": "rejected chapter/depth alias leaves existing profile intact",
+      "passed": true
+    },
+    {
+      "name": "noncanonical key rejected in chapter_complete_times: \"chapter1\"",
+      "passed": true
+    },
+    {
+      "name": "rejected chapter/depth alias leaves existing profile intact",
+      "passed": true
+    },
+    {
+      "name": "noncanonical key rejected in chapter_complete_times: \"2e0\"",
+      "passed": true
+    },
+    {
+      "name": "rejected chapter/depth alias leaves existing profile intact",
+      "passed": true
+    },
+    {
+      "name": "noncanonical key rejected in chapter_complete_times: \"\"",
+      "passed": true
+    },
+    {
+      "name": "rejected chapter/depth alias leaves existing profile intact",
+      "passed": true
+    },
+    {
+      "name": "byte-idempotence fixture obtains real permanent upgrade",
+      "passed": true
+    },
+    {
+      "name": "byte-idempotence fixture obtains decimal balance and claim/stat history",
+      "passed": true
+    },
+    {
+      "name": "byte-idempotence fixture starts active work",
+      "passed": true
+    },
+    {
+      "name": "paused fixture enters canonical loaded save state",
+      "passed": true
+    },
+    {
+      "name": "canonical paused save reloads",
+      "passed": true
+    },
+    {
+      "name": "canonical paused save with decimal points, upgrade and records is byte-idempotent",
+      "passed": true
+    },
+    {
+      "name": "canonical reload preserves paused suspended gameplay",
+      "passed": true
+    },
+    {
+      "name": "paused synthetic v0.4.23 save gains additive Legacy state",
+      "passed": true
+    },
+    {
+      "name": "first additive paused v0.4.24 save reloads",
+      "passed": true
+    },
+    {
+      "name": "first additive paused save is byte-idempotent on reload",
+      "passed": true
+    },
+    {
+      "name": "write isolated evidence canonical-paused-byte-idempotent",
+      "passed": true
+    }
+  ],
+  "failed": 0,
+  "isolation": "Pure simulation tests; no primary user save access",
+  "passed": 453,
+  "version": "v0.4.24"
+}

@@ -1,0 +1,731 @@
+{
+  "version": "v0.4.24",
+  "baseline_version": "v0.4.23",
+  "method": "Independent byte hashes and whole-function comparisons; changed gameplay functions compared after stripping only explicitly authorized Legacy additions",
+  "production_scripts_changed": [
+    "simulation.gd",
+    "main.gd",
+    "local_save.gd",
+    "sidebar_readout.gd",
+    "skill_field.gd"
+  ],
+  "reviewed_ui_deltas": [
+    "Version labels",
+    "Legacy window/button/sidebar and records",
+    "English action headings and damage",
+    "Short skill descriptions",
+    "Running/Fighting inspection art links",
+    "Guarded exact pre-Rebirth archive/write and test-only native storage override"
+  ],
+  "validation_review": [
+    "Insufficient points tolerance fixed and regression tested",
+    "Duplicate chapter aliases rejected and regression tested",
+    "Strict finite Legacy revision and purchases validated",
+    "Integer Legacy fields canonicalized; paused save byte idempotence tested"
+  ],
+  "checks": [
+    {
+      "name": "Exact original content and formulas: data/actions.json",
+      "passed": true,
+      "details": {
+        "baseline_sha256": "896c78b8180a7f7ea055deaebef4cfac1d93397f4d16a708852b1623ab3ad74f",
+        "candidate_sha256": "896c78b8180a7f7ea055deaebef4cfac1d93397f4d16a708852b1623ab3ad74f"
+      }
+    },
+    {
+      "name": "Exact original content and formulas: data/balance.json",
+      "passed": true,
+      "details": {
+        "baseline_sha256": "825f502ed29271f9d3455060232a23706d79fe906f3d6463379258dde58f937e",
+        "candidate_sha256": "825f502ed29271f9d3455060232a23706d79fe906f3d6463379258dde58f937e"
+      }
+    },
+    {
+      "name": "Exact original content and formulas: data/chapter_1_1.json",
+      "passed": true,
+      "details": {
+        "baseline_sha256": "8c0633bcc6c6028bd5e6a8f846177875d286c548373cc2a72989e5b82ff8af17",
+        "candidate_sha256": "8c0633bcc6c6028bd5e6a8f846177875d286c548373cc2a72989e5b82ff8af17"
+      }
+    },
+    {
+      "name": "Exact original content and formulas: data/chapter1_frames.json",
+      "passed": true,
+      "details": {
+        "baseline_sha256": "a525f23a74419edbaf128c84567b7296df7fa9e71acc88d014211ced0c473596",
+        "candidate_sha256": "a525f23a74419edbaf128c84567b7296df7fa9e71acc88d014211ced0c473596"
+      }
+    },
+    {
+      "name": "Exact original content and formulas: data/enemies.json",
+      "passed": true,
+      "details": {
+        "baseline_sha256": "4f08e2ebd6d3cbb9460486813006d2c0b073fb556009cfedabf4b6369ba563a6",
+        "candidate_sha256": "4f08e2ebd6d3cbb9460486813006d2c0b073fb556009cfedabf4b6369ba563a6"
+      }
+    },
+    {
+      "name": "Exact original content and formulas: data/food_rules.json",
+      "passed": true,
+      "details": {
+        "baseline_sha256": "5d5d4b744e18d63d7b8ac3f5db268f0ffc260098b6742926525a8b48ab25c2b6",
+        "candidate_sha256": "5d5d4b744e18d63d7b8ac3f5db268f0ffc260098b6742926525a8b48ab25c2b6"
+      }
+    },
+    {
+      "name": "Exact original content and formulas: data/items.json",
+      "passed": true,
+      "details": {
+        "baseline_sha256": "e7ba6145de3e11a7143d49ead5f00137d9497ff88de678aeac435760aa22158b",
+        "candidate_sha256": "e7ba6145de3e11a7143d49ead5f00137d9497ff88de678aeac435760aa22158b"
+      }
+    },
+    {
+      "name": "Exact original content and formulas: data/recipes.json",
+      "passed": true,
+      "details": {
+        "baseline_sha256": "23033b64235c96a3bf1af1672bbd10756b1e70bdab6b95817ddd90732628f53f",
+        "candidate_sha256": "23033b64235c96a3bf1af1672bbd10756b1e70bdab6b95817ddd90732628f53f"
+      }
+    },
+    {
+      "name": "Exact original content and formulas: data/subchapters.json",
+      "passed": true,
+      "details": {
+        "baseline_sha256": "29f6d26a3545f62e864cf301d99380a9208a08ae4cbbbc1ab1303d4e622f6b85",
+        "candidate_sha256": "29f6d26a3545f62e864cf301d99380a9208a08ae4cbbbc1ab1303d4e622f6b85"
+      }
+    },
+    {
+      "name": "No Chapter content data file added or removed",
+      "passed": true,
+      "details": {
+        "baseline_files": [
+          "actions.json",
+          "balance.json",
+          "chapter_1_1.json",
+          "chapter1_frames.json",
+          "enemies.json",
+          "food_rules.json",
+          "items.json",
+          "recipes.json",
+          "subchapters.json"
+        ],
+        "candidate_files": [
+          "actions.json",
+          "balance.json",
+          "chapter_1_1.json",
+          "chapter1_frames.json",
+          "enemies.json",
+          "food_rules.json",
+          "items.json",
+          "recipes.json",
+          "subchapters.json"
+        ]
+      }
+    },
+    {
+      "name": "Unchanged gameplay function: _init",
+      "passed": true,
+      "details": {
+        "comparison": "Whole original function text, normalized only for CRLF"
+      }
+    },
+    {
+      "name": "Unchanged gameplay function: advance",
+      "passed": true,
+      "details": {
+        "comparison": "Whole original function text, normalized only for CRLF"
+      }
+    },
+    {
+      "name": "Unchanged gameplay function: apply_food",
+      "passed": true,
+      "details": {
+        "comparison": "Whole original function text, normalized only for CRLF"
+      }
+    },
+    {
+      "name": "Unchanged gameplay function: begin_next_run",
+      "passed": true,
+      "details": {
+        "comparison": "Whole original function text, normalized only for CRLF"
+      }
+    },
+    {
+      "name": "Unchanged gameplay function: blocked",
+      "passed": true,
+      "details": {
+        "comparison": "Whole original function text, normalized only for CRLF"
+      }
+    },
+    {
+      "name": "Unchanged gameplay function: cancel_content_work",
+      "passed": true,
+      "details": {
+        "comparison": "Whole original function text, normalized only for CRLF"
+      }
+    },
+    {
+      "name": "Unchanged gameplay function: clear_queue",
+      "passed": true,
+      "details": {
+        "comparison": "Whole original function text, normalized only for CRLF"
+      }
+    },
+    {
+      "name": "Unchanged gameplay function: construction_total",
+      "passed": true,
+      "details": {
+        "comparison": "Whole original function text, normalized only for CRLF"
+      }
+    },
+    {
+      "name": "Unchanged gameplay function: content_action_allowed",
+      "passed": true,
+      "details": {
+        "comparison": "Whole original function text, normalized only for CRLF"
+      }
+    },
+    {
+      "name": "Unchanged gameplay function: cost",
+      "passed": true,
+      "details": {
+        "comparison": "Whole original function text, normalized only for CRLF"
+      }
+    },
+    {
+      "name": "Unchanged gameplay function: count",
+      "passed": true,
+      "details": {
+        "comparison": "Whole original function text, normalized only for CRLF"
+      }
+    },
+    {
+      "name": "Unchanged gameplay function: crafting_fraction",
+      "passed": true,
+      "details": {
+        "comparison": "Whole original function text, normalized only for CRLF"
+      }
+    },
+    {
+      "name": "Unchanged gameplay function: crafting_paid",
+      "passed": true,
+      "details": {
+        "comparison": "Whole original function text, normalized only for CRLF"
+      }
+    },
+    {
+      "name": "Unchanged gameplay function: crafting_text",
+      "passed": true,
+      "details": {
+        "comparison": "Whole original function text, normalized only for CRLF"
+      }
+    },
+    {
+      "name": "Unchanged gameplay function: die",
+      "passed": true,
+      "details": {
+        "comparison": "Whole original function text, normalized only for CRLF"
+      }
+    },
+    {
+      "name": "Unchanged gameplay function: eat",
+      "passed": true,
+      "details": {
+        "comparison": "Whole original function text, normalized only for CRLF"
+      }
+    },
+    {
+      "name": "Unchanged gameplay function: enqueue",
+      "passed": true,
+      "details": {
+        "comparison": "Whole original function text, normalized only for CRLF"
+      }
+    },
+    {
+      "name": "Unchanged gameplay function: fight_step",
+      "passed": true,
+      "details": {
+        "comparison": "Whole original function text, normalized only for CRLF"
+      }
+    },
+    {
+      "name": "Unchanged gameplay function: food_can_heal",
+      "passed": true,
+      "details": {
+        "comparison": "Whole original function text, normalized only for CRLF"
+      }
+    },
+    {
+      "name": "Unchanged gameplay function: grant_xp",
+      "passed": true,
+      "details": {
+        "comparison": "Whole original function text, normalized only for CRLF"
+      }
+    },
+    {
+      "name": "Unchanged gameplay function: hunger",
+      "passed": true,
+      "details": {
+        "comparison": "Whole original function text, normalized only for CRLF"
+      }
+    },
+    {
+      "name": "Unchanged gameplay function: level",
+      "passed": true,
+      "details": {
+        "comparison": "Whole original function text, normalized only for CRLF"
+      }
+    },
+    {
+      "name": "Unchanged gameplay function: mastery_threshold",
+      "passed": true,
+      "details": {
+        "comparison": "Whole original function text, normalized only for CRLF"
+      }
+    },
+    {
+      "name": "Unchanged gameplay function: mastery_unlocked",
+      "passed": true,
+      "details": {
+        "comparison": "Whole original function text, normalized only for CRLF"
+      }
+    },
+    {
+      "name": "Unchanged gameplay function: max_hp",
+      "passed": true,
+      "details": {
+        "comparison": "Whole original function text, normalized only for CRLF"
+      }
+    },
+    {
+      "name": "Unchanged gameplay function: migration_required",
+      "passed": true,
+      "details": {
+        "comparison": "Whole original function text, normalized only for CRLF"
+      }
+    },
+    {
+      "name": "Unchanged gameplay function: new_run",
+      "passed": true,
+      "details": {
+        "comparison": "Whole original function text, normalized only for CRLF"
+      }
+    },
+    {
+      "name": "Unchanged gameplay function: p",
+      "passed": true,
+      "details": {
+        "comparison": "Whole original function text, normalized only for CRLF"
+      }
+    },
+    {
+      "name": "Unchanged gameplay function: priority",
+      "passed": true,
+      "details": {
+        "comparison": "Whole original function text, normalized only for CRLF"
+      }
+    },
+    {
+      "name": "Unchanged gameplay function: process_food_timers",
+      "passed": true,
+      "details": {
+        "comparison": "Whole original function text, normalized only for CRLF"
+      }
+    },
+    {
+      "name": "Unchanged gameplay function: queue_satisfied",
+      "passed": true,
+      "details": {
+        "comparison": "Whole original function text, normalized only for CRLF"
+      }
+    },
+    {
+      "name": "Unchanged gameplay function: queue_waiting",
+      "passed": true,
+      "details": {
+        "comparison": "Whole original function text, normalized only for CRLF"
+      }
+    },
+    {
+      "name": "Unchanged gameplay function: r",
+      "passed": true,
+      "details": {
+        "comparison": "Whole original function text, normalized only for CRLF"
+      }
+    },
+    {
+      "name": "Unchanged gameplay function: read_data",
+      "passed": true,
+      "details": {
+        "comparison": "Whole original function text, normalized only for CRLF"
+      }
+    },
+    {
+      "name": "Unchanged gameplay function: recipe_requirements",
+      "passed": true,
+      "details": {
+        "comparison": "Whole original function text, normalized only for CRLF"
+      }
+    },
+    {
+      "name": "Unchanged gameplay function: reserve_crafting",
+      "passed": true,
+      "details": {
+        "comparison": "Whole original function text, normalized only for CRLF"
+      }
+    },
+    {
+      "name": "Unchanged gameplay function: restore_content",
+      "passed": true,
+      "details": {
+        "comparison": "Whole original function text, normalized only for CRLF"
+      }
+    },
+    {
+      "name": "Unchanged gameplay function: schedule",
+      "passed": true,
+      "details": {
+        "comparison": "Whole original function text, normalized only for CRLF"
+      }
+    },
+    {
+      "name": "Unchanged gameplay function: serialize",
+      "passed": true,
+      "details": {
+        "comparison": "Whole original function text, normalized only for CRLF"
+      }
+    },
+    {
+      "name": "Unchanged gameplay function: set_priority",
+      "passed": true,
+      "details": {
+        "comparison": "Whole original function text, normalized only for CRLF"
+      }
+    },
+    {
+      "name": "Unchanged gameplay function: start",
+      "passed": true,
+      "details": {
+        "comparison": "Whole original function text, normalized only for CRLF"
+      }
+    },
+    {
+      "name": "Unchanged gameplay function: stop",
+      "passed": true,
+      "details": {
+        "comparison": "Whole original function text, normalized only for CRLF"
+      }
+    },
+    {
+      "name": "Unchanged gameplay function: suspend_active",
+      "passed": true,
+      "details": {
+        "comparison": "Whole original function text, normalized only for CRLF"
+      }
+    },
+    {
+      "name": "Unchanged gameplay function: visible",
+      "passed": true,
+      "details": {
+        "comparison": "Whole original function text, normalized only for CRLF"
+      }
+    },
+    {
+      "name": "Unchanged gameplay function: vitality_level",
+      "passed": true,
+      "details": {
+        "comparison": "Whole original function text, normalized only for CRLF"
+      }
+    },
+    {
+      "name": "Unchanged gameplay function: vitality_progress",
+      "passed": true,
+      "details": {
+        "comparison": "Whole original function text, normalized only for CRLF"
+      }
+    },
+    {
+      "name": "Unchanged gameplay function: weapon_damage",
+      "passed": true,
+      "details": {
+        "comparison": "Whole original function text, normalized only for CRLF"
+      }
+    },
+    {
+      "name": "Speed preserves base, Run, Permanent and tool formulas with only Legacy additive term",
+      "passed": true,
+      "details": {
+        "authorized_delta": "+ legacy_speed_bonus(skill) before knife multiplier"
+      }
+    },
+    {
+      "name": "Simulation step preserves Hunger, XP, food, combat and work progression with only active Legacy timers added",
+      "passed": true,
+      "details": {
+        "authorized_delta": "Legacy/chapter timers in the active-work branch"
+      }
+    },
+    {
+      "name": "Action completion preserves recipes, rewards, mastery, travel and queue ownership with only Chapter record added",
+      "passed": true,
+      "details": {
+        "authorized_delta": "record_chapter_complete(1) and Chapter Complete status copy"
+      }
+    },
+    {
+      "name": "Original save and content migration validation is retained after additive Legacy validation",
+      "passed": true,
+      "details": {
+        "authorized_delta": "New Legacy validation/defaults precede the unchanged original restore body"
+      }
+    },
+    {
+      "name": "Fresh normal gameplay defaults are identical after removing new Legacy timing fields",
+      "passed": true,
+      "details": {
+        "baseline": {
+          "xp": {},
+          "vitality": 0.0,
+          "mastery": {},
+          "auto": {},
+          "unlocked": {},
+          "settings": {
+            "story": true
+          },
+          "generation": 1,
+          "furthest": 1,
+          "chapter_complete": false,
+          "best_bear_damage": 0.0
+        },
+        "candidate_normal_defaults": {
+          "xp": {},
+          "vitality": 0.0,
+          "mastery": {},
+          "auto": {},
+          "unlocked": {},
+          "settings": {
+            "story": true
+          },
+          "generation": 1,
+          "furthest": 1,
+          "chapter_complete": false,
+          "best_bear_damage": 0.0
+        }
+      }
+    },
+    {
+      "name": "Profile initialization changes only the new Legacy object and extracted persistent defaults",
+      "passed": true,
+      "details": {
+        "comparison": "Original state initialization with equivalent persistent helper and only new outer Legacy object removed"
+      }
+    },
+    {
+      "name": "Unchanged production script: action_sequence.gd",
+      "passed": true,
+      "details": {
+        "comparison": "SHA-256 byte equality"
+      }
+    },
+    {
+      "name": "Unchanged production script: action_strip.gd",
+      "passed": true,
+      "details": {
+        "comparison": "SHA-256 byte equality"
+      }
+    },
+    {
+      "name": "Unchanged production script: art_styles.gd",
+      "passed": true,
+      "details": {
+        "comparison": "SHA-256 byte equality"
+      }
+    },
+    {
+      "name": "Unchanged production script: inventory_tile.gd",
+      "passed": true,
+      "details": {
+        "comparison": "SHA-256 byte equality"
+      }
+    },
+    {
+      "name": "Unchanged production script: live_action.gd",
+      "passed": true,
+      "details": {
+        "comparison": "SHA-256 byte equality"
+      }
+    },
+    {
+      "name": "Unchanged production script: perch_visual.gd",
+      "passed": true,
+      "details": {
+        "comparison": "SHA-256 byte equality"
+      }
+    },
+    {
+      "name": "Unchanged production script: premium_panel.gd",
+      "passed": true,
+      "details": {
+        "comparison": "SHA-256 byte equality"
+      }
+    },
+    {
+      "name": "Unchanged production script: queue_timeline.gd",
+      "passed": true,
+      "details": {
+        "comparison": "SHA-256 byte equality"
+      }
+    },
+    {
+      "name": "Unchanged production script: scene_edge.gd",
+      "passed": true,
+      "details": {
+        "comparison": "SHA-256 byte equality"
+      }
+    },
+    {
+      "name": "Unchanged production script: skill_strip.gd",
+      "passed": true,
+      "details": {
+        "comparison": "SHA-256 byte equality"
+      }
+    },
+    {
+      "name": "Skill card behavior preserved: _draw",
+      "passed": true,
+      "details": {
+        "comparison": "Only description copy shortened"
+      }
+    },
+    {
+      "name": "Skill card behavior preserved: _gui_input",
+      "passed": true,
+      "details": {
+        "comparison": "Only description copy shortened"
+      }
+    },
+    {
+      "name": "Skill card behavior preserved: _make_custom_tooltip",
+      "passed": true,
+      "details": {
+        "comparison": "Only description copy shortened"
+      }
+    },
+    {
+      "name": "Skill card behavior preserved: _process",
+      "passed": true,
+      "details": {
+        "comparison": "Only description copy shortened"
+      }
+    },
+    {
+      "name": "Skill card behavior preserved: _ready",
+      "passed": true,
+      "details": {
+        "comparison": "Only description copy shortened"
+      }
+    },
+    {
+      "name": "Skill card behavior preserved: advance_visual",
+      "passed": true,
+      "details": {
+        "comparison": "Only description copy shortened"
+      }
+    },
+    {
+      "name": "Skill card behavior preserved: bar_style",
+      "passed": true,
+      "details": {
+        "comparison": "Only description copy shortened"
+      }
+    },
+    {
+      "name": "Skill card behavior preserved: display_name",
+      "passed": true,
+      "details": {
+        "comparison": "Only description copy shortened"
+      }
+    },
+    {
+      "name": "Skill card behavior preserved: draw_text",
+      "passed": true,
+      "details": {
+        "comparison": "Only description copy shortened"
+      }
+    },
+    {
+      "name": "Skill card behavior preserved: load_art",
+      "passed": true,
+      "details": {
+        "comparison": "Only description copy shortened"
+      }
+    },
+    {
+      "name": "Skill card behavior preserved: make_info_panel",
+      "passed": true,
+      "details": {
+        "comparison": "Only description copy shortened"
+      }
+    },
+    {
+      "name": "Skill card behavior preserved: progression_rect",
+      "passed": true,
+      "details": {
+        "comparison": "Only description copy shortened"
+      }
+    },
+    {
+      "name": "Skill card behavior preserved: set_compact",
+      "passed": true,
+      "details": {
+        "comparison": "Only description copy shortened"
+      }
+    },
+    {
+      "name": "Skill card behavior preserved: set_progress",
+      "passed": true,
+      "details": {
+        "comparison": "Only description copy shortened"
+      }
+    },
+    {
+      "name": "Skill card behavior preserved: sync_channel",
+      "passed": true,
+      "details": {
+        "comparison": "Only description copy shortened"
+      }
+    },
+    {
+      "name": "Main gameplay/save loop preserved: _process",
+      "passed": true,
+      "details": {
+        "comparison": "Whole original function text"
+      }
+    },
+    {
+      "name": "Main gameplay/save loop preserved: load_game",
+      "passed": true,
+      "details": {
+        "comparison": "Whole original function text"
+      }
+    },
+    {
+      "name": "Main gameplay/save loop preserved: save_game",
+      "passed": true,
+      "details": {
+        "comparison": "Whole original function text"
+      }
+    },
+    {
+      "name": "Main gameplay/save loop preserved: render_action",
+      "passed": true,
+      "details": {
+        "comparison": "Whole original function text"
+      }
+    }
+  ],
+  "passed": 92,
+  "failed": 0
+}

@@ -1,0 +1,672 @@
+{
+  "checks": [
+    {
+      "name": "A fresh v0.4.24 restores",
+      "passed": true
+    },
+    {
+      "name": "A fresh save round trip is semantically exact",
+      "passed": true
+    },
+    {
+      "name": "A fresh Legacy layer and counters remain byte-idempotent after first reload",
+      "passed": true
+    },
+    {
+      "name": "A canonical fresh save remains byte-idempotent after second reload",
+      "passed": true
+    },
+    {
+      "name": "A fresh profile has zero balance, reward and Rebirths",
+      "passed": true
+    },
+    {
+      "name": "B in-progress v0.4.23 restores",
+      "passed": true
+    },
+    {
+      "name": "B in-progress v0.4.23 preserves persistent auto",
+      "passed": true
+    },
+    {
+      "name": "B in-progress v0.4.23 preserves persistent best_bear_damage",
+      "passed": true
+    },
+    {
+      "name": "B in-progress v0.4.23 preserves persistent chapter_complete",
+      "passed": true
+    },
+    {
+      "name": "B in-progress v0.4.23 preserves persistent furthest",
+      "passed": true
+    },
+    {
+      "name": "B in-progress v0.4.23 preserves persistent future_extension",
+      "passed": true
+    },
+    {
+      "name": "B in-progress v0.4.23 preserves persistent generation",
+      "passed": true
+    },
+    {
+      "name": "B in-progress v0.4.23 preserves persistent levels",
+      "passed": true
+    },
+    {
+      "name": "B in-progress v0.4.23 preserves persistent mastery",
+      "passed": true
+    },
+    {
+      "name": "B in-progress v0.4.23 preserves persistent permanent_max_hp_increase",
+      "passed": true
+    },
+    {
+      "name": "B in-progress v0.4.23 preserves persistent settings",
+      "passed": true
+    },
+    {
+      "name": "B in-progress v0.4.23 preserves persistent unlocked",
+      "passed": true
+    },
+    {
+      "name": "B in-progress v0.4.23 preserves persistent vitality",
+      "passed": true
+    },
+    {
+      "name": "B in-progress v0.4.23 preserves persistent vitality_level",
+      "passed": true
+    },
+    {
+      "name": "B in-progress v0.4.23 preserves persistent xp",
+      "passed": true
+    },
+    {
+      "name": "B in-progress v0.4.23 preserves run active",
+      "passed": true
+    },
+    {
+      "name": "B in-progress v0.4.23 preserves run cap",
+      "passed": true
+    },
+    {
+      "name": "B in-progress v0.4.23 preserves run combat",
+      "passed": true
+    },
+    {
+      "name": "B in-progress v0.4.23 preserves run craft_batches",
+      "passed": true
+    },
+    {
+      "name": "B in-progress v0.4.23 preserves run craft_paid",
+      "passed": true
+    },
+    {
+      "name": "B in-progress v0.4.23 preserves run dead",
+      "passed": true
+    },
+    {
+      "name": "B in-progress v0.4.23 preserves run done",
+      "passed": true
+    },
+    {
+      "name": "B in-progress v0.4.23 preserves run eating",
+      "passed": true
+    },
+    {
+      "name": "B in-progress v0.4.23 preserves run food_frozen",
+      "passed": true
+    },
+    {
+      "name": "B in-progress v0.4.23 preserves run food_timers",
+      "passed": true
+    },
+    {
+      "name": "B in-progress v0.4.23 preserves run frame",
+      "passed": true
+    },
+    {
+      "name": "B in-progress v0.4.23 preserves run future_extension",
+      "passed": true
+    },
+    {
+      "name": "B in-progress v0.4.23 preserves run hp",
+      "passed": true
+    },
+    {
+      "name": "B in-progress v0.4.23 preserves run hunger_multiplier",
+      "passed": true
+    },
+    {
+      "name": "B in-progress v0.4.23 preserves run inventory",
+      "passed": true
+    },
+    {
+      "name": "B in-progress v0.4.23 preserves run levels",
+      "passed": true
+    },
+    {
+      "name": "B in-progress v0.4.23 preserves run paused",
+      "passed": true
+    },
+    {
+      "name": "B in-progress v0.4.23 preserves run progress",
+      "passed": true
+    },
+    {
+      "name": "B in-progress v0.4.23 preserves run queue",
+      "passed": true
+    },
+    {
+      "name": "B in-progress v0.4.23 preserves run queue_index",
+      "passed": true
+    },
+    {
+      "name": "B in-progress v0.4.23 preserves run repeat",
+      "passed": true
+    },
+    {
+      "name": "B in-progress v0.4.23 preserves run seconds",
+      "passed": true
+    },
+    {
+      "name": "B in-progress v0.4.23 preserves run source",
+      "passed": true
+    },
+    {
+      "name": "B in-progress v0.4.23 preserves run stages",
+      "passed": true
+    },
+    {
+      "name": "B in-progress v0.4.23 preserves run suspended",
+      "passed": true
+    },
+    {
+      "name": "B in-progress v0.4.23 preserves run weapon",
+      "passed": true
+    },
+    {
+      "name": "B in-progress v0.4.23 preserves run xp",
+      "passed": true
+    },
+    {
+      "name": "B in-progress v0.4.23 initializes unclaimed Legacy layer additively",
+      "passed": true
+    },
+    {
+      "name": "B in-progress v0.4.23 pending first reward is correct",
+      "passed": true
+    },
+    {
+      "name": "B in-progress v0.4.23 invents no historical timing or PB",
+      "passed": true
+    },
+    {
+      "name": "B in-progress v0.4.23 retains known completed status as clear count",
+      "passed": true
+    },
+    {
+      "name": "B in-progress v0.4.23 second additive load is idempotent",
+      "passed": true
+    },
+    {
+      "name": "B in-progress v0.4.23 first additive save is byte-idempotent after reload",
+      "passed": true
+    },
+    {
+      "name": "B in-progress v0.4.23 two subsequent reloads remain byte-idempotent",
+      "passed": true
+    },
+    {
+      "name": "C completed v0.4.23 restores",
+      "passed": true
+    },
+    {
+      "name": "C completed v0.4.23 preserves persistent auto",
+      "passed": true
+    },
+    {
+      "name": "C completed v0.4.23 preserves persistent best_bear_damage",
+      "passed": true
+    },
+    {
+      "name": "C completed v0.4.23 preserves persistent chapter_complete",
+      "passed": true
+    },
+    {
+      "name": "C completed v0.4.23 preserves persistent furthest",
+      "passed": true
+    },
+    {
+      "name": "C completed v0.4.23 preserves persistent future_extension",
+      "passed": true
+    },
+    {
+      "name": "C completed v0.4.23 preserves persistent generation",
+      "passed": true
+    },
+    {
+      "name": "C completed v0.4.23 preserves persistent levels",
+      "passed": true
+    },
+    {
+      "name": "C completed v0.4.23 preserves persistent mastery",
+      "passed": true
+    },
+    {
+      "name": "C completed v0.4.23 preserves persistent permanent_max_hp_increase",
+      "passed": true
+    },
+    {
+      "name": "C completed v0.4.23 preserves persistent settings",
+      "passed": true
+    },
+    {
+      "name": "C completed v0.4.23 preserves persistent unlocked",
+      "passed": true
+    },
+    {
+      "name": "C completed v0.4.23 preserves persistent vitality",
+      "passed": true
+    },
+    {
+      "name": "C completed v0.4.23 preserves persistent vitality_level",
+      "passed": true
+    },
+    {
+      "name": "C completed v0.4.23 preserves persistent xp",
+      "passed": true
+    },
+    {
+      "name": "C completed v0.4.23 preserves run active",
+      "passed": true
+    },
+    {
+      "name": "C completed v0.4.23 preserves run cap",
+      "passed": true
+    },
+    {
+      "name": "C completed v0.4.23 preserves run combat",
+      "passed": true
+    },
+    {
+      "name": "C completed v0.4.23 preserves run craft_batches",
+      "passed": true
+    },
+    {
+      "name": "C completed v0.4.23 preserves run craft_paid",
+      "passed": true
+    },
+    {
+      "name": "C completed v0.4.23 preserves run dead",
+      "passed": true
+    },
+    {
+      "name": "C completed v0.4.23 preserves run done",
+      "passed": true
+    },
+    {
+      "name": "C completed v0.4.23 preserves run eating",
+      "passed": true
+    },
+    {
+      "name": "C completed v0.4.23 preserves run food_frozen",
+      "passed": true
+    },
+    {
+      "name": "C completed v0.4.23 preserves run food_timers",
+      "passed": true
+    },
+    {
+      "name": "C completed v0.4.23 preserves run frame",
+      "passed": true
+    },
+    {
+      "name": "C completed v0.4.23 preserves run future_extension",
+      "passed": true
+    },
+    {
+      "name": "C completed v0.4.23 preserves run hp",
+      "passed": true
+    },
+    {
+      "name": "C completed v0.4.23 preserves run hunger_multiplier",
+      "passed": true
+    },
+    {
+      "name": "C completed v0.4.23 preserves run inventory",
+      "passed": true
+    },
+    {
+      "name": "C completed v0.4.23 preserves run levels",
+      "passed": true
+    },
+    {
+      "name": "C completed v0.4.23 preserves run paused",
+      "passed": true
+    },
+    {
+      "name": "C completed v0.4.23 preserves run progress",
+      "passed": true
+    },
+    {
+      "name": "C completed v0.4.23 preserves run queue",
+      "passed": true
+    },
+    {
+      "name": "C completed v0.4.23 preserves run queue_index",
+      "passed": true
+    },
+    {
+      "name": "C completed v0.4.23 preserves run repeat",
+      "passed": true
+    },
+    {
+      "name": "C completed v0.4.23 preserves run seconds",
+      "passed": true
+    },
+    {
+      "name": "C completed v0.4.23 preserves run source",
+      "passed": true
+    },
+    {
+      "name": "C completed v0.4.23 preserves run stages",
+      "passed": true
+    },
+    {
+      "name": "C completed v0.4.23 preserves run suspended",
+      "passed": true
+    },
+    {
+      "name": "C completed v0.4.23 preserves run weapon",
+      "passed": true
+    },
+    {
+      "name": "C completed v0.4.23 preserves run xp",
+      "passed": true
+    },
+    {
+      "name": "C completed v0.4.23 initializes unclaimed Legacy layer additively",
+      "passed": true
+    },
+    {
+      "name": "C completed v0.4.23 pending first reward is correct",
+      "passed": true
+    },
+    {
+      "name": "C completed v0.4.23 invents no historical timing or PB",
+      "passed": true
+    },
+    {
+      "name": "C completed v0.4.23 retains known completed status as clear count",
+      "passed": true
+    },
+    {
+      "name": "C completed v0.4.23 second additive load is idempotent",
+      "passed": true
+    },
+    {
+      "name": "C completed v0.4.23 first additive save is byte-idempotent after reload",
+      "passed": true
+    },
+    {
+      "name": "C completed v0.4.23 two subsequent reloads remain byte-idempotent",
+      "passed": true
+    },
+    {
+      "name": "D v0.4.22 legacy layout loads through retained content migration",
+      "passed": true
+    },
+    {
+      "name": "D semantic Creek Hollow maps to Creek Crossing",
+      "passed": true
+    },
+    {
+      "name": "D compatible queued work and duplicate order survive",
+      "passed": true
+    },
+    {
+      "name": "D XP, inventory and settings are not wiped",
+      "passed": true
+    },
+    {
+      "name": "D obsolete completion retired while earned mastery and Auto survive",
+      "passed": true
+    },
+    {
+      "name": "D in-progress migrated profile receives no invented reward",
+      "passed": true
+    },
+    {
+      "name": "E fresh primary save written in isolated QA directory",
+      "passed": true
+    },
+    {
+      "name": "E native override routes primary outside user saves",
+      "passed": true
+    },
+    {
+      "name": "E actual action starts before saving",
+      "passed": true
+    },
+    {
+      "name": "E save before Rebirth succeeds",
+      "passed": true
+    },
+    {
+      "name": "E pre-Rebirth reload preserves exact pending, timers, records, action progress and settings",
+      "passed": true
+    },
+    {
+      "name": "E pending reward remains unspent after reload",
+      "passed": true
+    },
+    {
+      "name": "G verified exact pre-reset archive exists before reset",
+      "passed": true
+    },
+    {
+      "name": "G archive bytes match exact pre-Rebirth save",
+      "passed": true
+    },
+    {
+      "name": "E first confirmed Rebirth with upgrade saves",
+      "passed": true
+    },
+    {
+      "name": "E post-Rebirth primary reload succeeds",
+      "passed": true
+    },
+    {
+      "name": "E upgrade and claimed chapter survive post-Rebirth reload",
+      "passed": true
+    },
+    {
+      "name": "E primary contains fresh ordinary gameplay after Rebirth",
+      "passed": true
+    },
+    {
+      "name": "E chapter records, depth records and settings survive reload",
+      "passed": true
+    },
+    {
+      "name": "G post-reset primary replacement cannot mutate archive",
+      "passed": true
+    },
+    {
+      "name": "F decimal balance and all six upgrade levels save",
+      "passed": true
+    },
+    {
+      "name": "F decimal balance, upgrades, claims and records reload exactly",
+      "passed": true
+    },
+    {
+      "name": "F decimal balance and Legacy counters are byte-idempotent after reload",
+      "passed": true
+    },
+    {
+      "name": "F nonzero decimals and additive +2% survive reload",
+      "passed": true
+    },
+    {
+      "name": "G another Rebirth gets unique numbered archive",
+      "passed": true
+    },
+    {
+      "name": "G reused archive number creates a separate immutable digest archive",
+      "passed": true
+    },
+    {
+      "name": "G prior archive bytes unchanged and conflicting bytes preserved independently",
+      "passed": true
+    },
+    {
+      "name": "G repeated preservation of identical raw archive is idempotent",
+      "passed": true
+    },
+    {
+      "name": "G/H actual Legacy UI exposes Rebirth action",
+      "passed": true
+    },
+    {
+      "name": "G actual UI opens confirmation before destructive work",
+      "passed": true
+    },
+    {
+      "name": "G opening confirmation writes no archive or primary",
+      "passed": true
+    },
+    {
+      "name": "G canceling confirmation leaves archives, primary and gameplay untouched",
+      "passed": true
+    },
+    {
+      "name": "G/H actual Legacy UI exposes Rebirth action",
+      "passed": true
+    },
+    {
+      "name": "G additional simulated gameplay starts while confirmation is open",
+      "passed": true
+    },
+    {
+      "name": "G confirmed archive captures exact current pre-reset state after confirmation delay",
+      "passed": true
+    },
+    {
+      "name": "G confirmation verifies archive then writes post-reset primary exactly once",
+      "passed": true
+    },
+    {
+      "name": "G confirmed UI Rebirth resets and credits once",
+      "passed": true
+    },
+    {
+      "name": "G primary and immutable archive expose post-reset and pre-reset states",
+      "passed": true
+    },
+    {
+      "name": "G/H actual Legacy UI exposes Rebirth action",
+      "passed": true
+    },
+    {
+      "name": "H archive failure blocks Rebirth and preserves exact primary and memory",
+      "passed": true
+    },
+    {
+      "name": "H archive failure performs no destructive primary write",
+      "passed": true
+    },
+    {
+      "name": "H later autosave cannot overwrite primary after archive failure",
+      "passed": true
+    },
+    {
+      "name": "G/H actual Legacy UI exposes Rebirth action",
+      "passed": true
+    },
+    {
+      "name": "H post-reset write failure rolls memory back to exact archived state",
+      "passed": true
+    },
+    {
+      "name": "H failed post-reset transaction performs one verified archive and one write attempt",
+      "passed": true
+    },
+    {
+      "name": "H native unwritable archive location reports failure",
+      "passed": true
+    },
+    {
+      "name": "H native archive failure leaves source profile intact",
+      "passed": true
+    },
+    {
+      "name": "G/H real native UI fixture primary persists in isolated QA directory",
+      "passed": true
+    },
+    {
+      "name": "G/H actual Legacy UI exposes Rebirth action",
+      "passed": true
+    },
+    {
+      "name": "G real local_save transaction opens UI confirmation",
+      "passed": true
+    },
+    {
+      "name": "G real native transaction permits additional gameplay while confirming",
+      "passed": true
+    },
+    {
+      "name": "G real native UI archive exists and contains byte-exact latest pre-reset state",
+      "passed": true
+    },
+    {
+      "name": "G real native UI confirms and persists successful Rebirth",
+      "passed": true
+    },
+    {
+      "name": "E/G real native UI primary reload retains awarded points and claim count",
+      "passed": true
+    },
+    {
+      "name": "E/G real native UI primary reload exposes complete normal gameplay reset",
+      "passed": true
+    },
+    {
+      "name": "G real immutable archive reload recovers exact old Legacy and unfinished action",
+      "passed": true
+    },
+    {
+      "name": "G real native archive survives post-Rebirth write and both reloads unchanged",
+      "passed": true
+    },
+    {
+      "name": "G/H real native UI fixture primary persists in isolated QA directory",
+      "passed": true
+    },
+    {
+      "name": "H real native archive failure is injected at archive path without changing primary",
+      "passed": true
+    },
+    {
+      "name": "G/H actual Legacy UI exposes Rebirth action",
+      "passed": true
+    },
+    {
+      "name": "H actual native archive failure blocks UI Rebirth and preserves memory and primary bytes",
+      "passed": true
+    },
+    {
+      "name": "H actual native failure reload retains original unclaimed reward and gameplay",
+      "passed": true
+    },
+    {
+      "name": "H real native archive failure also blocks later autosave overwrite",
+      "passed": true
+    }
+  ],
+  "failed": [],
+  "passed": 166,
+  "total": 166,
+  "version": "v0.4.24"
+}

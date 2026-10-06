@@ -1,0 +1,9 @@
+RELIVOR v0.4.24
+Legacy / Rebirth system added.
+Each chapter can reward once per Legacy; reward decays by 1% per prior claim: 0.99^claims.
+Rewards are paid only on Rebirth.
+Permanent skill-speed upgrades cost 1 Legacy Point per +1%.
+Rebirth resets normal gameplay but preserves Legacy Points, upgrades, claim counts and records.
+Chapter timing records and Full Legacy timing added.
+Desktop skill descriptions shortened to prevent clipping.
+English UI preserved.
